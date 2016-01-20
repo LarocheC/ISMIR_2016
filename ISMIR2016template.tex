@@ -51,23 +51,26 @@ The abstract should be placed at the top left column and should contain about 15
 %
 \section{Introduction}\label{sec:introduction}
 
-This template includes all the information about formatting manuscripts for the ISMIR \conferenceyear\ Conference.
-Please follow these guidelines to give the final proceedings a uniform look.
-Most of the required formatting is achieved automatically by using the supplied
-style file (\LaTeX) or template (Word).
-If you have any questions, please contact the Program Committee
-(\texttt{ismir\conferenceyear-papers@ismir.net}).
-This template can be downloaded from the ISMIR \conferenceyear\ web site (\texttt{http://ismir\conferenceyear.ismir.net}).
-%
-\section{Paper Length}
-\textcolor{red}{The regulations for the maximal paper length have changed.}
-Instead of the strict limit of six pages (as used for ISMIR 2014), we adopt 
-a ``(6+1)-page policy'' for ISMIR 2015. This means, the paper may have a 
-maximum of 6 pages for technical content including figures and possible references 
-with one additional optional 7th page containing only references.
-Note that this is a strict requirement. 
-\textcolor{red}{The seventh page (if used at all) must
-not contain any other material except for references.}
+Audio Source separation is a challenging task and fully automatic system is still out of reach, but a number of algorithm involving a human operator are starting to yield satisfactory results. In this context, Non-negative Matrix Factorization (NMF) is a widely used method for source separation. The goal of NMF is to approximate a data matrix $V \in \mathbb{R}_{+}^{n \times m} $ as $V \approx \tilde{V} = WH$ with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ and where $k$ is the rank of factorization \cite{lee99}. In audio signal processing, the input data is usually a Time-Frequency (TF) representation such as a short time Fourier transform (STFT) or a constant-Q transform spectrogram. For source separation the main model for 
+
+
+\section{Construction of the dictionary}
+
+
+\subsection{Supervised NMF for source separation}
+
+The NMF model is:
+\begin{equation}
+V \approx \tilde{V} = WH.
+\end{equation}
+If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the data. This dictionary can then be used to extract a specific instrument from a mixture \cite{jaureguiberry2011adaptation,kim2011nonnegative}. However, building a dictionary specific to an instrument and that performs well on a large database is a complicated problem. 
+
+
+\subsection{Construction of the dictionary}
+
+We decide to use a NMF decomposition for the dictionary. The audio drum signal are from the database \cite{gillet2006enst} and we also used isolated drum sound found on the internet (The dictionary signal used are available on your website). We concatenated $33$ isolated strike on different element of different drum kit to have a wide variety of sounds. The power spectrum of STFT of the drum signal is used as the input for the NMF. We perform an NMF on the test decomposition and we use different rank of factorization to obtain different dictionary.  
+
+
 
 \section{Page Size}\label{sec:page_size}
 
@@ -190,7 +193,7 @@ When referring to a document, type the number in square brackets
 \cite{Author:00}, or for a range \cite{Author:00,Someone:10,Someone:04}.
 
 % For bibtex users:
-\bibliography{ISMIR2015template}
+\bibliography{reference}
 
 % For non bibtex users:
 %\begin{thebibliography}{citations}
