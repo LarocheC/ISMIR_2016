@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{EwertM12}
+S.~Ewert and M.~M{\"u}ller.
+\newblock Score-informed source separation for music signals.
+\newblock {\em Multimodal music processing}, 3:73--94, 2012.
+
+\bibitem{jaureguiberry2011adaptation}
+Xabier Jaureguiberry, Pierre Leveau, Simon Maller, and Juan~Jos{\'e} Burred.
+\newblock Adaptation of source-specific dictionaries in non-negative matrix
+  factorization for source separation.
+\newblock In {\em Proc. of IEEE ICASSP}, pages 5--8, 2011.
+
+\bibitem{kim2011nonnegative}
+Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
+\newblock Nonnegative matrix partial co-factorization for spectral and temporal
+  drum source separation.
+\newblock {\em Journal of Selected Topics in Signal Processing},
+  5(6):1192--1204, 2011.
+
+\bibitem{lee99}
+D.~Lee and S.~Seung.
+\newblock Learning the parts of objects by nonnegative matrix factorization.
+\newblock {\em Nature}, 401:788--791, 1999.
+
+\bibitem{gillet2006enst}
+O.Gillet and G.Richard.
+\newblock Enst-drums: an extensive audio-visual database for drum signals
+  processing.
+\newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
+
+\bibitem{wudrum}
+Chih-Wei Wu and Alexander Lerch.
+\newblock Drum transcription using partially fixed non-negative matrix
+  factorization.
+\newblock In {\em Proc. of EUSIPCO}, 2008.
+
+\end{thebibliography}

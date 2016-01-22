@@ -7,6 +7,10 @@
 \usepackage{ismir,amsmath,cite}
 \usepackage{graphicx}
 \usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[]{algorithm2e}
+\usepackage{enumitem} 
 
 % Title.
 % ------
@@ -51,7 +55,8 @@ The abstract should be placed at the top left column and should contain about 15
 %
 \section{Introduction}\label{sec:introduction}
 
-Audio Source separation is a challenging task and fully automatic system is still out of reach, but a number of algorithm involving a human operator are starting to yield satisfactory results. In this context, Non-negative Matrix Factorization (NMF) is a widely used method for source separation. The goal of NMF is to approximate a data matrix $V \in \mathbb{R}_{+}^{n \times m} $ as $V \approx \tilde{V} = WH$ with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ and where $k$ is the rank of factorization \cite{lee99}. In audio signal processing, the input data is usually a Time-Frequency (TF) representation such as a short time Fourier transform (STFT) or a constant-Q transform spectrogram. For source separation the main model for 
+Audio Source separation is a challenging task and fully automatic system is still out of reach, but a number of algorithm involving a human operator are starting to yield satisfactory results. In this context, Non-negative Matrix Factorization (NMF) is a widely used method for source separation. The goal of NMF is to approximate a data matrix $V \in \mathbb{R}_{+}^{n \times m} $ as $V \approx \tilde{V} = WH$ with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ and where $k$ is the rank of factorization \cite{lee99}. In audio signal processing, the input data is usually a Time-Frequency (TF) representation such as a short time Fourier transform (STFT) or a constant-Q transform spectrogram. Blind source separation is a difficult problem and the plain NMF decomposition does not provide satisfying results. To perform a satisfying results, it is necessary to exploit various features that make each sources distinguishable from one another. 
+Supervised algorithms in the NMF framework exploit training data or prior information in order to guide the decomposition process. For example information from the scores or from midi signals \cite{EwertM12} can be used to initialize the learning process. The downside of this approach is that it requires well organized prior information that is not always available. Another supervised method consists in performing prior training on specific databases. For example a dictionary matrix $W_{train}$ can be learnt from a big database in order to separate an instrument \cite{jaureguiberry2011adaptation,wudrum}. A common method to build a dictionary for NMF is to perform a decomposition on a large training set. After the convergence, the $W$ matrix from the decomposition is used as the dictionary matrix $W_{train}$ in the separation \cite{jaureguiberry2011adaptation}. Another method is detailed in \cite{wudrum}, a dictionary matrix is created by extracting template spectra from isolated drum samples. The dictionary is then used in a NMF decomposition to perform drum transcription. This method requires minimum tuning from the user. However, the dictionary should match the target instrument for satisfying performances. In this work we will focus on how to build a p supervised algorithms 
 
 
 \section{Construction of the dictionary}
@@ -68,7 +73,7 @@ If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictiona
 
 \subsection{Construction of the dictionary}
 
-We decide to use a NMF decomposition for the dictionary. The audio drum signal are from the database \cite{gillet2006enst} and we also used isolated drum sound found on the internet (The dictionary signal used are available on your website). We concatenated $33$ isolated strike on different element of different drum kit to have a wide variety of sounds. The power spectrum of STFT of the drum signal is used as the input for the NMF. We perform an NMF on the test decomposition and we use different rank of factorization to obtain different dictionary.  
+We decide to use a NMF decomposition for the dictionary. The audio drum signal are from the database \cite{gillet2006enst} and we also used isolated drum sound found on the internet (The dictionary signal used are available on your website). We concatenated $33$ isolated strike on different element of different drum kit to have a wide variety of sounds. The power spectrum of STFT of the drum signal is used as the input for the NMF. We perform an NMF on the test decomposition and we use different rank of factorization to obtain different dictionary.
 
 
 
@@ -186,11 +191,7 @@ E=mc^{2}
 
 \section{Citations}
 
-All bibliographical references should be listed at the end,
-inside a section named ``REFERENCES,'' numbered and in alphabetical order.
-All references listed should be cited in the text.
-When referring to a document, type the number in square brackets
-\cite{Author:00}, or for a range \cite{Author:00,Someone:10,Someone:04}.
+\bibliographystyle{IEEEtran}
 
 % For bibtex users:
 \bibliography{reference}
