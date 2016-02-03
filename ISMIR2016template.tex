@@ -74,12 +74,8 @@ The NMF model is:
 \begin{equation}
 V \approx \tilde{V} = WH.
 \end{equation}
-If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the data. This dictionary can then be used to extract a specific instrument from a mixture \cite{jaureguiberry2011adaptation,kim2011nonnegative}. However, building a dictionary specific to an instrument and that performs well on a large database is a complicated problem. Here we will use genre specific drum dictionary. The medley-dB database has information on the genre of music. We will used the dictionary to  
-
-
-\subsection{Construction of the dictionary}
-
-We decide to use a NMF decomposition for the dictionary. The audio drum signal are from the database \cite{gillet2006enst} and we also used isolated drum sound found on the internet (The dictionary signal used are available on your website). We concatenated $33$ isolated strike on different element of different drum kit to have a wide variety of sounds. The power spectrum of STFT of the drum signal is used as the input for the NMF. We perform an NMF on the test decomposition and we use different rank of factorization to obtain different dictionary.
+If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. This dictionary can then be used to extract the percussive instruments from a mixture \cite{wudrum}. However, building a dictionary specific to an instrument that performs well on a large database is a complicated problem. Here we build genre specific drum dictionary using the medley-dB database. Using dictionary specific to the genre of music allows us to have smaller dictionaries that a more specific to the signal to decompose. It grants us lower computation time and better separation score
+The dictionary are build has follow. 
 
 
 
