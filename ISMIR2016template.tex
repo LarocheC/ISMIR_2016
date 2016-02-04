@@ -63,9 +63,71 @@ The main contribution of this article is that we developed a genre specific meth
  
 
 
+\section{Presentation of the SPNMF}
+
+
+
+\subsection{Overview}
+
+
+The aim of PNMF is to find a non negative projection matrix $P \in \mathbb{R}_{+}^{n \times n}$ such that $V \approx \tilde{V} = PV$. In \cite{yuanOja2005} Yuan \& al. proposed to seek $P$ as an approximative projection matrix under the form $P = WW^{T}$ with $W \in \mathbb{R}_{+}^{n \times k}$ with $ k \leqslant n $. The PNMF problem reads : 
+\begin{equation}\label{EqPnmf}
+\min_{W \geqslant 0} ||V - WW^{T}V||^2 
+\end{equation}
+where $\|.\|^{2}$ is the squared Euclidean distance.
+ 
+The ONMF \cite{choi} consists in solving the following problem: 
+%\vspace{-0.25cm} 
+\begin{align}
+\min_{W \geqslant 0, H \geqslant0} ||V - WH||^2 \quad   \text{s.t}.\quad W^{T}W=I_{k} 
+\end{align}%
+%\vspace{-0.20cm}
+In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In practice, it seems that PNMF and ONMF lead to similar decompositions, as the $W$ matrix estimated by PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). The links between PNMF, ONMF and the regular NMF are discussed in the next section.  
+
+
+
+\subsection{On the equivalence between NMF, PNMF and ONMF} 
+\label{subsec:eq_nmf}
+
+Using a squared Euclidean distance between the data matrix $V$ and its approximation $WH$, the NMF problems reads:
+$$
+\min_{W,H\geq 0} \|V - WH\|^2\ , 
+$$
+where PNMF (resp. ONMF) adds the constraint $H=W^TV$ (resp. $W^TW = I$). Let us assume that $V$ admits an NMF decomposition without any errors, i.e., one can find $W$ and $H$ of rank $k$ such that $V=WH$.  Then, one can easily prove that necessarily $H = (W^TW)^{-1}W^T$. Now, as demonstrated in \cite{Richman74}, an invertible matrix is nonnegative if and only if it is a monomial matrix, that is, up to a scaling and  permutation matrix, we necessarily have $W^TW = I$. This result is summarized in the following theorem: 
+
+
+In practice, the assumption $V=WH$ does not hold as soon as $k<\min(n,m)$, hence the motivation to introduce PNMF and ONMF. However, it is interesting to stress that the orthogonality of $W$ is a requirement to obtain a true projector for $H$. Moreover, in practice, $W_{pnmf}$ is ``almost'' orthogonal, leading to an ``almost projection'' for $H_{pnmf}$ as motivated by the authors in~\cite{yuanOja2005}. This remark has encouraged us to build upon PNMF instead of ONMF in the next section.
+
+
+
+\subsection{Principle}
+
+As stated in \cite{canadas2014percussive}, harmonic instruments have sparse basis functions whereas percussive instruments have much flatter spectra. As the columns of $W$ are orthogonal, when two sources overlap in the Time-Frequency (TF) domain only one basis function will represent the mixture which is not adequate for efficient separation. To overcome this problem, we propose to add a standard NMF decomposition term to the PNMF. With a similar technique as in \cite{HennequinDAFx2010}, we increase the rank of the PNMF. Let $k = k'+e $ with $e$ being the number of additional components. We can expect that most of the harmonic components will be represented by the orthogonal part while the percussive ones will be in the regular NMF components. Let $V$ be the magnitude spectrogram of the input data. The model is then given by
+\begin{equation} \label{Cfunction}
+V \approx \tilde{V}= W_{1}H_{1} + W_{2} H_{2},
+\end{equation}
+where $W_{1} H_{1} $ is the almost orthogonal part with rank $k'$ and $W_{2} H_{2} $ are $e$ regular NMF components. Following the same idea as in section \ref{subsec:eq_nmf}, we obtain :
+\begin{equation}
+H_{1} =  W_{1}^{T} (V - W_{2} H_{2}) ,\quad \text{iff} \quad W_{1}^{T}W_1 = I\ .
+\end{equation}
+We then propose the {\em structured projected NMF} cost function:
+\begin{equation}\label{cost1}
+\min_{W_1,W_2,H_2\geq 0} || V - W_{1}W_{1}^{T} (V - W_{2} H_{2}) - W_{2} H_{2} ||^{2}.
+\end{equation}
+
+
+
+As in \cite{HennequinDAFx2010}, $e$ is kept smaller than $k'$. The goal here is to focus most of the energy in the orthogonal part to benefit from the sparse decomposition property of PNMF. 
+
 
 
 \section{Construction of the dictionary}
+
+
+\subsection{Database}\label{database}
+
+The dataset is taken from medley-dB \cite{bittner2014medleydb}, it is composed of polyphonic real-world music excerpts. It has $122$ music signals and $77$ of them contain percussive instruments, harmonic instruments and vocals. The signals that do not contain a percussive part are not part of the evaluation. We will be using the song of the genre, \emph{Singer/Songwriter} ($17$ songs), \emph{Pop} ($10$ songs), \emph{Rock} ($20$ songs), \emph{Jazz} ($11$ songs), \emph{Electronic/Fusion} ($13$ songs) and \emph{World/Folk} ($6$ songs). Because the notion of genre is quite subjective, the medley-dB database uses general genre labels. These labels should not be considered to be "precise" genre labels. There are many instances where a song could have fallen in multiple genres, and the choices were made so that each genre would be as acoustically homogenous as possible. As we are only working with the instrumental part of the song "Pop" label (for example) are similar to the "Singer/Songwriter".
+
 
 
 \subsection{Supervised NMF for source separation}
@@ -75,13 +137,7 @@ The NMF model is:
 V \approx \tilde{V} = WH.
 \end{equation}
 If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. This dictionary can then be used to extract the percussive instruments from a mixture \cite{wudrum}. However, building a dictionary specific to an instrument that performs well on a large database is a complicated problem. Here we build genre specific drum dictionary using the medley-dB database. Using dictionary specific to the genre of music allows us to have smaller dictionaries that a more specific to the signal to decompose. It grants us lower computation time and better separation score
-The dictionary are build has follow. 
-
-
-
-\section{Database}\label{database}
-
-The dataset is taken from medley-dB \cite{bittner2014medleydb}, it is composed of polyphonic real-world music excerpts. It has $122$ music signals and $89$ of them contain percussive instruments, harmonic instruments and vocals. The signals that do not contain a percussive part are not part of the evaluation. 
+The dictionary are build has follow. For every song of the medley-dB database, we perform and NMF with $k=100$ on the drum signals. The $Wtrain$ matrices are then concatenated depending on the genre of the song. 
 
 
 
