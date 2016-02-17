@@ -46,22 +46,38 @@ C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
 \newblock A structured nonnegative matrix factorization for source separation.
 \newblock In {\em Proc. of EUSIPCO}, 2015.
 
+\bibitem{yuanOja2005}
+Z.~Yuan and E.~Oja.
+\newblock Projective nonnegative matrix factorization for image compression and
+  feature extraction.
+\newblock {\em Image Analysis}, pages 333--342, 2005.
+
+\bibitem{YangOja10}
+Z.~Yang and E.~Oja.
+\newblock Linear and nonlinear projective nonnegative matrix factorization.
+\newblock {\em IEEE Transactions on Neural Network.}, 21(5):734--749, 2010.
+
+\bibitem{choi}
+S.~Choi.
+\newblock Algorithms for orthogonal nonnegative matrix factorization.
+\newblock In {\em Proc. of IEEE IJCNN}, pages 1828--1832, 2008.
+
+\bibitem{canadas2014percussive}
+F.~Canadas-Quesada, P.~Vera-Candeas, N.~Ruiz-Reyes, J.~Carabias-Orti, and
+  P.~Cabanas-Molero.
+\newblock Percussive/harmonic sound separation by non-negative matrix
+  factorization with smoothness/sparseness constraints.
+\newblock {\em EURASIP Journal on Audio, Speech, and Music Processing},
+  2014(1):1--17, 2014.
+
+\bibitem{Lee01algorithmsfor}
+D.~Lee and S.~Seung.
+\newblock Algorithms for non-negative matrix factorization.
+\newblock {\em Proc. of NIPS}, pages 556--562, 2001.
+
 \bibitem{bittner2014medleydb}
 R.~Bittner, J.~Salamon, M.~Tierney, M.~Mauch, C.~Cannam, and J.~Bello.
 \newblock Medleydb: A multitrack dataset for annotation-intensive mir research.
 \newblock In {\em Proc. of ISMIR}, 2014.
-
-\bibitem{kim2011nonnegative}
-Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
-\newblock Nonnegative matrix partial co-factorization for spectral and temporal
-  drum source separation.
-\newblock {\em Journal of Selected Topics in Signal Processing},
-  5(6):1192--1204, 2011.
-
-\bibitem{gillet2006enst}
-O.Gillet and G.Richard.
-\newblock Enst-drums: an extensive audio-visual database for drum signals
-  processing.
-\newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
 
 \end{thebibliography}

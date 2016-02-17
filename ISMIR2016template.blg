@@ -1,51 +1,9 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: ISMIR2016template.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ISMIR2016template.aux
 The style file: unsrt.bst
 Illegal, another \bibstyle command---line 3 of file ISMIR2016template.aux
  : \bibstyle
  :          {IEEEtran}
 I'm skipping whatever remains of this command
 Database file #1: reference.bib
-You've used 11 entries,
-            1791 wiz_defined-function locations,
-            509 strings with 5401 characters,
-and the built_in function-call counts, 2984 in all, are:
-= -- 251
-> -- 127
-< -- 4
-+ -- 46
-- -- 35
-* -- 181
-:= -- 440
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 11
-chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 152
-empty$ -- 316
-format.name$ -- 35
-if$ -- 702
-int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 11
-newline$ -- 58
-num.names$ -- 11
-pop$ -- 49
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 83
-stack$ -- 0
-substring$ -- 192
-swap$ -- 50
-text.length$ -- 4
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 26
-width$ -- 13
-write$ -- 120
+Warning--I didn't find a database entry for "liutkus:hal-01110028"
 (There was 1 error message)
