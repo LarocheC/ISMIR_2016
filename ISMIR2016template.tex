@@ -173,6 +173,42 @@ x_h(t) = InverseSTFT(\mathcal{M}_H \otimes X).
 \section{Construction of the dictionary}
 
 
+Length of the dictionary: 
+
+\begin{table}
+   
+	\centering 
+   \begin{tabular}{|l|l|}
+   	\hline   
+   Genre & Length(min)\\
+  \hline
+Classical  & 22.06 \\
+  \hline
+Electronic/Fusion & 18.66\\
+	\hline
+Jazz & 10.96\\
+\hline
+Pop &  12.53 \\
+\hline
+Rock & 11.43\\
+\hline
+Sing/Songwriter	& 9.36\\
+\hline
+World/Folk & 9.53\\
+\hline
+Non Specific & 11.03\\
+\hline
+  
+\end{tabular} 
+\caption{\label{resultONMF2} Source separation performance for the synthetic signal.}
+
+
+\end{table}
+\vspace{-0.4cm}
+
+
+
+
 \subsection{Database}\label{database}
 
 The dataset is taken from medley-dB \cite{bittner2014medleydb}, it is composed of polyphonic real-world music excerpts. It has $122$ music signals and $77$ of them contain percussive instruments, harmonic instruments and vocals. The signals that do not contain a percussive part are not part of the evaluation. We will be using the song of the genre, \emph{Singer/Songwriter} ($17$ songs), \emph{Pop} ($10$ songs), \emph{Rock} ($20$ songs), \emph{Jazz} ($11$ songs), \emph{Electronic/Fusion} ($13$ songs) and \emph{World/Folk} ($6$ songs). Because the notion of genre is quite subjective, the medley-dB database uses general genre labels. These labels should not be considered to be "precise" genre labels. There are many instances where a song could have fallen in multiple genres, and the choices were made so that each genre would be as acoustically homogeneous as possible. As we are only working with the instrumental part of the song "Pop" label (for example) are similar to the "Singer/Songwriter".

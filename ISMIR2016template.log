@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  17 FEB 2016 14:57
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  22 FEB 2016 15:39
 entering extended mode
 **ISMIR2016template.tex
 (C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016template.tex
@@ -287,14 +287,14 @@ LaTeX Warning: Citation `liutkus:hal-01110028' on page 2 undefined on input lin
 e 152.
 
 
-Overfull \hbox (2.3253pt too wide) in paragraph at lines 178--179
+Overfull \hbox (2.3253pt too wide) in paragraph at lines 214--215
 \OT1/ptm/m/it/10 Elec-tronic/Fusion \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10 13$ \OT1/
 ptm/m/n/10 songs) and \OT1/ptm/m/it/10 World/Folk \OT1/ptm/m/n/10 ($\OT1/cmr/m/
 n/10 6$ \OT1/ptm/m/n/10 songs). Be-
  []
 
 
-Overfull \hbox (22.51459pt too wide) in paragraph at lines 178--179
+Overfull \hbox (22.51459pt too wide) in paragraph at lines 214--215
 \OT1/ptm/m/n/10 "Pop" la-bel (for ex-am-ple) are sim-i-lar to the "Singer/Songw
 riter". 
  []
@@ -302,7 +302,7 @@ riter".
 [2] [3] <figure.png, id=34, 130.44736pt x 91.3011pt>
 File: figure.png Graphic file (type png)
  <use figure.png>
-Package pdftex.def Info: figure.png used on input line 293.
+Package pdftex.def Info: figure.png used on input line 329.
 (pdftex.def)             Requested size: 233.31259pt x 163.30814pt.
 
 (C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016template.bbl
@@ -320,17 +320,19 @@ Underfull \hbox (badness 2181) in paragraph at lines 66--72
 \OT1/ptm/m/n/10 trix fac-tor-iza-tion with smooth-ness/sparseness con-
  []
 
-) [4 <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figure.png (PNG copy)>]
-(C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016template.aux)
+[4 <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figure.png (PNG copy)>])
+[5
+
+] (C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016template.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3730 strings out of 494045
- 48553 string characters out of 3148382
- 129972 words of memory out of 3000000
- 6972 multiletter control sequences out of 15000+200000
+ 3731 strings out of 494045
+ 48566 string characters out of 3148382
+ 131980 words of memory out of 3000000
+ 6973 multiletter control sequences out of 15000+200000
  27626 words of font info for 64 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  27i,15n,24p,1282b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -350,9 +352,9 @@ onts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX 2.9/fonts
 pe1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ISMIR2016template.pdf (4 pages, 208399 bytes).
+Output written on ISMIR2016template.pdf (5 pages, 209454 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
