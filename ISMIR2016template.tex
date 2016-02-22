@@ -212,6 +212,46 @@ Non Specific & 11.03\\
 \subsection{Database}\label{database}
 
 The dataset is taken from medley-dB \cite{bittner2014medleydb}, it is composed of polyphonic real-world music excerpts. It has $122$ music signals and $77$ of them contain percussive instruments, harmonic instruments and vocals. The signals that do not contain a percussive part are not part of the evaluation. We will be using the song of the genre, \emph{Singer/Songwriter} ($17$ songs), \emph{Pop} ($10$ songs), \emph{Rock} ($20$ songs), \emph{Jazz} ($11$ songs), \emph{Electronic/Fusion} ($13$ songs) and \emph{World/Folk} ($6$ songs). Because the notion of genre is quite subjective, the medley-dB database uses general genre labels. These labels should not be considered to be "precise" genre labels. There are many instances where a song could have fallen in multiple genres, and the choices were made so that each genre would be as acoustically homogeneous as possible. As we are only working with the instrumental part of the song "Pop" label (for example) are similar to the "Singer/Songwriter".
+We use $3$ song of each genre to use as a training database. The songs used for the training part are not part of the evaluation. The files selected are:
+Length of the dictionary: 
+
+\begin{table}
+   
+	\centering 
+   \begin{tabular}{|l|l|}
+   	\hline   
+   Genre & Length(min)\\
+  \hline
+Classical  & JoelHelander_Definition \\
+ & MatthewEntwistle_AnEveningWithOliver \\
+ & MusicDelta_Beethoven \\
+  \hline
+Electronic/Fusion & EthanHein_1930sSynthAndUprightBass\\
+ & TablaBreakbeatScience_Animoog\\
+ & TablaBreakbeatScience_Scorpio\\
+	\hline
+Jazz & CroqueMadame_Oil\\
+ & MusicDelta_BebopJazz\\
+ & MusicDelta_ModalJazz \\
+\hline
+Pop &  DreamersOfTheGhetto_HeavyLove \\
+ & NightPanther_Fire \\
+ & StrandOfOaks_Spacestation \\
+\hline
+Rock & BigTroubles_Phantom\\
+ & Meaxic_TakeAStep \\
+ & PurlingHiss_Lolita \\
+\hline
+Sing/Songwriter	& AimeeNorwich_Child\\
+ & ClaraBerryAndWooldog_Boys\\
+ & InvisibleFamiliars_DisturbingWildlife\\
+\hline
+World/Folk &AimeeNorwich_Flying \\
+ &KarimDouaidy_Hopscotch \\
+ & MusicDelta_ChineseYaoZu\\
+\hline
+
+ 
 
 
 
