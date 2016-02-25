@@ -1,4 +1,10 @@
-% Latex Paper Template for ISMIR 2014
+% Latex Paper Template for ISMIR 2016
+%
+% Updated for 2016 conference, 02.02.2016 by Doug Turnbull
+%
+% Changes after submission, 23.07.2015 by Meinard Mueller
+% Inclusion of "\multauthor" ...
+%
 %
 % Version 20140604
 % Replaced \setauthorname with automatic setting from \oneauthor etc.
@@ -35,8 +41,8 @@
 
 %%%<<<<<<<<<<>>>>>>>>>>>%%%
 %%%TO BE CHANGED EVERY YEAR
-\newcommand{\conferenceyear}{2015}
-\newcommand{\conferenceedition}{16th}
+\newcommand{\conferenceyear}{2016}
+\newcommand{\conferenceedition}{17th}
 %%%<<<<<<<<<<>>>>>>>>>>>%%%
 %%%<<<<<<<<<<>>>>>>>>>>>%%%
 
@@ -160,7 +166,7 @@
 {\includegraphics[height=0.45cm]{figs/cc_by.pdf}}
 \vskip -.45cm
 \begin{spacing}{1.1}
-\hskip 1.5cm \copyright \hskip .1cm \authorname.\\
+\hskip 1.5cm \copyright \hskip .1cm \authorname.
 Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).
 {\bf Attribution: } \authorname.
 ``\@title'',
@@ -171,9 +177,15 @@ Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4
 }
 
 
-
-
-
+\def\multauthor#1#2{
+  \gdef\@author{
+  \begin{tabular}{@{}c@{}}
+    {\bf #1} \\
+    #2\relax
+   \end{tabular}%\hskip .3in
+  }
+%  \def\authorname{#1}
+}
 
 \def\oneauthor#1#2{
   \gdef\@author{
@@ -374,7 +386,7 @@ Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4
   \@xsect{\@tempskipa}
 }
 
-\bibliographystyle{unsrt}
+\bibliographystyle{plain}
 
 \def\thebibliography#1{
   \section{References}\list

@@ -1,9 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: ISMIR2016template.aux
-The style file: unsrt.bst
-Illegal, another \bibstyle command---line 3 of file ISMIR2016template.aux
- : \bibstyle
- :          {IEEEtran}
-I'm skipping whatever remains of this command
-Database file #1: reference.bib
-Warning--I didn't find a database entry for "liutkus:hal-01110028"
-(There was 1 error message)
+I found no \citation commands---while reading file ISMIR2016template.aux
+I found no \bibdata command---while reading file ISMIR2016template.aux
+I found no \bibstyle command---while reading file ISMIR2016template.aux
+(There were 3 error messages)

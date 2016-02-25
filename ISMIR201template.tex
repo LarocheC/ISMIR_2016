@@ -1,0 +1,423 @@
+% -----------------------------------------------
+% Template for ISMIR Papers
+% 2015 version, based on previous ISMIR templates
+% -----------------------------------------------
+
+\documentclass{article}
+\usepackage{ismir,amsmath,cite}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[]{algorithm2e}
+\usepackage{enumitem} 
+\bibliographystyle{IEEEtran}
+% Title.
+% ------
+\title{Paper Template For ISMIR \conferenceyear}
+
+
+% Single address
+% To use with only one author or several with the same address
+% ---------------
+%\oneauthor
+% {Names should be omitted for double-blind reviewing}
+% {Affiliations should be omitted for double-blind reviewing}
+
+% Two addresses
+% --------------
+%\twoauthors
+%  {First author} {School \\ Department}
+%  {Second author} {Company \\ Address}
+
+% Three addresses
+% --------------
+%\threeauthors
+%  {First author} {Affiliation1 \\ {\tt author1@ismir.edu}}
+%  {Second author} {\bf Retain these fake authors in\\\bf submission to preserve the formatting}
+%  {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
+
+% Four addresses
+% --------------
+\fourauthors
+  {First author} {Affiliation1 \\ {\tt author1@ismir.edu}}
+  {Second author}{Affiliation2 \\ {\tt author2@ismir.edu}}
+  {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
+  {Fourth author} {Affiliation4 \\ {\tt author4@ismir.edu}}
+
+\begin{document}
+%
+\maketitle
+%
+\begin{abstract}
+The abstract should be placed at the top left column and should contain about 150-200 words.
+\end{abstract}
+%
+\section{Introduction}\label{sec:introduction}
+
+Training and evaluating Blind audio Sources Separation (BSS) algorithms requires large multitrack datasets. Despite efforts to crowd-source annotations [9], most datasets available for MIR research are still the result of a manual annotation effort by a specific researcher or group. Consequently, the size of the datasets available for a particular MIR task is often directly related to the amount of effort involved in producing the annotations. Some tasks, such as cover song identification or music recommendation, can leverage weak annotations such as
+basic song metadata, known relationships or listening patterns oftentimes compiled by large music services such as
+last.fm 1 . However, there is a subset of MIR tasks dealing with detailed information from the music signal for which time-aligned annotations are not readily available, such as the fundamental frequency (f0) of the melody (needed for melody extraction [13]) or the activation times of the different instruments in the mix (needed for instrument recognition
+[1]). Annotating this kind of highly specific information from real world recordings is a time consuming
+process that requires qualified individuals, and is usually done in the context of large annotation efforts such as the
+Billboard [3], SALAMI [15], and Beatles [8] datasets. These sets include manual annotations of structure, chords,
+or notes, typically consisting of categorical labels at time intervals on the order of seconds. The annotation process
+is even more time-consuming for f0 values or instrument activations for example, which are numeric instead of categorical,
+and at a time-scale on the order of milliseconds. Unsurprisingly, the datasets available for evaluating these tasks are often limited in size (on the order of a couple dozen files) and comprised solely of short excerpts. When multitrack audio is available, annotation tasks that would be difficult with mixed audio can often be expedited. For example, annotating the f0 curve for a particular instrument from a full audio mix is difficult and tedious, whereas with multitrack stems the process can be partly automated using monophonic pitch tracking techniques. Since no algorithm provides 100 estimation accuracy in real-world conditions, a common solution is to have experts manually correct these machine annotations, a process significantly simpler than annotating from scratch. Unfortunately, collections of royalty-free multitrack recordings that can be shared for research purposes are relatively scarce, and those that exist are homogeneous in genre. This is a problem not only for evaluating annotation-intensive tasks but also for tasks that by definition require access to the individual tracks of a song such as source separation and automatic mixing.
+
+
+
+
+Audio Source separation is a challenging task and fully automatic system is still out of reach, but a number of algorithm involving a human operator are starting to yield satisfactory results. Supervised algorithms use high-level musical information to improve the separation quality of the algorithm. In the context of blind source separation, Non-negative Matrix Factorization (NMF) is a widely used method for source separation. The goal of NMF is to approximate a data matrix $V \in \mathbb{R}_{+}^{n \times m} $ as $V \approx \tilde{V} = WH$ with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ and where $k$ is the rank of factorization \cite{lee99}. In audio signal processing, the input data is usually a Time-Frequency (TF) representation such as a short time Fourier transform (STFT) or a constant-Q transform spectrogram. Blind source separation is a difficult problem and the plain NMF decomposition does not provide satisfying results. To perform a satisfying results, it is necessary to exploit various features that make each sources distinguishable from one another. 
+Supervised algorithms in the NMF framework exploit training data or prior information in order to guide the decomposition process. For example information from the scores or from midi signals \cite{EwertM12} can be used to initialize the learning process. The downside of this approach is that it requires well organized prior information that is not always available. Another supervised method consists in performing prior training on specific databases. For example a dictionary matrix $W_{train}$ is learned from a big database in order to separate an instrument \cite{jaureguiberry2011adaptation,wudrum}. A common method to build a dictionary for NMF is to perform a decomposition on a large training set. After the convergence, the $W$ matrix from the decomposition is used as the dictionary matrix $W_{train}$ in the separation \cite{jaureguiberry2011adaptation}. Another method is detailed in \cite{wudrum}, a dictionary matrix is created by extracting template spectra from isolated drum samples. The dictionary is then used in a NMF decomposition to perform drum transcription. This method requires minimum tuning from the user. However, the dictionary should match the target instrument for satisfying performances. 
+The problem of recent method using dictionary matrices is that, within a database, an instrument can sound differently depending on the recording condition and post processing treatment. In order to represent correctly one instrument, ones can decide to learn a dictionary on a large database, however, the problem of overfitting the data exist. In order to overcome this problem and to be able to build effective dictionaries we decided to use genre specific training data. Genre specific information can provide an insight on the structure of the audio signal. Music from the same genre share similar chords and rhythm and the resemblance between two pieces of music have been used to perform chord transcription \cite{ni2012using,lee2008acoustic} or for downbeat detection \cite{hockman2012one}. 
+In this paper, we focus on the task of harmonic/percussive source separation (HPSS) using the method developed in \cite{laroche2015structured}. We adapt the method to be used with a drum dictionary to extract the percussive instruments. This method is explained in detail in the preprint. 
+The main contribution of this article is that we developed a genre specific method to build a drum NMF dictionary that obtains consistent results on a HPSS task. Overall using a fixed dictionary for drum extraction is an underused method in the literature as it is difficult to create a drum dictionary that provide robust results on a large variety of signal. By using genre specific dictionary we were able to improve the separation score and decrease the computation time as the dictionary are smaller in size. 
+ 
+
+
+\section{Structured projective NMF (SPNMF)}
+\label{sec:SPNMF}
+
+In this section we present our semi-supervised algorithm for harmonic/percussive source separation.
+
+\subsection{Presentation of the orthogonal and projective NMF}\label{subsec:PNMF}
+
+
+Using a squared Euclidean distance between the data matrix $V$ and its approximation $WH$, the NMF problems reads:
+$$
+\min_{W,H\geq 0} \|V - WH\|^2\ , 
+$$
+where $\|.\|^{2}$ is the squared Euclidean distance.
+
+The aim of PNMF is to find a non negative projection matrix $P \in \mathbb{R}_{+}^{n \times n}$ such that $V \approx \tilde{V} = PV$. In~\cite{yuanOja2005} Yuan \& al. propose to seek $P$ as an approximative projection matrix under the form $P = WW^{T}$ with $W \in \mathbb{R}_{+}^{n \times k}$ with $ k \leqslant n $. The PNMF problem reads : 
+\begin{equation}\label{EqPnmf}
+\min_{W \geqslant 0} ||V - WW^{T}V||^2 
+\end{equation}
+
+PNMF is similar to the NMF problem and can be simply obtained by replacing the activation matrix $H$ by $W^TV$. It is shown in~\cite{YangOja10} that the PNMF gives a much sparser decomposition than NMF.
+
+Another very similar approach is the ONMF~\cite{choi}. It consists in solving the following problem: 
+\begin{align}
+\min_{W \geqslant 0, H \geqslant0} ||V - WH||^2 \quad   \text{s.t}.\quad W^{T}W=I_{k} 
+\end{align}%
+In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In theory, it seems that PNMF and ONMF lead to similar decompositions, as the $W$ matrix estimated by PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However in practice, enforcing the orthogonality between the base at every iteration is a constraint too strong to decompose audio signal~\cite{laroche2015structured}. 
+
+The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to the NMF, the sparsity of PNMF and is an inherent features of the decomposition. These key properties of PNMF motivated us to decompose the harmonic instruments with the orthogonal basis functions.
+
+
+\subsection{Principle of the SPNMF}
+
+The orthogonal basis functions of PNMF are not flexible enough to decompose a complex audio signal. As stated in~\cite{canadas2014percussive}, harmonic instruments have sparse basis functions whereas percussive instruments have much flatter spectra. As the columns of $W$ are orthogonal, when two sources overlap in the Time-Frequency (TF) plane only one basis function will represent the mixture which is not adequate for efficient separation. To overcome this problem, we propose to add a standard NMF decomposition term to the PNMF. We can expect that most of the harmonic components will be represented by the orthogonal part while the percussive ones will be the regular NMF components. Using a similar model as in our preliminary work~\cite{laroche2015structured}, let $V$ be the magnitude spectrogram of the input data. The model is then given by
+\begin{equation} \label{Cfunction}
+V \approx \tilde{V}= V_H + V_{P},
+\end{equation}
+with $V_P$ the spectrogram of the percussive part and $V_H$ the spectrogram of the harmonic part. $V_H$ is approximated by the PNMF decomposition while $W_P$ is decomposed by NMF components as :
+\begin{equation}
+V \approx \tilde{V}= W_{H}W_{H}^{T}V + W_{P} H_{P}.
+\end{equation}
+The data matrix is approximated by an almost orthogonal sparse part that codes the harmonic instruments $V_H = W_HW_H^T V$ and a non constrained NMF part that codes the percussive instruments $V_P = W_PH_P$. However, a fully unsupervised SPNMF model does not allow for a satisfying harmonic/percussive source separation~\cite{laroche2015structured}. To alleviate this problem, we use here a fixed drum dictionary $W_p$ in the percussive part of the SPNMF.
+
+
+
+\subsection{Algorithm Optimization}
+
+In order to obtain such a decomposition, we can use a measure of fit $D(x|y)$ between the data matrix $V$ and the estimated matrix $\tilde{V}$. $D(x|y)$ is a scalar cost function and in this article, we use the Itakura Saito (IS) divergence.
+
+
+
+The SPNMF model gives the cost function : 
+\begin{equation}\label{InitCost}
+\min_{W_H,W_P,H_P \geq 0} D(V|W_{H}W_{H}^{T}V + W_{P} H_{P})  
+\end{equation}
+
+A solution of this problem can be obtained by iterative multiplicative update rules following the same strategy as in~\cite{yuanOja2005,Lee01algorithmsfor} which consists in splitting the gradient with respect to (wrt) one variable (here $W_H$ for exemple) $\nabla_{W_H} D(V|\tilde{V})$ in its positive $[\nabla_{W_H} D(V|\tilde{V})]^{+}$ and negative parts $[\nabla_{W_H} D(V|\tilde{V})]^{-}$.
+The multiplicative updates for SPNMF are then given by: 
+$$W_{H} \leftarrow W_{H} \otimes \frac{ [\nabla_{W_H} D(V|\tilde{V})]^{-} }{[\nabla_{W_H} D(V|\tilde{V})]^{+}}, $$
+where $\otimes$ is the Hadamard product or element-wise product. The SPNMF algorithm with a fixed dictionary matrix is:
+ 
+\begin{algorithm}[h]
+ Input: $V \in \mathbb{R}_{+}^{m \times n} $
+ Output: $W \in \mathbb{R}_{+}^{m \times k}$, $W_{train} \in \mathbb{R}_+^{m \times e}$ and $H \in \mathbb{R}_{+}^{e \times n}$
+ Initialization\;
+ \While{$i \leq$ number of iterations}{
+	$H_{P} \leftarrow H_{P} \otimes \frac{ [\nabla_{H_P} D(V|\tilde{V})]^{-} }{[\nabla_{H_P} D(V|\tilde{V})]^{+}}$
+	
+
+	$W_{H} \leftarrow W_{H} \otimes \frac{ [\nabla_{W_H} D(V|\tilde{V})]^{-} }{[\nabla_{W_H} D(V|\tilde{V})]^{+}}$
+	 \vspace{0.2cm}
+	 	
+	$i=i+1$ 
+ }
+ $ X_P = W_{train}H_P $ and
+ $ X_H = W_HW_H^TV $ 
+  
+\vspace{0.2cm}
+ \caption{SPNMF with the drum dictionary matrix.}\label{AlgoDictionary}
+\end{algorithm}
+
+
+
+
+ 
+\subsection{Signal reconstruction}
+
+The percussive signal $x_p(t)$ is synthesized using the magnitude percussive spectrogram $X_P = W_PH_P$. To reconstruct the phase of the percussive part, we use a generalized Wiener filter~\cite{liutkus:hal-01110028} to create a percussive mask as:
+\begin{equation}
+\mathcal{M}_P = \frac{X_P^\alpha}{X_M^\alpha + X_P^\alpha}.
+\end{equation} 
+Where $\alpha \in (1,2)$. To retrieve the percussive signal as, 
+\begin{equation}
+x_p(t) = InverseSTFT(\mathcal{M}_P \otimes X).
+\end{equation}
+Where $X$ is the complex spectrogram of the mixture.
+Similarly for the harmonic part, we obtain:
+\begin{equation}\label{percuweiner}
+\mathcal{M}_H = \frac{X_H^\alpha}{X_M^\alpha + X_P^\alpha},
+\end{equation}
+and:
+\begin{equation}
+x_h(t) = InverseSTFT(\mathcal{M}_H \otimes X).
+\end{equation}
+
+
+
+
+\section{Construction of the dictionary}
+
+
+Length of the dictionary: 
+
+\begin{table}
+   
+	\centering 
+   \begin{tabular}{|l|l|}
+   	\hline   
+   Genre & Length(min)\\
+  \hline
+Classical  & 22.06 \\
+  \hline
+Electronic/Fusion & 18.66\\
+	\hline
+Jazz & 10.96\\
+\hline
+Pop &  12.53 \\
+\hline
+Rock & 11.43\\
+\hline
+Sing/Songwriter	& 9.36\\
+\hline
+World/Folk & 9.53\\
+\hline
+Non Specific & 11.03\\
+\hline
+  
+\end{tabular} 
+\caption{\label{resultONMF2} Source separation performance for the synthetic signal.}
+
+
+\end{table}
+\vspace{-0.4cm}
+
+
+
+
+\subsection{Database}\label{database}
+
+The dataset is taken from medley-dB \cite{bittner2014medleydb}, it is composed of polyphonic real-world music excerpts. It has $122$ music signals and $77$ of them contain percussive instruments, harmonic instruments and vocals. The signals that do not contain a percussive part are not part of the evaluation. We will be using the song of the genre, \emph{Singer/Songwriter} ($17$ songs), \emph{Pop} ($10$ songs), \emph{Rock} ($20$ songs), \emph{Jazz} ($11$ songs), \emph{Electronic/Fusion} ($13$ songs) and \emph{World/Folk} ($6$ songs). Because the notion of genre is quite subjective, the medley-dB database uses general genre labels. These labels should not be considered to be "precise" genre labels. There are many instances where a song could have fallen in multiple genres, and the choices were made so that each genre would be as acoustically homogeneous as possible. As we are only working with the instrumental part of the song "Pop" label (for example) are similar to the "Singer/Songwriter".
+We use $3$ song of each genre to use as a training database. The songs used for the training part are not part of the evaluation. The files selected are:
+Length of the dictionary: 
+
+\begin{table}
+   
+	\centering 
+   \begin{tabular}{|l|l|}
+   	\hline   
+   Genre & Length(min)\\
+  \hline
+Classical  & JoelHelander Definition \\
+ & MatthewEntwistle AnEveningWithOliver \\
+ & MusicDelta Beethoven \\
+  \hline
+Electronic/Fusion & EthanHein 1930sSynthAndUprightBass\\
+ & TablaBreakbeatScience Animoog\\
+ & TablaBreakbeatScience Scorpio\\
+	\hline
+Jazz & CroqueMadame Oil\\
+ & MusicDelta BebopJazz\\
+ & MusicDelta ModalJazz \\
+\hline
+Pop &  DreamersOfTheGhetto HeavyLove \\
+ & NightPanther Fire \\
+ & StrandOfOaks Spacestation \\
+\hline
+Rock & BigTroubles Phantom\\
+ & Meaxic TakeAStep \\
+ & PurlingHiss Lolita \\
+\hline
+Sing/Songwriter	& AimeeNorwich Child\\
+ & ClaraBerryAndWooldog Boys\\
+ & InvisibleFamiliars DisturbingWildlife\\
+\hline
+World/Folk &AimeeNorwich Flying \\
+ &KarimDouaidy Hopscotch \\
+ & MusicDelta ChineseYaoZu\\
+\hline
+
+ 
+
+
+
+\subsection{Supervised NMF for source separation}
+
+The NMF model is:
+\begin{equation}
+V \approx \tilde{V} = WH.
+\end{equation}
+If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. Building a dictionary specific to an instrument that performs well on a large database is a complicated problem. Here we build genre specific drum dictionary using the medley-dB database. Using dictionary specific to the genre of music allows us to have smaller dictionaries that a more specific to the signal to decompose. It grants us lower computation time and better separation score
+The dictionary are build has follow. For every song of the medley-dB database, we perform and NMF with $k=100$ on the drum signals. The $W$ matrices are then concatenated depending on the genre of the song to form a dictionary matrix specific to a genre of music. 
+
+
+
+
+
+\section{Page Size}\label{sec:page_size}
+
+The proceedings will be printed on
+ \underline{portrait A4-size paper} \underline{(21.0cm x 29.7cm)}.
+All material on each page should fit within a rectangle of 17.2cm x 25.2cm,
+centered on the page, beginning 2.0cm
+from the top of the page and ending with 2.5cm from the bottom.
+The left and right margins should be 1.9cm.
+The text should be in two 8.2cm columns with a 0.8cm gutter.
+All text must be in a two-column format.
+Text must be fully justified.
+
+\section{Typeset Text}\label{sec:typeset_text}
+
+\subsection{Normal or Body Text}\label{subsec:body}
+
+Please use a 10pt (point) Times font. Sans-serif or non-proportional fonts
+can be used only for special purposes, such as distinguishing source code text.
+
+The first paragraph in each section should not be indented, but all other paragraphs should be.
+
+\subsection{Title and Authors}
+
+The title is 14pt Times, bold, caps, upper case, centered.
+Authors' names are omitted when submitting for double-blind reviewing.
+The following is for making a camera-ready version.
+Authors' names are centered.
+The lead author's name is to be listed first (left-most), and the co-authors' names after.
+If the addresses for all authors are the same, include the address only once, centered.
+If the authors have different addresses, put the addresses, evenly spaced, under each authors' name.
+
+\subsection{First Page Copyright Notice}
+
+Please include the copyright notice exactly as it appears here in the lower left-hand corner of the page.
+It is set in 8pt Times.
+
+\subsection{Page Numbering, Headers and Footers}
+
+Do not include headers, footers or page numbers in your submission.
+These will be added when the publications are assembled.
+
+\section{First Level Headings}
+
+First level headings are in Times 10pt bold,
+centered with 1 line of space above the section head, and 1/2 space below it.
+For a section header immediately followed by a subsection header, the space should be merged.
+
+\subsection{Second Level Headings}
+
+Second level headings are in Times 10pt bold, flush left,
+with 1 line of space above the section head, and 1/2 space below it.
+The first letter of each significant word is capitalized.
+
+\subsubsection{Third and Further Level Headings}
+
+Third level headings are in Times 10pt italic, flush left,
+with 1/2 line of space above the section head, and 1/2 space below it.
+The first letter of each significant word is capitalized.
+
+Using more than three levels of headings is highly discouraged.
+
+\section{Footnotes and Figures}
+
+\subsection{Footnotes}
+
+Indicate footnotes with a number in the text.\footnote{This is a footnote.}
+Use 8pt type for footnotes. Place the footnotes at the bottom of the page on which they appear.
+Precede the footnote with a 0.5pt horizontal rule.
+
+\subsection{Figures, Tables and Captions}
+
+All artwork must be centered, neat, clean, and legible.
+All lines should be very dark for purposes of reproduction and art work should not be hand-drawn.
+The proceedings are not in color, and therefore all figures must make sense in black-and-white form.
+Figure and table numbers and captions always appear below the figure.
+Leave 1 line space between the figure or table and the caption.
+Each figure or table is numbered consecutively. Captions should be Times 10pt.
+Place tables/figures in text as close to the reference as possible.
+References to tables and figures should be capitalized, for example:
+see \figref{fig:example} and \tabref{tab:example}.
+Figures and tables may extend across both columns to a maximum width of 17.2cm.
+
+\begin{table}
+ \begin{center}
+ \begin{tabular}{|l|l|}
+  \hline
+  String value & Numeric value \\
+  \hline
+  Hello ISMIR  & \conferenceyear \\
+  \hline
+ \end{tabular}
+\end{center}
+ \caption{Table captions should be placed below the table.}
+ \label{tab:example}
+\end{table}
+
+\begin{figure}
+ \centerline{\framebox{
+ \includegraphics[width=\columnwidth]{figure.png}}}
+ \caption{Figure captions should be placed below the figure.}
+ \label{fig:example}
+\end{figure}
+
+\section{Equations}
+
+Equations should be placed on separate lines and numbered.
+The number should be on the right side, in parentheses, as in \eqnref{relativity}.
+
+\begin{equation}\label{relativity}
+E=mc^{2}
+\end{equation}
+
+\section{Citations}
+
+%\bibliographystyle{IEEEtran}
+
+% For bibtex users:
+\bibliography{reference}
+
+% For non bibtex users:
+%\begin{thebibliography}{citations}
+%
+%\bibitem {Author:00}
+%E. Author.
+%``The Title of the Conference Paper,''
+%{\it Proceedings of the International Symposium
+%on Music Information Retrieval}, pp.~000--111, 2000.
+%
+%\bibitem{Someone:10}
+%A. Someone, B. Someone, and C. Someone.
+%``The Title of the Journal Paper,''
+%{\it Journal of New Music Research},
+%Vol.~A, No.~B, pp.~111--222, 2010.
+%
+%\bibitem{Someone:04} X. Someone and Y. Someone. {\it Title of the Book},
+%    Editorial Acme, Porto, 2012.
+%
+%\end{thebibliography}
+
+\end{document}
