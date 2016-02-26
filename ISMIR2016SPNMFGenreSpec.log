@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  25 FEB 2016 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  26 FEB 2016 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,7 +304,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box38
 \enitdp@description=\count110
 )
-No file ISMIR2016SPNMFGenreSpec.aux.
+(./ISMIR2016SPNMFGenreSpec.aux)
 \openout1 = `ISMIR2016SPNMFGenreSpec.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
@@ -320,6 +320,7 @@ LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 64.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -385,56 +386,13 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ‹ in font ptmr7t!
 
-
-LaTeX Warning: Citation `boll1979suppression' on page 1 undefined on input line
- 75.
-
-
-LaTeX Warning: Citation `fitzgerald2011upmixing' on page 1 undefined on input l
-ine 75.
-
-
-LaTeX Warning: Citation `Bertin07' on page 1 undefined on input line 75.
-
-
-LaTeX Warning: Citation `ni2012using' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Citation `lee2008acoustic' on page 1 undefined on input line 77.
-
-
-
-LaTeX Warning: Citation `hockman2012one' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Citation `li2003comparative' on page 1 undefined on input line 7
-7.
-
-
-LaTeX Warning: Citation `lee99' on page 1 undefined on input line 82.
-
-
-LaTeX Warning: Citation `EwertM12' on page 1 undefined on input line 83.
-
-
-LaTeX Warning: Citation `jaureguiberry2011adaptation' on page 1 undefined on in
-put line 83.
-
-
-LaTeX Warning: Citation `wudrum' on page 1 undefined on input line 83.
-
-
 Overfull \hbox (5.69467pt too wide) in paragraph at lines 82--84
 \OT1/ptm/m/n/10 var-i-ous fea-tures that make each sources dis-tin-guish-able f
 rom
  []
 
 
-LaTeX Warning: Citation `laroche2015structured' on page 1 undefined on input li
-ne 87.
-
-
-Overfull \hbox (5.33546pt too wide) in paragraph at lines 87--89
+Overfull \hbox (5.33546pt too wide) in paragraph at lines 86--89
 []\OT1/ptm/m/n/10 In this pa-per, we fo-cus on the task of har-monic/percussive
 
  []
@@ -443,106 +401,57 @@ Overfull \hbox (5.33546pt too wide) in paragraph at lines 87--89
 
 
 
- <./figs/cc_by.pdf>]
-
-LaTeX Warning: Citation `yuanOja2005' on page 2 undefined on input line 106.
-
-
-LaTeX Warning: Citation `YangOja10' on page 2 undefined on input line 111.
-
-
-LaTeX Warning: Citation `choi' on page 2 undefined on input line 113.
-
-
-LaTeX Warning: Citation `canadas2014percussive' on page 2 undefined on input li
-ne 124.
-
-
-LaTeX Warning: Citation `Lee01algorithmsfor' on page 2 undefined on input line 
-147.
-
-
-Overfull \hbox (0.1969pt too wide) in paragraph at lines 147--149
-\OT1/ptm/m/n/10 to (wrt) one vari-able (here $\OML/cmm/m/it/10 W[]$ \OT1/ptm/m/
-n/10 for ex-em-ple) $\OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 (\OM
-L/cmm/m/it/10 V\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (38.64937pt too wide) in paragraph at lines 147--149
-\OT1/ptm/m/n/10 in its pos-i-tive $\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 r[]\OML/cm
-m/m/it/10 D\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/
-10 )][]$ \OT1/ptm/m/n/10 and neg-a-tive parts $\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/1
-0 r[]\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V\OMS/cmsy/m/n/10 j[]\
-OT1/cmr/m/n/10 )][]$\OT1/ptm/m/n/10 .
- []
-
-
-LaTeX Warning: Citation `liutkus:hal-01110028' on page 2 undefined on input lin
-e 178.
-
-[2]
-
-LaTeX Warning: Citation `bittner2014medleydb' on page 3 undefined on input line
- 240.
-
-
-Overfull \hbox (2.3253pt too wide) in paragraph at lines 240--243
-\OT1/ptm/m/it/10 Elec-tronic/Fusion \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10 13$ \OT1/
-ptm/m/n/10 songs) and \OT1/ptm/m/it/10 World/Folk \OT1/ptm/m/n/10 ($\OT1/cmr/m/
-n/10 6$ \OT1/ptm/m/n/10 songs). Be-
- []
-
-
-Overfull \hbox (22.51459pt too wide) in paragraph at lines 240--243
-\OT1/ptm/m/n/10 "Pop" la-bel (for ex-am-ple) are sim-i-lar to the "Singer/Songw
-riter".
- []
-
-
-Overfull \hbox (27.52483pt too wide) in paragraph at lines 247--282
+ <./figs/cc_by.pdf>] [2]
+Overfull \hbox (29.74493pt too wide) in paragraph at lines 221--263
  [][] 
  []
 
-No file ISMIR2016SPNMFGenreSpec.bbl.
-[3] (./ISMIR2016SPNMFGenreSpec.aux)
+(./ISMIR2016SPNMFGenreSpec.bbl [3]
+Underfull \hbox (badness 2057) in paragraph at lines 28--34
+\OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
+ []
 
-LaTeX Warning: There were undefined references.
+
+Underfull \hbox (badness 2181) in paragraph at lines 28--34
+\OT1/ptm/m/n/10 trix fac-tor-iza-tion with smooth-ness/sparseness con-
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 1454) in paragraph at lines 63--66
+[]\OT1/ptm/m/n/10 C. Laroche, M. Kowal-ski, H. Pa-padopou-los, and
+ []
 
- ) 
+) [4] (./ISMIR2016SPNMFGenreSpec.aux) ) 
 Here is how much of TeX's memory you used:
- 5605 strings out of 493089
- 82060 string characters out of 6134842
- 177520 words of memory out of 5000000
- 8993 multiletter control sequences out of 15000+600000
+ 5616 strings out of 493089
+ 82264 string characters out of 6134842
+ 177701 words of memory out of 5000000
+ 9000 multiletter control sequences out of 15000+600000
  24963 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,38p,1285b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (3 pages, 181851 bytes).
+{/usr/local/texlive/2015/texmf-dist/font
+s/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msam7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr
+8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ISMIR2016SPNMFGenreSpec.pdf (4 pages, 189388 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

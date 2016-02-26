@@ -1,0 +1,129 @@
+\begin{thebibliography}{10}
+
+\bibitem{SiSec10}
+S.~Araki, A.~Ozerov, V.~Gowreesunker, H.~Sawada, F.~Theis, G.~Nolte, D.~Lutter,
+  and N.~Duong.
+\newblock The 2010 signal separation evaluation campaign : audio source
+  separation.
+\newblock In {\em Proc. of LVA/ICA}, pages 114--122, 2010.
+
+\bibitem{Bertin07}
+N.~Bertin, R.Badeau, and G.Richard.
+\newblock Blind signal decompositions for automatic transcription of polyphonic
+  music: Nmf and k-svd on the benchmark.
+\newblock In {\em Proc. of IEEE ICASSP}, pages 65--68, 2007.
+
+\bibitem{bittner2014medleydb}
+R.~Bittner, J.~Salamon, M.~Tierney, M.~Mauch, C.~Cannam, and J.~Bello.
+\newblock Medleydb: A multitrack dataset for annotation-intensive mir research.
+\newblock In {\em Proc. of ISMIR}, 2014.
+
+\bibitem{boll1979suppression}
+S.~Boll.
+\newblock Suppression of acoustic noise in speech using spectral subtraction.
+\newblock {\em IEEE Transactions on Acoustics, Speech and Signal Processing},
+  27(2):113--120, 1979.
+
+\bibitem{canadas2014percussive}
+F.~Canadas-Quesada, P.~Vera-Candeas, N.~Ruiz-Reyes, J.~Carabias-Orti, and
+  P.~Cabanas-Molero.
+\newblock Percussive/harmonic sound separation by non-negative matrix
+  factorization with smoothness/sparseness constraints.
+\newblock {\em EURASIP Journal on Audio, Speech, and Music Processing},
+  2014(1):1--17, 2014.
+
+\bibitem{choi}
+S.~Choi.
+\newblock Algorithms for orthogonal nonnegative matrix factorization.
+\newblock In {\em Proc. of IEEE IJCNN}, pages 1828--1832, 2008.
+
+\bibitem{EwertM12}
+S.~Ewert and M.~M{\"u}ller.
+\newblock Score-informed source separation for music signals.
+\newblock {\em Multimodal music processing}, 3:73--94, 2012.
+
+\bibitem{fitzgerald2011upmixing}
+D.~Fitzgerald.
+\newblock Upmixing from mono-a source separation approach.
+\newblock In {\em IEEE proc. of DSP}, pages 1--7, 2011.
+
+\bibitem{hockman2012one}
+J.~Hockman, M.~Davies, and I.~Fujinaga.
+\newblock One in the jungle: Downbeat detection in hardcore, jungle, and drum
+  and bass.
+\newblock In {\em In proc. of ISMIR}, pages 169--174, 2012.
+
+\bibitem{jaureguiberry2011adaptation}
+Xabier Jaureguiberry, Pierre Leveau, Simon Maller, and Juan~Jos{\'e} Burred.
+\newblock Adaptation of source-specific dictionaries in non-negative matrix
+  factorization for source separation.
+\newblock In {\em Proc. of IEEE ICASSP}, pages 5--8, 2011.
+
+\bibitem{laroche2015structured}
+C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
+\newblock A structured nonnegative matrix factorization for source separation.
+\newblock In {\em Proc. of EUSIPCO}, 2015.
+
+\bibitem{lee99}
+D.~Lee and S.~Seung.
+\newblock Learning the parts of objects by nonnegative matrix factorization.
+\newblock {\em Nature}, 401:788--791, 1999.
+
+\bibitem{Lee01algorithmsfor}
+D.~Lee and S.~Seung.
+\newblock Algorithms for non-negative matrix factorization.
+\newblock {\em Proc. of NIPS}, pages 556--562, 2001.
+
+\bibitem{lee2008acoustic}
+K.~Lee and M.~Slaney.
+\newblock Acoustic chord transcription and key extraction from audio using
+  key-dependent hmms trained on synthesized audio.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  16(2):291--301, 2008.
+
+\bibitem{li2003comparative}
+T.~Li, M.Ogihara, and Q.~Li.
+\newblock A comparative study on content-based music genre classification.
+\newblock In {\em In Proc. of ACM}, pages 282--289, 2003.
+
+\bibitem{liutkus2015generalized}
+A.~Liutkus and R.~Badeau.
+\newblock Generalized wiener filtering with fractional power spectrograms.
+\newblock In {\em IEEE Proc. of ICASSP}, pages 266--270, 2015.
+
+\bibitem{ni2012using}
+Y.~Ni, M.~McVicar, R.~Santos-Rodriguez, and T.~De Bie.
+\newblock Using hyper-genre training to explore genre information for automatic
+  chord estimation.
+\newblock In {\em Proc. of ISMIR}, pages 109--114, 2012.
+
+\bibitem{gillet2006enst}
+O.Gillet and G.Richard.
+\newblock Enst-drums: an extensive audio-visual database for drum signals
+  processing.
+\newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
+
+\bibitem{tzanetakis2002musical}
+G.~Tzanetakis and P.~Cook.
+\newblock Musical genre classification of audio signals.
+\newblock {\em IEEE transactions on Speech and Audio Processing},
+  10(5):293--302, 2002.
+
+\bibitem{wudrum}
+Chih-Wei Wu and Alexander Lerch.
+\newblock Drum transcription using partially fixed non-negative matrix
+  factorization.
+\newblock In {\em Proc. of EUSIPCO}, 2008.
+
+\bibitem{YangOja10}
+Z.~Yang and E.~Oja.
+\newblock Linear and nonlinear projective nonnegative matrix factorization.
+\newblock {\em IEEE Transactions on Neural Network.}, 21(5):734--749, 2010.
+
+\bibitem{yuanOja2005}
+Z.~Yuan and E.~Oja.
+\newblock Projective nonnegative matrix factorization for image compression and
+  feature extraction.
+\newblock {\em Image Analysis}, pages 333--342, 2005.
+
+\end{thebibliography}
