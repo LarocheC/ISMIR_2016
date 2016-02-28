@@ -198,7 +198,7 @@ x_h(t) = InverseSTFT(\mathcal{M}_H \otimes X).
 
 The first step to build a NMF drum dictionary is to select the rank of factorization. We run different tests on the public SiSec database from~\cite{SiSec10}. It is composed of polyphonic real-world music excerpts and each music signal contains percussive, harmonic instruments and vocals. The duration of the four recording is ranging from $14$ to $24$~s. The goal is to perform an harmonic/percussive decomposition. Following~\cite{canadas2014percussive}, we will not consider the vocal part and we will build mixture signals only from the percussive and harmonic instruments. All the signals are sampled at $44.1kHz$. We compute the STFT with a and $2048$ sample-long Hann window with a $50\%$ overlap.
 
-The drum signal used for the training comes from the database \cite{gillet2006enst} and the signal is around $10$min long. We used $42$ files from the database were the drummer is playing a \emph{drum phrase}. We compute an NMF decomposition with different rank of factorization ($k=12$, $k=50$, $k=100$, $k=500$, $k=1000$ and $k=2000$) on the drum signal alone to obtain $6$  drum dictionaries.
+The drum signal used for the training comes from the database \cite{gillet2006enst} and the signal is around $3$min long. We used $14$ files from the database were the drummer is playing a \emph{drum phrase}. We compute an NMF decomposition with different rank of factorization ($k=12$, $k=50$, $k=100$, $k=500$, $k=1000$ and $k=2000$) on the drum signal alone to obtain $6$  drum dictionaries.
 The dictionaries are then used to perform a HPSS on the four songs of the SiSEC database. The results are displayed on figure.
 
 
