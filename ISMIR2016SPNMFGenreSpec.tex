@@ -29,7 +29,7 @@
 
 % Title.
 % ------
-\title{Paper Template For ISMIR \conferenceyear}
+\title{Genre specific dictionaries for harmonic/percussive source separation}
 
 % Note: Please do NOT use \thanks or a \footnote in any of the author markup
 
@@ -56,7 +56,7 @@
 % Four addresses
 % --------------
 \fourauthors
-  {First author} {Affiliation1 \\ {\tt author1@ismir.edu}}
+  {Cl\'{e}ment Laroche} {Affiliation1 \\ {\tt author1@ismir.edu}}
   {Second author}{Affiliation2 \\ {\tt author2@ismir.edu}}
   {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
   {Fourth author} {Affiliation4 \\ {\tt author4@ismir.edu}}
@@ -199,9 +199,16 @@ x_h(t) = InverseSTFT(\mathcal{M}_H \otimes X).
 The first step to build a NMF drum dictionary is to select the rank of factorization. We run different tests on the public SiSec database from~\cite{SiSec10}. It is composed of polyphonic real-world music excerpts and each music signal contains percussive, harmonic instruments and vocals. The duration of the four recording is ranging from $14$ to $24$~s. The goal is to perform an harmonic/percussive decomposition. Following~\cite{canadas2014percussive}, we will not consider the vocal part and we will build mixture signals only from the percussive and harmonic instruments. All the signals are sampled at $44.1kHz$. We compute the STFT with a and $2048$ sample-long Hann window with a $50\%$ overlap.
 
 The drum signal used for the training comes from the database \cite{gillet2006enst} and the signal is around $3$min long. We used $14$ files from the database were the drummer is playing a \emph{drum phrase}. We compute an NMF decomposition with different rank of factorization ($k=12$, $k=50$, $k=100$, $k=500$, $k=1000$ and $k=2000$) on the drum signal alone to obtain $6$  drum dictionaries.
-The dictionaries are then used to perform a HPSS on the four songs of the SiSEC database. The results are displayed on figure.
+The dictionaries are then used to perform a HPSS on the four songs of the SiSEC database. The results are displayed on figure \ref{dictsize}.
 
+\begin{figure}[h]
 
+  \centering 
+  \includegraphics[width=9cm]{figs/AllDictSizeISMIR.eps}
+%  \vspace{2.0cm}
+  \caption{\label{dictsize} Average results on the SiSec database.}
+  
+\end{figure}
  
 
 \subsection{Database}\label{database}
@@ -238,18 +245,17 @@ Singer/Songwriter	& AimeeNorwich Child \\
  & ClaraBerryAndWooldog Boys \\
  & InvisibleFamiliars DisturbingWildlife \\
 \hline
-World/Folk &AimeeNorwich Flying \\
+World/Folk & AimeeNorwich Flying \\
  &KarimDouaidy Hopscotch \\
  & MusicDelta ChineseYaoZu\\
 \hline
-Non specific &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
- &  \\
+Non specific & JoelHelander Definition \\
+ & TablaBreakbeatScience Animoog \\
+ & MusicDelta BebopJazz \\
+ & DreamersOfTheGhetto HeavyLove \\
+ &  BigTroubles Phantom \\
+ & AimeeNorwich Flying \\
+ &  MusicDelta ChineseYaoZu\\
  \hline
 
   
@@ -270,8 +276,6 @@ V \approx \tilde{V} = WH.
 \end{equation}
 If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. Building a dictionary specific to an instrument that performs well on a large database is a complicated problem. Here we build genre specific drum dictionary using the medley-dB database. Using dictionary specific to the genre of music allows us to have smaller dictionaries that a more specific to the signal to decompose. It grants us lower computation time and better separation score
 The dictionary are build has follow. For every genre specific database of the training database, we perform and NMF with $k=300$ on the drum signals (with the results from Section \ref{optimalsize}, we choose $k=100$ per song for the NMF).
-
-Length of the dictionary: 
 
 \begin{table}
    
