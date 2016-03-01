@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ISMIR2016SPNMFGenreSpec.aux
 The style file: plain.bst
 Database file #1: reference.bib
-You've used 22 entries,
+You've used 27 entries,
             2118 wiz_defined-function locations,
-            631 strings with 7566 characters,
-and the built_in function-call counts, 8790 in all, are:
-= -- 855
-> -- 378
-< -- 12
-+ -- 151
-- -- 126
-* -- 564
-:= -- 1349
-add.period$ -- 66
-call.type$ -- 22
-change.case$ -- 129
+            654 strings with 8315 characters,
+and the built_in function-call counts, 10911 in all, are:
+= -- 1068
+> -- 468
+< -- 15
++ -- 186
+- -- 156
+* -- 705
+:= -- 1668
+add.period$ -- 81
+call.type$ -- 27
+change.case$ -- 159
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 381
-empty$ -- 729
-format.name$ -- 126
-if$ -- 1945
+cite$ -- 27
+duplicate$ -- 470
+empty$ -- 902
+format.name$ -- 156
+if$ -- 2413
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 22
-newline$ -- 113
-num.names$ -- 44
-pop$ -- 157
+int.to.str$ -- 27
+missing$ -- 27
+newline$ -- 138
+num.names$ -- 54
+pop$ -- 192
 preamble$ -- 1
-purify$ -- 107
+purify$ -- 132
 quote$ -- 0
-skip$ -- 305
+skip$ -- 378
 stack$ -- 0
-substring$ -- 581
-swap$ -- 135
-text.length$ -- 12
+substring$ -- 740
+swap$ -- 168
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 108
 warning$ -- 0
-while$ -- 83
-width$ -- 24
-write$ -- 241
+while$ -- 105
+width$ -- 29
+write$ -- 296

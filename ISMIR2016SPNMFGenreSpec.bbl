@@ -7,6 +7,11 @@ S.~Araki, A.~Ozerov, V.~Gowreesunker, H.~Sawada, F.~Theis, G.~Nolte, D.~Lutter,
   separation.
 \newblock In {\em Proc. of LVA/ICA}, pages 114--122, 2010.
 
+\bibitem{aucouturier2003representing}
+J.J. Aucouturier and F.~Pachet.
+\newblock Representing musical genre: A state of the art.
+\newblock {\em Journal of New Music Research}, 32(1):83--93, 2003.
+
 \bibitem{Bertin07}
 N.~Bertin, R.Badeau, and G.Richard.
 \newblock Blind signal decompositions for automatic transcription of polyphonic
@@ -45,19 +50,25 @@ S.~Ewert and M.~M{\"u}ller.
 \bibitem{fitzgerald2011upmixing}
 D.~Fitzgerald.
 \newblock Upmixing from mono-a source separation approach.
-\newblock In {\em IEEE proc. of DSP}, pages 1--7, 2011.
+\newblock In {\em Proc. of IEEE DSP}, pages 1--7, 2011.
 
 \bibitem{hockman2012one}
 J.~Hockman, M.~Davies, and I.~Fujinaga.
 \newblock One in the jungle: Downbeat detection in hardcore, jungle, and drum
   and bass.
-\newblock In {\em In proc. of ISMIR}, pages 169--174, 2012.
+\newblock In {\em Proc. of ISMIR}, pages 169--174, 2012.
 
 \bibitem{jaureguiberry2011adaptation}
 X.~Jaureguiberry, P.~Leveau, S.~Maller, and J.~Burred.
 \newblock Adaptation of source-specific dictionaries in non-negative matrix
   factorization for source separation.
 \newblock In {\em Proc. of IEEE ICASSP}, pages 5--8, 2011.
+
+\bibitem{lampropoulos2005musical}
+A.~Lampropoulos, P.~Lampropoulou, and G.~Tsihrintzis.
+\newblock Musical genre classification enhanced by improved source separation
+  technique.
+\newblock In {\em Proc. of ISMIR}, pages 576--581, 2005.
 
 \bibitem{laroche2015structured}
 C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
@@ -84,12 +95,18 @@ K.~Lee and M.~Slaney.
 \bibitem{li2003comparative}
 T.~Li, M.Ogihara, and Q.~Li.
 \newblock A comparative study on content-based music genre classification.
-\newblock In {\em In Proc. of ACM}, pages 282--289, 2003.
+\newblock In {\em Proc. of ACM}, pages 282--289, 2003.
 
 \bibitem{liutkus2015generalized}
 A.~Liutkus and R.~Badeau.
 \newblock Generalized wiener filtering with fractional power spectrograms.
-\newblock In {\em IEEE Proc. of ICASSP}, pages 266--270, 2015.
+\newblock In {\em Proc. of IEEE ICASSP}, pages 266--270, 2015.
+
+\bibitem{mckay2006musical}
+C.~McKay and I.~Fujinaga.
+\newblock Musical genre classification: Is it worth pursuing and how can it be
+  improved?
+\newblock In {\em Proc. of ISMIR}, pages 101--106, 2006.
 
 \bibitem{ni2012using}
 Y.~Ni, M.~McVicar, R.~Santos-Rodriguez, and T.~De Bie.
@@ -103,14 +120,26 @@ O.Gillet and G.Richard.
   processing.
 \newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
 
+\bibitem{rump2010autoregressive}
+H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
+\newblock Autoregressive mfcc models for genre classification improved by
+  harmonic-percussion separation.
+\newblock In {\em Proc. of ISMIR}, pages 87--92, 2010.
+
 \bibitem{tzanetakis2002musical}
 G.~Tzanetakis and P.~Cook.
 \newblock Musical genre classification of audio signals.
 \newblock {\em IEEE transactions on Speech and Audio Processing},
   10(5):293--302, 2002.
 
+\bibitem{bsseval}
+E.~Vincent, R.~Gribonval, and C.~F\'{e}votte.
+\newblock Performance measurement in blind audio source separation.
+\newblock {\em IEEE Transactions on Audio, Speech, Language Process.},
+  14:1462--1469, 2006.
+
 \bibitem{wudrum}
-Chih-Wei Wu and Alexander Lerch.
+C.~Wu and A.~Lerch.
 \newblock Drum transcription using partially fixed non-negative matrix
   factorization.
 \newblock In {\em Proc. of EUSIPCO}, 2008.
