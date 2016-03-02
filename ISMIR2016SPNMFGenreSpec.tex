@@ -334,6 +334,7 @@ Non Specific (Mix) & 11.03 & 30000 \\
 
 In this section we present the results of the algorithm with the genre specific dictionaries on the $66$ song from test database Medley-dB. We perform an HPSS on the audio files using the SPNMF with the $8$ dictionaries created on Section \ref{genrespecdict}. The results on each of the songs are then sorted by genres and the average results are displayed using box-plot. Each box-plot is made up of a central line indicating the median of the data, upper and lower box edges indicating the $1^{st}$ and $3^{rd}$ quartiles while the whiskers indicate the minimum and maximum values. 
 
+
 The Figures \ref{sdrpop}, \ref{sirpop} and \ref{sarpop} show the SDR, SAR and SIR results for all the dictionaries on the \emph{Pop} subsection. It gives us a overall idea on how all the dictionaries perform on the same database. The results using the \emph{Pop} dictionary has the highest SDR and SIR results. The non specific dictionary is not performing as well as the \emph{Pop} dictionary. On this database, the genre specific method is giving relevant information to the algorithm. As stated in Section \ref{database}, some genre are similar to other. This explains why the \emph{Rock} and the \emph{Singer} dictionaries are giving good results too. 
 An interesting result is that compared to the non specific dictionary, the \emph{Pop} dictionary has a lower variance. Genre information allows for a higher robustness to the variety of the songs within the same genre.  
 
@@ -407,24 +408,58 @@ An interesting result is that compared to the non specific dictionary, the \emph
 %\caption{\label{specresults} Mean SDR, SIR and SAR results of the Medley-dB database.}
 %\end{table}
 
+%\begin{table*}
+%   
+%   \begin{tabular}{|c|c|c|c|c|c|c|c|}
+%\hline   
+%Genre & Classical & Electronic/Fusion & Jazz & Pop & Rock & Singer/Songwriter & World/Folk \\
+%\hline
+%Genre specific Results(dB)  & & & & & & & \\
+%SDR & 2.95     & \bf{0.54}& 5.94     & \bf{3.76}&\bf{0.97} &\bf{4.69} &\bf{1.83} \\
+%SIR & \bf{9.41}& 8.51     & \bf{11.1}& \bf{9.77}&\bf{12.0} & 9.80     &\bf{8.33} \\
+%SAR & 12.0     & 11.9     & \bf{15.6}& 13.9     &\bf{19.1} &\bf{17.2} &\bf{18.6} \\
+%\hline
+%Non specific (dB) & & & & & & &\\
+%SDR & \bf{3.00}& 0.50     & \bf{6.02}& 3.40     & -0.11    &  3.71    & 0.66 \\
+%SIR & 9.25     & \bf{9.18}& 10.5     & 8.72     & 10.6     &\bf{10.3} & 7.53 \\
+%SAR & \bf{17.6}& \bf{14.1}& 15.4     & \bf{14.5}& 15.4     & 16.9     & 16.4 \\
+%\hline
+%  \end{tabular} 
+%\caption{\label{specresults} Mean SDR, SIR and SAR results on the Medley-dB database.}
+%\end{table*}
+
 \begin{table*}
    
    \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline   
 Genre & Classical & Electronic/Fusion & Jazz & Pop & Rock & Singer/Songwriter & World/Folk \\
 \hline
+Percussive separation & & & & & & & \\
+\hline
 Genre specific Results(dB)  & & & & & & & \\
-SDR & 2.95     & \bf{0.54}& 5.94     & \bf{3.76}&\bf{0.97} &\bf{4.69} &\bf{1.83} \\
-SIR & \bf{9.41}& 8.51     & \bf{11.1}& \bf{9.77}&\bf{12.0} & 9.80     &\bf{8.33} \\
-SAR & 12.0     & 11.9     & \bf{15.6}& 13.9     &\bf{19.1} &\bf{17.2} &\bf{18.6} \\
+SDR & -1.64     & -0.63     &\bf{0.36} & \bf{2.45}&\bf{-0.17}& \bf{0.64} & \bf{-3.02} \\
+SIR & 8.21      & 15.17     &\bf{9.60} & 12.34    &\bf{19.79}& 11.45     & \bf{2.54} \\
+SAR & 5.88      & 0.31      &\bf{2.08} & \bf{3.36}& 0.31     & \bf{4.46} & \bf{11.90} \\
 \hline
 Non specific (dB) & & & & & & &\\
-SDR & \bf{3.00}& 0.50     & \bf{6.02}& 3.40     & -0.11    &  3.71    & 0.66 \\
-SIR & 9.25     & \bf{9.18}& 10.5     & 8.72     & 10.6     &\bf{10.3} & 7.53 \\
-SAR & \bf{17.6}& \bf{14.1}& 15.4     & \bf{14.5}& 15.4     & 16.9     & 16.4 \\
+SDR & \bf{-0.04}& \bf{-0.25}& -0.68    & 2.01     & -2.15    & -0.01     & -3.84 \\
+SIR & \bf{11.3} & \bf{17.01}& 9.57     &\bf{12.60}& 18.30    & \bf{13.04}& 2.46 \\
+SAR & \bf{8.07} & \bf{0.39} & 0.87     & 2.74     &\bf{2.34} & 1.83      & 11.89 \\
+\hline   
+Harmonic Separation &  & & & & & & \\  
+\hline
+Genre specific Results(dB)  & & & & & & & \\
+SDR & \bf{7.49}    & \bf{1.63}    & \bf{13.05} & \bf{5.06}  & \bf{2.14}& 7.20      &\bf{4.86} \\
+SIR & \bf{10.60}   & \bf{1.84}    & \bf{13.27} & \bf{5.02 } & 2.19     & \bf{11.45}& 12.19 \\
+SAR & 18.19       & 23.48       & 28.50      & 24.48      &\bf{35.97}& 28.48     & \bf{21.23} \\
+\hline
+Non specific (dB) & & & & & & &\\
+SDR & 6.04        & 1.33        & 12.71     & 4.78      & 1.92      & 7.46      & 4.80\\
+SIR & 7.14        & 1.36        & 12.82     & 4.85      & \bf{2.86} & 7.50      & 12.60 \\
+SAR & \bf{27.21}& \bf{27.72}   & \bf{29.87} & \bf{26.17}& 34.25     &\bf{31.87} & \bf{20.92}\\
 \hline
   \end{tabular} 
-\caption{\label{specresults} Mean SDR, SIR and SAR results on the Medley-dB database.}
+\caption{\label{specresults} Mean harmonic SDR, SIR and SAR results on the Medley-dB database.}
 \end{table*}
 
 
@@ -437,6 +472,9 @@ On Table \ref{specresults}, we display the mean separation score for all the gen
 
 On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary. The similar pitch content of the music of the same genre is not altered by the NMF compression and this information improve the separation.  
 The database \emph{Classical} and \emph{Electronic/Fusion} are composed of songs where the drum is only playing for a few moments. Similarly on some songs of the \emph{Electronic/Fusion} database, the electronic drum reproduces the same pattern during the whole song making the drum part very redundant thus the drum dictionary does not contain a sufficient amount of information to outperform the universal dictionary. Because of these two factors, the genre specific dictionaries are not performing correctly.
+
+
+
 
 The main drawback of using a NMF dictionary is that the decomposition is not unique and can any permutation is also a solution. Because of that, we lose the temporal structure of the original drum signal. 
 
