@@ -436,7 +436,7 @@ Genre & Classical & Electronic/Fusion & Jazz & Pop & Rock & Singer/Songwriter & 
 \hline
 Percussive separation & & & & & & & \\
 \hline
-Genre specific Results(dB)  & & & & & & & \\
+Genre specific (dB)  & & & & & & & \\
 SDR & -1.64     & -0.63     &\bf{0.36} & \bf{2.45}&\bf{-0.17}& \bf{0.64} & \bf{-3.02} \\
 SIR & 8.21      & 15.17     &\bf{9.60} & 12.34    &\bf{19.79}& 11.45     & \bf{2.54} \\
 SAR & 5.88      & 0.31      &\bf{2.08} & \bf{3.36}& 0.31     & \bf{4.46} & \bf{11.90} \\
@@ -448,7 +448,7 @@ SAR & \bf{8.07} & \bf{0.39} & 0.87     & 2.74     &\bf{2.34} & 1.83      & 11.89
 \hline   
 Harmonic Separation &  & & & & & & \\  
 \hline
-Genre specific Results(dB)  & & & & & & & \\
+Genre specific (dB)  & & & & & & & \\
 SDR & \bf{7.49}    & \bf{1.63}    & \bf{13.05} & \bf{5.06}  & \bf{2.14}& 7.20      &\bf{4.86} \\
 SIR & \bf{10.60}   & \bf{1.84}    & \bf{13.27} & \bf{5.02 } & 2.19     & \bf{11.45}& 12.19 \\
 SAR & 18.19       & 23.48       & 28.50      & 24.48      &\bf{35.97}& 28.48     & \bf{21.23} \\
@@ -473,18 +473,17 @@ On Table \ref{specresults}, we display the mean separation score for all the gen
 On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary. The similar pitch content of the music of the same genre is not altered by the NMF compression and this information improve the separation.  
 The database \emph{Classical} and \emph{Electronic/Fusion} are composed of songs where the drum is only playing for a few moments. Similarly on some songs of the \emph{Electronic/Fusion} database, the electronic drum reproduces the same pattern during the whole song making the drum part very redundant thus the drum dictionary does not contain a sufficient amount of information to outperform the universal dictionary. Because of these two factors, the genre specific dictionaries are not performing correctly.
 
+Overall the harmonic separation is giving much better results than the percussive extraction. The fixed dictionaries are creating artefact as the percussive templates do not correspond exactly to the drum signal to decompose. A possible way to alleviate this problem is to adapt the dictionaries but this require the use of an hyper parameters that is not the philosophy of this work.
 
-
-
-The main drawback of using a NMF dictionary is that the decomposition is not unique and can any permutation is also a solution. Because of that, we lose the temporal structure of the original drum signal. 
+%The main drawback of using a NMF dictionary is that the decomposition is not unique and can any permutation is also a solution. Because of that, we lose the temporal structure of the original drum signal. 
 
 
 
 \section{Conclusion}
 
-Using genre specific information in order to build more relevant drum dictionaries is a powerful method to improve the HPSS. The dictionaries still have an imprint of the genre even after the NMF decomposition and the additional information is properly used by the SPNMF to improve the source separation.
+Using genre specific information in order to build more relevant drum dictionaries is a powerful method to improve the HPSS. The dictionaries still have an imprint of the genre even after the NMF decomposition and the additional information is properly used by the SPNMF to improve the source separation. 
 
-This is a first step in order to produce dictionaries capable of extracting a wide variety of audio signal.
+This is a first step in order to produce dictionaries capable of extracting a wide variety of audio signal. 
 
 Future work will be dedicated into building a blind method to select the genre specific dictionary in order to perform the same technique on database were the genre information is not present. 
 

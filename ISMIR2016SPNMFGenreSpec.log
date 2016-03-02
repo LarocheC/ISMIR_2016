@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  2 MAR 2016 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  2 MAR 2016 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,13 +504,15 @@ Overfull \hbox (22.7622pt too wide) in paragraph at lines 358--360
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[4]
+Underfull \vbox (badness 1127) has occurred while \output is active []
 
-Overfull \hbox (8.13832pt too wide) in paragraph at lines 433--462
-[][] 
- []
 
-[4] [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-conver
-ted-to.pdf>] (./ISMIR2016SPNMFGenreSpec.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-converted
+-to.pdf>]
+(./ISMIR2016SPNMFGenreSpec.bbl
 Underfull \hbox (badness 2057) in paragraph at lines 33--39
 \OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
  []
@@ -574,7 +576,7 @@ msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 348348 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 348347 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
