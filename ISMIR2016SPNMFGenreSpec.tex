@@ -361,53 +361,6 @@ An interesting result is that compared to the non specific dictionary, the \emph
   
 \end{figure}
 
-
-%
-%\begin{table}
-%   
-%   \begin{tabular}{|l|l|l|}
-%\hline   
-%Genre & Genre specific Results(dB) & Non specific (dB)\\
-%\hline
-%Classical  &  &\\
-%SDR & 2.95 & \bf{3.00} \\
-%SIR & \bf{9.41} & 9.25 \\
-%SAR & 12.0 & \bf{17.6}  \\
-%\hline
-%Electronic/Fusion & &\\
-%SDR & \bf{0.54} & 0.50 \\
-%SIR & 8.51 & \bf{9.18} \\
-%SAR & 11.9 & \bf{14.1} \\
-%\hline
-%Jazz & &\\
-%SDR & 5.94 & \bf{6.02} \\
-%SIR & \bf{11.1} & 10.5 \\
-%SAR & \bf{15.6} & 15.4 \\
-%\hline
-%Pop &   &\\
-%SDR & \bf{3.76} & 3.40 \\
-%SIR & \bf{9.77} & 8.72 \\
-%SAR & 13.9 & \bf{14.5} \\
-%\hline
-%Rock & &\\
-%SDR & \bf{0.97} & -0.11  \\
-%SIR & \bf{12.0} & 10.6 \\
-%SAR & \bf{19.1} & 18.3 \\
-%\hline
-%Singer/Songwriter & &\\
-%SDR & \bf{4.69} & 3.71 \\
-%SIR & 9.80 & \bf{10.3} \\
-%SAR & \bf{17.2} & 16.9 \\
-%\hline
-%World/Folk &  &\\
-%SDR & \bf{1.83} & 0.66 \\
-%SIR & \bf{8.33} & 7.53 \\
-%SAR & \bf{18.6} & 16.4 \\
-%\hline
-%  \end{tabular} 
-%\caption{\label{specresults} Mean SDR, SIR and SAR results of the Medley-dB database.}
-%\end{table}
-
 %\begin{table*}
 %   
 %   \begin{tabular}{|c|c|c|c|c|c|c|c|}
@@ -481,11 +434,9 @@ Overall the harmonic separation is giving much better results than the percussiv
 
 \section{Conclusion}
 
-Using genre specific information in order to build more relevant drum dictionaries is a powerful method to improve the HPSS. The dictionaries still have an imprint of the genre even after the NMF decomposition and the additional information is properly used by the SPNMF to improve the source separation. 
+Using genre specific information in order to build more relevant drum dictionaries is a powerful method to improve the HPSS. The dictionaries still have an imprint of the genre even after the NMF decomposition and the additional information is properly used by the SPNMF to improve the source separation. This is a first step in order to produce dictionaries capable of extracting a wide variety of audio signal. 
 
-This is a first step in order to produce dictionaries capable of extracting a wide variety of audio signal. 
-
-Future work will be dedicated into building a blind method to select the genre specific dictionary in order to perform the same technique on database were the genre information is not present. 
+Future work will be dedicated into building a blind method to select the genre specific dictionary in order to perform the same technique on database where the genre information. 
 
 
 
