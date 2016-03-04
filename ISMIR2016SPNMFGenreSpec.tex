@@ -82,7 +82,8 @@ Supervised algorithms for audio source separation use apriori information like t
 The large variety of audio signal can be classified into different musical genres \cite{tzanetakis2002musical}. Genres are labels created and used by humans for categorizing and describing music. They have no strict definitions and boundaries but particular genre share certain characteristics typically related to the instrumentation, rhythmic structure, and pitch content of the music. This resemblance between two pieces of music have been used to perform chord transcription \cite{ni2012using,lee2008acoustic} or for downbeat detection \cite{hockman2012one}. Finally when the genre information is not available, it is possible to perform automatic genre classification \cite{li2003comparative}.
 
 In the context of BASS, Non-negative Matrix Factorization (NMF) is a widely used method for source separation. The goal of NMF is to approximate a data matrix $V \in \mathbb{R}_{+}^{n \times m} $ as $V \approx \tilde{V} = WH$ with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ and where $k$ is the rank of factorization \cite{lee99}. In audio signal processing, the input data is usually a Time-Frequency (TF) representation such as a short time Fourier transform (STFT) or a constant-Q transform spectrogram. Blind source separation is a difficult problem and the plain NMF decomposition does not provide satisfying results. To perform a satisfying decomposition, it is necessary to exploit various features that make each sources distinguishable from one another. 
-Supervised algorithms in the NMF framework exploit training data or prior information in order to guide the decomposition process. For example information from the scores or from midi signals \cite{EwertM12} can be used to initialize the learning process. The downside of these approachs are that they require well organized prior information that is not always available. Another supervised method consists in performing prior training on specific databases. A dictionary matrix $W_{train}$ is learned from a big database in order to separate an instrument \cite{jaureguiberry2011adaptation,wudrum}. A common method to build a dictionary is to perform a NMF decomposition on a large training set. After the convergence, the $W$ matrix from the decomposition is used as the dictionary matrix $W_{train}$ in the separation \cite{jaureguiberry2011adaptation}. Another method is detailed in \cite{wudrum}, a dictionary matrix is created by extracting template spectra from isolated drum samples. The dictionary is then used in a NMF decomposition to perform drum transcription. These methods require minimum tuning from the user. However, the dictionaries must match the target instruments for satisfying performances. 
+Supervised algorithms in the NMF framework exploit training data or prior information in order to guide the decomposition process. For example information from the scores or from midi signals \cite{EwertM12} can be used to initialize the learning process. The downside of these approachs are that they require well organized prior information that is not always available. Another supervised method consists in performing prior training on specific databases. A dictionary matrix $W_{train}$ is learned from a big database in order to separate an instrument \cite{jaureguiberry2011adaptation,wudrum}. These methods require minimum tuning from the user. However, the dictionaries must match the target instruments for satisfying performances. 
+
 
 In this paper, we focus on the task of harmonic/percussive source separation (HPSS) using the method developed in \cite{laroche2015structured}. We adapt the algorithm to use a drum dictionary to extract the percussive instruments. This method is explained in detail in the preprint. 
 The problem of using a fixed dictionary matrices is that within a database, the same instrument can sound differently depending on the recording conditions and post processing treatments. In order to represent correctly one instrument, ones can decide to learn a dictionary on a large database. However, the problem of over-fitting the data exist. In order to overcome this problem and to build effective dictionaries, we decided to use genre specific training data. As they share similar features, genre specific information can provide an insight on the structure of the audio signal.
@@ -91,14 +92,27 @@ The main contribution of this article is that we developed a genre specific meth
 
 
 
-\section{Genre specific information}\label{defgenre}
+\section{Toward genre specific information}\label{defgenre}
 
-
+\subsection{Genre information}
 
 Musical genre is probably the most popular high level music descriptor. Electronic Music Distribution have become more popular in recent years and music catalogues never stop to increase (the biggest online services propose around 1 million tracks); in that context, associating a genre to a musical piece is crucial to help users finding what they are looking for. If an explicit definitions of musical genres is still out of reach \cite{aucouturier2003representing}, musical genre classification can be performed automatically using different set of features\cite{tzanetakis2002musical,mckay2006musical}. 
 
 Source separation have been used extensively in order to help the classification process \cite{rump2010autoregressive,lampropoulos2005musical}. However, using genre information have not been exploited to guide the decomposition process. 
 
+\subsection{Methods for dictionary learning}
+
+In the case of under-determined source separation, the common method is to use dictionaries that carry information specific of the source to extract. There are several methods to build a dictionary. A well known approach is the K-Single Value Decomposition (K-SVD) \cite{aharon2006img}. It is used for face recognition \cite{zhang2010discriminative} and sparse coding \cite{jiang2011learning}. However, K-SVD does not scale well to process large audio signal and a genre specific dictionary cannot be considered with this method.
+
+Another popular method to build a dictionary is to compute a NMF decomposition on a large training set. After the convergence, the $W$ matrix from the decomposition is used as the dictionary matrix $W_{train}$ in the separation \cite{jaureguiberry2011adaptation}. The rank of factorization determine the final size of the dictionary and can be chosen small to perform a strong compression of the original data. This property of NMF motivated us to build our dictionary using the NMF on some genre specific data. The selection of the rank of factorization will be discussed in Section \ref{optimalsize}.  
+
+\subsection{Genre information for HPSS}
+
+Harmonic/percussive source separation has numerous applications as a preprocessing step. For example most multi-pitch estimation models~\cite{klapuri2008multipitch}, instruments recognition~\cite{eronen2000musical} and melody extraction~\cite{salamon2012melody} algorithms are much more efficient if the influence of the percussive sources is diminished. Indeed, these algorithms often rely on the analysis of the harmonic structures that are blurred by the percussive instruments. Similarly, beat tracking~\cite{ellis2007beat} and drum transcription algorithms~\cite{paulus2005drum} are more accurate if the harmonic instruments are not part of the signal. Finally, using the HPSS algorithm~\cite{fitzgerald2010harmonic} as a preprocessing step increases the performance for singing pitch extraction and voice separation~\cite{hsu2012tandem}. 
+
+
+
+Finally in~\cite{kim2011nonnegative}. The drum source separation is done using a Non-Negative Matrix Partial Co-Factorization (NMPCF). The spectrogram of the signal and the drum-only data (obtained from prior learning) are simultaneously decomposed in order to determine common basis vectors that capture the spectral and temporal characteristics of drum sources. The shared dictionary matrix retrieves the drum signal, however it must be chosen carefully in order to obtain satisfying results. The percussive part of the decomposition is constrained while the harmonic part is completely unconstrained. As a result, it tends to decompose a lot of information (i.e., the harmonic part contains some percussive instruments) from the signal and the decomposition is not satisfactory. In the NMPCF, the dictionary are not fixed, we will this method compare it to the SPNMF were the dictionary is fixed. 
 
 
 
@@ -106,24 +120,6 @@ Source separation have been used extensively in order to help the classification
 \label{sec:SPNMF}
 
 In this section we present our semi-supervised algorithm for harmonic/percussive source separation.
-
-\subsection{Presentation of the orthogonal and projective NMF}\label{subsec:PNMF}
-
-
-The aim of PNMF is to find a non negative projection matrix $P \in \mathbb{R}_{+}^{n \times n}$ such that $V \approx \tilde{V} = PV$. In~\cite{yuanOja2005} Yuan \& al. propose to seek $P$ as an approximative projection matrix under the form $P = WW^{T}$ with $W \in \mathbb{R}_{+}^{n \times k}$ with $ k \leqslant n $. The PNMF problem reads : 
-\begin{equation}\label{EqPnmf}
-\min_{W \geqslant 0} ||V - WW^{T}V||^2 
-\end{equation}
-
-PNMF is similar to the NMF problem and can be simply obtained by replacing the activation matrix $H$ by $W^TV$. It is shown in~\cite{YangOja10} that the PNMF gives a much sparser decomposition than NMF.
-
-Another very similar approach is the ONMF~\cite{choi}. It consists in solving the following problem: 
-\begin{align}
-\min_{W \geqslant 0, H \geqslant0} ||V - WH||^2 \quad   \text{s.t}.\quad W^{T}W=I_{k} 
-\end{align}%
-In this method, orthogonality between nonnegative basis functions is enforced during the optimization process. In theory, it seems that PNMF and ONMF lead to similar decompositions, as the $W$ matrix estimated by PNMF is almost orthogonal (i.e., $\|W^{T}W-I_{k}\|^{2}$ is small). However in practice, enforcing the orthogonality between the base at every iteration is a constraint too strong to decompose audio signal~\cite{laroche2015structured}. 
-
-The sparsity of the dictionary matrix is an interesting property for the decomposition of audio signals and especially for the decomposition of harmonic instruments with very localized harmonic spectra. Contrary to the NMF, the sparsity of PNMF and is an inherent features of the decomposition. These key properties of PNMF motivated us to decompose the harmonic instruments with the orthogonal basis functions.
 
 
 \subsection{Principle of the SPNMF}

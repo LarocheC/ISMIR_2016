@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{aharon2006img}
+M.~Aharon, M.~Elad, and Alfred A.~Bruckstein.
+\newblock K-svd: An algorithm for designing overcomplete dictionaries for
+  sparse representation.
+\newblock {\em IEEE Transactions on Signal Processing}, 54(11):4311--4322,
+  2006.
+
 \bibitem{SiSec10}
 S.~Araki, A.~Ozerov, V.~Gowreesunker, H.~Sawada, F.~Theis, G.~Nolte, D.~Lutter,
   and N.~Duong.
@@ -37,15 +44,27 @@ F.~Canadas-Quesada, P.~Vera-Candeas, N.~Ruiz-Reyes, J.~Carabias-Orti, and
 \newblock {\em EURASIP Journal on Audio, Speech, and Music Processing},
   2014(1):1--17, 2014.
 
-\bibitem{choi}
-S.~Choi.
-\newblock Algorithms for orthogonal nonnegative matrix factorization.
-\newblock In {\em Proc. of IEEE IJCNN}, pages 1828--1832, 2008.
+\bibitem{ellis2007beat}
+Daniel~PW Ellis.
+\newblock Beat tracking by dynamic programming.
+\newblock {\em Journal of New Music Research}, 36(1):51--60, 2007.
+
+\bibitem{eronen2000musical}
+A.~Eronen and A.~Klapuri.
+\newblock Musical instrument recognition using cepstral coefficients and
+  temporal features.
+\newblock In {\em Proc. of IEEE ICASSP}, volume~2, pages II753--II756. IEEE,
+  2000.
 
 \bibitem{EwertM12}
 S.~Ewert and M.~M{\"u}ller.
 \newblock Score-informed source separation for music signals.
 \newblock {\em Multimodal music processing}, 3:73--94, 2012.
+
+\bibitem{fitzgerald2010harmonic}
+D.~Fitzgerald.
+\newblock Harmonic/percussive separation using median filtering.
+\newblock In {\em Proc. of DAFx}, 2010.
 
 \bibitem{fitzgerald2011upmixing}
 D.~Fitzgerald.
@@ -58,11 +77,38 @@ J.~Hockman, M.~Davies, and I.~Fujinaga.
   and bass.
 \newblock In {\em Proc. of ISMIR}, pages 169--174, 2012.
 
+\bibitem{hsu2012tandem}
+Chao-Ling Hsu, DeLiang Wang, Jyh-Shing~Roger Jang, and Ke~Hu.
+\newblock A tandem algorithm for singing pitch extraction and voice separation
+  from music accompaniment.
+\newblock {\em Transactions on Audio, Speech, and Language Processing.},
+  20(5):1482--1491, 2012.
+
 \bibitem{jaureguiberry2011adaptation}
 X.~Jaureguiberry, P.~Leveau, S.~Maller, and J.~Burred.
 \newblock Adaptation of source-specific dictionaries in non-negative matrix
   factorization for source separation.
 \newblock In {\em Proc. of IEEE ICASSP}, pages 5--8, 2011.
+
+\bibitem{jiang2011learning}
+Z.~Jiang, Z.~Lin, and L.S Davis.
+\newblock Learning a discriminative dictionary for sparse coding via label
+  consistent k-svd.
+\newblock In {\em Proc. of CVPR}, pages 1697--1704, 2011.
+
+\bibitem{kim2011nonnegative}
+Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
+\newblock Nonnegative matrix partial co-factorization for spectral and temporal
+  drum source separation.
+\newblock {\em Journal of Selected Topics in Signal Processing},
+  5(6):1192--1204, 2011.
+
+\bibitem{klapuri2008multipitch}
+Anssi Klapuri.
+\newblock Multipitch analysis of polyphonic music and speech signals using an
+  auditory model.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
+  16(2):255--266, 2008.
 
 \bibitem{lampropoulos2005musical}
 A.~Lampropoulos, P.~Lampropoulou, and G.~Tsihrintzis.
@@ -120,11 +166,23 @@ O.Gillet and G.Richard.
   processing.
 \newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
 
+\bibitem{paulus2005drum}
+Jouni Paulus and Tuomas Virtanen.
+\newblock Drum transcription with non-negative spectrogram factorisation.
+\newblock In {\em Proc. of EUSIPCO}, pages 1--4, 2005.
+
 \bibitem{rump2010autoregressive}
 H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
 \newblock Autoregressive mfcc models for genre classification improved by
   harmonic-percussion separation.
 \newblock In {\em Proc. of ISMIR}, pages 87--92, 2010.
+
+\bibitem{salamon2012melody}
+Justin Salamon and Emilia G{\'o}mez.
+\newblock Melody extraction from polyphonic music signals using pitch contour
+  characteristics.
+\newblock {\em Transactions on Audio, Speech, and Language Processing.},
+  20(6):1759--1770, 2012.
 
 \bibitem{tzanetakis2002musical}
 G.~Tzanetakis and P.~Cook.
@@ -144,15 +202,15 @@ C.~Wu and A.~Lerch.
   factorization.
 \newblock In {\em Proc. of EUSIPCO}, 2008.
 
-\bibitem{YangOja10}
-Z.~Yang and E.~Oja.
-\newblock Linear and nonlinear projective nonnegative matrix factorization.
-\newblock {\em IEEE Transactions on Neural Network.}, 21(5):734--749, 2010.
-
 \bibitem{yuanOja2005}
 Z.~Yuan and E.~Oja.
 \newblock Projective nonnegative matrix factorization for image compression and
   feature extraction.
 \newblock {\em Image Analysis}, pages 333--342, 2005.
+
+\bibitem{zhang2010discriminative}
+Q.~Zhang and B.~Li.
+\newblock Discriminative k-svd for dictionary learning in face recognition.
+\newblock In {\em Proc. of IEEE CVPR}, pages 2691--2698. IEEE, 2010.
 
 \end{thebibliography}

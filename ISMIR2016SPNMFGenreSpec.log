@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  3 MAR 2016 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  4 MAR 2016 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,12 +386,12 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ‹ in font ptmr7t!
 
-Underfull \hbox (badness 6510) in paragraph at lines 87--90
+Underfull \hbox (badness 6510) in paragraph at lines 88--91
 []\OT1/ptm/m/n/10 In this pa-per, we fo-cus on the task of har-
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 87--90
+Underfull \hbox (badness 1776) in paragraph at lines 88--91
 \OT1/ptm/m/n/10 monic/percussive source sep-a-ra-tion (HPSS) us-ing the
  []
 
@@ -409,23 +409,23 @@ Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 (epstopdf)                    size: 7462 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/AllDictSizeISMIR-eps-
 converted-to.pdf figs/AllDictSizeISMIR.eps>
-(epstopdf)             \includegraphics on input line 220.
+(epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/AllDictSizeISMIR-eps-converted-to.pdf, id=30, 1284.8pt x 613.29124pt>
+<figs/AllDictSizeISMIR-eps-converted-to.pdf, id=27, 1284.8pt x 613.29124pt>
 File: figs/AllDictSizeISMIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/AllDictSizeISMIR-eps-converted-to.pdf>
 Package pdftex.def Info: figs/AllDictSizeISMIR-eps-converted-to.pdf used on inp
-ut line 220.
+ut line 216.
 (pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 220--222
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 216--218
  [][] 
  []
 
 [3 <./figs/AllDictSizeISMIR-eps-converted-to.pdf>]
-Overfull \hbox (5.83914pt too wide) in paragraph at lines 240--283
+Overfull \hbox (5.83914pt too wide) in paragraph at lines 236--279
  [][] 
  []
 
@@ -437,17 +437,17 @@ Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    size: 53653 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SDRismirpop-eps-conve
 rted-to.pdf figs/SDRismirpop.eps>
-(epstopdf)             \includegraphics on input line 344.
+(epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SDRismirpop-eps-converted-to.pdf, id=42, 1284.8pt x 614.295pt>
+<figs/SDRismirpop-eps-converted-to.pdf, id=41, 1284.8pt x 614.295pt>
 File: figs/SDRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SDRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SDRismirpop-eps-converted-to.pdf used on input li
-ne 344.
+ne 340.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 344--346
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 340--342
  [][] 
  []
 
@@ -462,17 +462,17 @@ Package epstopdf Info: Source file: <figs/SIRismirpop.eps>
 (epstopdf)                    size: 50927 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SIRismirpop-eps-conve
 rted-to.pdf figs/SIRismirpop.eps>
-(epstopdf)             \includegraphics on input line 351.
+(epstopdf)             \includegraphics on input line 347.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SIRismirpop-eps-converted-to.pdf, id=43, 1284.8pt x 614.295pt>
+<figs/SIRismirpop-eps-converted-to.pdf, id=42, 1284.8pt x 614.295pt>
 File: figs/SIRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SIRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SIRismirpop-eps-converted-to.pdf used on input li
-ne 351.
+ne 347.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 351--353
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 347--349
  [][] 
  []
 
@@ -487,81 +487,77 @@ Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    size: 42131 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SARismirpop-eps-conve
 rted-to.pdf figs/SARismirpop.eps>
-(epstopdf)             \includegraphics on input line 358.
+(epstopdf)             \includegraphics on input line 354.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SARismirpop-eps-converted-to.pdf, id=44, 1284.8pt x 614.295pt>
+<figs/SARismirpop-eps-converted-to.pdf, id=43, 1284.8pt x 614.295pt>
 File: figs/SARismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SARismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SARismirpop-eps-converted-to.pdf used on input li
-ne 358.
+ne 354.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 358--360
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 354--356
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-converted
--to.pdf>]
-(./ISMIR2016SPNMFGenreSpec.bbl
-Underfull \hbox (badness 2057) in paragraph at lines 33--39
+[4] [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-conver
+ted-to.pdf>] (./ISMIR2016SPNMFGenreSpec.bbl
+Underfull \hbox (badness 2057) in paragraph at lines 40--46
 \OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 33--39
+Underfull \hbox (badness 2181) in paragraph at lines 40--46
 \OT1/ptm/m/n/10 trix fac-tor-iza-tion with smooth-ness/sparseness con-
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 62--66
-\OT1/ptm/m/n/10 Adap-ta-tion of source-specific dic-tio-nar-ies in non-
+Underfull \hbox (badness 1087) in paragraph at lines 81--86
+[]\OT1/ptm/m/n/10 Chao-Ling Hsu, DeLiang Wang, Jyh-Shing Roger
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--72
+Underfull \hbox (badness 1975) in paragraph at lines 88--92
+\OT1/ptm/m/n/10 Adap-ta-tion of source-specific dic-tio-nar-ies in non-
+ []
+
+[6 <./figs/SARismirpop-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 []\OT1/ptm/m/n/10 A. Lam-propou-los, P. Lam-propoulou, and
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 68--72
+Underfull \hbox (badness 6978) in paragraph at lines 114--118
 \OT1/ptm/m/n/10 G. Tsihrintzis.  Mu-si-cal genre clas-si-fi-ca-tion en-
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 74--77
+Underfull \hbox (badness 1454) in paragraph at lines 120--123
 []\OT1/ptm/m/n/10 C. Laroche, M. Kowal-ski, H. Pa-padopou-los, and
  []
 
-[6 <./figs/SARismirpop-eps-converted-to.pdf>]
-Underfull \hbox (badness 1817) in paragraph at lines 124--128
+
+Underfull \hbox (badness 1817) in paragraph at lines 175--179
 []\OT1/ptm/m/n/10 H. Rump, S. Miyabe, E. Tsunoo, N. Ono, and
  []
 
-) [7
-
-] (./ISMIR2016SPNMFGenreSpec.aux)
+) [7] (./ISMIR2016SPNMFGenreSpec.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5663 strings out of 493089
- 83329 string characters out of 6134842
- 189844 words of memory out of 5000000
- 9037 multiletter control sequences out of 15000+600000
- 28093 words of font info for 69 fonts, out of 8000000 for 9000
+ 5669 strings out of 493089
+ 83483 string characters out of 6134842
+ 189862 words of memory out of 5000000
+ 9043 multiletter control sequences out of 15000+600000
+ 27079 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,38p,1275b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,16n,38p,1133b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texl
@@ -574,16 +570,15 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 348196 bytes).
+f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 340842 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 178 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
