@@ -235,7 +235,7 @@ The optimal dictionary size for the SPNMF algorithm is $k=100$ and that what we 
 
 The dataset medley-dB \cite{bittner2014medleydb} is used for our tests. It is composed of polyphonic real-world music excerpts. It has $122$ music signals and $85$ of them contain percussive instruments, harmonic instruments and vocals. The signals that do not contain a percussive part are not part of the evaluation. We are using the song of the genre, \emph{Classical} ($8$ songs), \emph{Singer/Songwriter} ($17$ songs), \emph{Pop} ($10$ songs), \emph{Rock} ($20$ songs), \emph{Jazz} ($11$ songs), \emph{Electronic/Fusion} ($13$ songs) and \emph{World/Folk} ($6$ songs). Because the notion of genre is quite subjective (see Section \ref{defgenre}), the medley-dB database uses general genre labels. These labels should not be considered to be precise genre labels. There are many instances where a song could have fallen in multiple genres, and the choices were made so that each genre would be as acoustically homogeneous as possible. As we are only working with the instrumental part of the song, the \emph{Pop} label (for example) are similar to the \emph{Singer/Songwriter}.
 
-The training dataset is built using $3$ song of each genre. The songs used for the training part are not part of the evaluation. To compare the genre specific dictionary, we build a non specific/universal dictionary built using half of one song of each genre. Finally, a last dictionary is built using around $10$min of pure drum signals from ENST-Drums similarly as in Section \ref{optimalsize}. The files from medley-dB selected for the training are given in Table \ref{trainingdata}. 
+The training dataset is built using $3$ song of each genre. The songs used for the training part are not part of the evaluation. To compare the genre specific dictionary, we build a non specific/universal dictionary built using half of one song of each genre. Finally, a last dictionary is built using around $10$min of pure drum signals from the ENST-Drums database similarly as in Section \ref{optimalsize}. The files from medley-dB selected for the training are given in Table \ref{trainingdata}. 
 
 
 \begin{table} 
@@ -336,13 +336,14 @@ Non Specific (Mix) & 11.03 & 30000 \\
 
 \subsection{Comparison of the dictionaries}
 
-In this section we present the results of the algorithm with the genre specific dictionaries on the $64$ song from test database Medley-dB. We perform an HPSS on the audio files using the SPNMF with the $8$ dictionaries created on Section \ref{genrespecdict}. The results on each of the songs are then sorted by genres and the average results are displayed using box-plot. Each box-plot is made up of a central line indicating the median of the data, upper and lower box edges indicating the $1^{st}$ and $3^{rd}$ quartiles while the whiskers indicate the minimum and maximum values. 
+In this section we present the results of the algorithm with the genre specific dictionaries on the $64$ remaining song from test database Medley-dB. We perform an HPSS on the audio files using the SPNMF with the $9$ dictionaries created in Section \ref{genrespecdict}. The results on each of the songs are then sorted by genres and the average results are displayed using box-plot. Each box-plot is made up of a central line indicating the median of the data, upper and lower box edges indicating the $1^{st}$ and $3^{rd}$ quartiles while the whiskers indicate the minimum and maximum values. 
 
 
 The Figures \ref{sdrpop}, \ref{sirpop} and \ref{sarpop} show the SDR, SAR and SIR results for all the dictionaries on the \emph{Pop} subsection. It gives us a overall idea on how all the dictionaries perform on the same database. The results using the \emph{Pop} dictionary has the highest SDR and SIR results. The non specific dictionary is not performing as well as the \emph{Pop} dictionary. On this database, the genre specific method is giving relevant information to the algorithm. As stated in Section \ref{database}, some genre are similar to other. This explains why the \emph{Rock} and the \emph{Singer} dictionaries are giving good results too. 
 An interesting result is that compared to the non specific dictionary, the \emph{Pop} dictionary has a lower variance. Genre information allows for a higher robustness to the variety of the songs within the same genre.  
 
 The dictionary built on the ENST-drums is giving very similar results to the universal dictionary built on the Medley-dB database. We are not using the ENST-Drums results in the rest of the article. 
+
 
 \begin{figure}[h]
 
@@ -429,10 +430,10 @@ On Table \ref{specresults}, we display the mean separation score for all the gen
 \subsection{Discussion}
 
 
-On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary. The similar pitch content of the music of the same genre is not altered by the NMF compression and this information improve the separation.  
+On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary. The correlation between the music of the same genre is not altered by the NMF compression and the drum templates are more suited to the decomposition.  
 The database \emph{Classical} and \emph{Electronic/Fusion} are composed of songs where the drum is only playing for a few moments. Similarly on some songs of the \emph{Electronic/Fusion} database, the electronic drum reproduces the same pattern during the whole song making the drum part very redundant thus the drum dictionary does not contain a sufficient amount of information to outperform the universal dictionary. Because of these two factors, the genre specific dictionaries are not performing correctly.
 
-Overall the harmonic separation is giving much better results than the percussive extraction. The fixed dictionaries are creating artefact as the percussive templates do not correspond exactly to the drum signal to decompose. A possible way to alleviate this problem is to adapt the dictionaries but this require the use of an hyper parameters that is not the philosophy of this work.
+Overall the harmonic separation is giving much better results than the percussive extraction. The fixed dictionaries are creating artefact as the percussive templates do not correspond exactly to the target drum signal. A possible way to alleviate this problem is to adapt the dictionaries but this requires the use of hyper parameters and that is not the philosophy of this work.
 
 %The main drawback of using a NMF dictionary is that the decomposition is not unique and can any permutation is also a solution. Because of that, we lose the temporal structure of the original drum signal. 
 

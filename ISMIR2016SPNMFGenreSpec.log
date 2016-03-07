@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  7 MAR 2016 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  7 MAR 2016 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -402,11 +402,16 @@ Underfull \hbox (badness 1776) in paragraph at lines 88--91
  <./figs/cc_by.pdf>]
 
 LaTeX Warning: Citation `ono2008separation' on page 2 undefined on input line 1
-13.
+14.
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 115--116
+Underfull \hbox (badness 1348) in paragraph at lines 116--117
 \OT1/ptm/m/n/10 us-ing a Non-Negative Ma-trix Par-tial Co-Factorization
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 125--126
+\OT1/ptm/m/n/10 In this sec-tion we present our al-go-rithm for har-
  []
 
 [2]
@@ -419,7 +424,7 @@ Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 (epstopdf)                    size: 7462 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/AllDictSizeISMIR-eps-
 converted-to.pdf figs/AllDictSizeISMIR.eps>
-(epstopdf)             \includegraphics on input line 223.
+(epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/AllDictSizeISMIR-eps-converted-to.pdf, id=27, 1284.8pt x 613.29124pt>
@@ -427,18 +432,19 @@ File: figs/AllDictSizeISMIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/AllDictSizeISMIR-eps-converted-to.pdf>
 Package pdftex.def Info: figs/AllDictSizeISMIR-eps-converted-to.pdf used on inp
-ut line 223.
+ut line 224.
 (pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 223--225
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 224--226
  [][] 
  []
 
 [3 <./figs/AllDictSizeISMIR-eps-converted-to.pdf>]
-Overfull \hbox (5.83914pt too wide) in paragraph at lines 243--286
+Overfull \hbox (5.83914pt too wide) in paragraph at lines 244--287
  [][] 
  []
 
+[4]
 Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    date: 2016-03-01 17:29:51
 (epstopdf)                    size: 20464595 bytes
@@ -447,22 +453,19 @@ Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    size: 53653 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SDRismirpop-eps-conve
 rted-to.pdf figs/SDRismirpop.eps>
-(epstopdf)             \includegraphics on input line 347.
+(epstopdf)             \includegraphics on input line 351.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SDRismirpop-eps-converted-to.pdf, id=41, 1284.8pt x 614.295pt>
+ <figs/SDRismirpop-eps-converted-to.pdf, id=44, 1284.8pt x 614.295pt>
 File: figs/SDRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SDRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SDRismirpop-eps-converted-to.pdf used on input li
-ne 347.
+ne 351.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 347--349
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 351--353
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package epstopdf Info: Source file: <figs/SIRismirpop.eps>
 (epstopdf)                    date: 2016-03-01 17:33:23
@@ -472,22 +475,19 @@ Package epstopdf Info: Source file: <figs/SIRismirpop.eps>
 (epstopdf)                    size: 50927 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SIRismirpop-eps-conve
 rted-to.pdf figs/SIRismirpop.eps>
-(epstopdf)             \includegraphics on input line 354.
+(epstopdf)             \includegraphics on input line 358.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SIRismirpop-eps-converted-to.pdf, id=42, 1284.8pt x 614.295pt>
+<figs/SIRismirpop-eps-converted-to.pdf, id=45, 1284.8pt x 614.295pt>
 File: figs/SIRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SIRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SIRismirpop-eps-converted-to.pdf used on input li
-ne 354.
+ne 358.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 354--356
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 358--360
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    date: 2016-03-01 17:28:46
@@ -497,25 +497,23 @@ Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    size: 42131 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SARismirpop-eps-conve
 rted-to.pdf figs/SARismirpop.eps>
-(epstopdf)             \includegraphics on input line 361.
+(epstopdf)             \includegraphics on input line 365.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SARismirpop-eps-converted-to.pdf, id=43, 1284.8pt x 614.295pt>
+<figs/SARismirpop-eps-converted-to.pdf, id=46, 1284.8pt x 614.295pt>
 File: figs/SARismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SARismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SARismirpop-eps-converted-to.pdf used on input li
-ne 361.
+ne 365.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 361--363
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 365--367
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-conver
-ted-to.pdf>] (./ISMIR2016SPNMFGenreSpec.bbl
+[5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-converted-
+to.pdf> <./figs/SARismirpop-eps-converted-to.pdf>]
+(./ISMIR2016SPNMFGenreSpec.bbl
 Underfull \hbox (badness 2057) in paragraph at lines 40--46
 \OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
  []
@@ -535,7 +533,7 @@ Underfull \hbox (badness 1975) in paragraph at lines 88--92
 \OT1/ptm/m/n/10 Adap-ta-tion of source-specific dic-tio-nar-ies in non-
  []
 
-[6 <./figs/SARismirpop-eps-converted-to.pdf>]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 114--118
 []\OT1/ptm/m/n/10 A. Lam-propou-los, P. Lam-propoulou, and
  []
@@ -566,7 +564,7 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  5670 strings out of 493089
  83502 string characters out of 6134842
- 189862 words of memory out of 5000000
+ 180862 words of memory out of 5000000
  9044 multiletter control sequences out of 15000+600000
  27079 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -588,7 +586,7 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 341299 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 342324 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
