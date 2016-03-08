@@ -166,6 +166,12 @@ O.Gillet and G.Richard.
   processing.
 \newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
 
+\bibitem{ono2008separation}
+N.~Ono, K.~Miyamoto, J.~Le Roux, H.~Kameoka, and S.~Sagayama.
+\newblock Separation of a monaural audio signal into harmonic/percussive
+  components by complementary diffusion on spectrogram.
+\newblock In {\em Proc. of EUSIPCO}, 2008.
+
 \bibitem{paulus2005drum}
 Jouni Paulus and Tuomas Virtanen.
 \newblock Drum transcription with non-negative spectrogram factorisation.

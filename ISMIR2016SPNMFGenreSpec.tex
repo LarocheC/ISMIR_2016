@@ -20,11 +20,10 @@
 \usepackage[justification=centering]{caption}
 \usepackage{epstopdf}
 \usepackage{float} 
-
 \usepackage{amssymb}
 \usepackage[]{algorithm2e}
 \usepackage{enumitem} 
-\sloppy
+%\sloppy
 
 
 % Title.
@@ -81,7 +80,11 @@ Supervised algorithms for audio source separation use apriori information like t
 
 The large variety of audio signal can be classified into different musical genres \cite{tzanetakis2002musical}. Genres are labels created and used by humans for categorizing and describing music. They have no strict definitions and boundaries but particular genre share certain characteristics typically related to instrumentation, rhythmic structure, and pitch content of the music. This resemblance between two pieces of music have been used to improve chord transcription \cite{ni2012using,lee2008acoustic} or for downbeat detection \cite{hockman2012one} algorithm. Genre information can be obtained using annotated labels whom when the genre information is not available, it is possible to perform automatic genre classification \cite{li2003comparative}.
 
-In the context of BASS, Non-negative Matrix Factorization (NMF) is a widely used method for source separation. The goal of NMF is to approximate a data matrix $V \in \mathbb{R}_{+}^{n \times m} $ as $V \approx \tilde{V} = WH$ with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ and where $k$ is the rank of factorization \cite{lee99}. In audio signal processing, the input data is usually a Time-Frequency (TF) representation such as a short time Fourier transform (STFT) or a constant-Q transform spectrogram. Blind source separation is a difficult problem and the plain NMF decomposition does not provide satisfying results. To perform a satisfying decomposition, it is necessary to exploit various features that make each sources distinguishable from one another. 
+In the context of BASS, Non-negative Matrix Factorization (NMF) is a widely used method for source separation. The goal of NMF is to approximate a data matrix $V \in \mathbb{R}_{+}^{n \times m} $ as 
+\begin{equation}\label{modelNMF}
+V \approx \tilde{V} = WH
+\end{equation}
+with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ and where $k$ is the rank of factorization \cite{lee99}. In audio signal processing, the input data is usually a Time-Frequency (TF) representation such as a short time Fourier transform (STFT) or a constant-Q transform spectrogram. Blind source separation is a difficult problem and the plain NMF decomposition does not provide satisfying results. To perform a satisfying decomposition, it is necessary to exploit various features that make each sources distinguishable from one another. 
 Supervised algorithms in the NMF framework exploit training data or prior information in order to guide the decomposition process. For example information from the scores or from midi signals \cite{EwertM12} can be used to initialize the learning process. The downside of these approachs are that they require well organized prior information that is not always available. Another supervised method consists in performing prior training on specific databases. A dictionary matrix $W_{train}$ is learned from a big database in order to separate an instrument \cite{jaureguiberry2011adaptation,wudrum}. These methods require minimum tuning from the user. However, the dictionaries must match the target instruments for satisfying performances. 
 
 
@@ -103,9 +106,9 @@ Source separation have been used extensively in order to help the classification
 
 \subsection{Methods for dictionary learning}
 
-In the case of under-determined source separation, the common method is to use dictionaries that carry information specific of the source to extract. There are several methods to build a dictionary. A well known approach is the K-Single Value Decomposition (K-SVD) \cite{aharon2006img}. It is used for face recognition \cite{zhang2010discriminative} and sparse coding \cite{jiang2011learning}. However, K-SVD does not scale well to process large audio signal and a genre specific dictionary cannot be considered with this method.
+In the case of under-determined source separation, the common method is to use dictionaries that carry information specific to a target source. There are several methods to build a dictionary. A well known approach is the K-Single Value Decomposition (K-SVD) \cite{aharon2006img}. It is used for face recognition \cite{zhang2010discriminative} and sparse coding \cite{jiang2011learning}. However, K-SVD does not scale well to process large audio signal and a genre specific dictionary cannot be considered with this method.
 
-Another popular method to build a dictionary is to compute a NMF decomposition on a large training set. After the convergence, the $W$ matrix from the decomposition is used as the dictionary matrix $W_{train}$ in the separation \cite{jaureguiberry2011adaptation}. The rank of factorization determine the final size of the dictionary and can be chosen small to perform a strong compression of the original data. This property of NMF motivated us to build our dictionary using the NMF on some genre specific data. The selection of the rank of factorization will be discussed in Section \ref{optimalsize}.  
+Another popular method to build a dictionary is to compute a NMF decomposition on a large training set specific to the target source. After the optimization process of the NMF, the $W$ matrix from the decomposition is used as the dictionary matrix $W_{train}$ in the separation \cite{jaureguiberry2011adaptation}. The rank of factorization determines the final size of the dictionary and it can be chosen small to obtain a strong compression of the original data. This property of NMF motivated us to build our dictionaries using the NMF on some genre specific data. The selection of the rank of factorization will be discussed in Section \ref{optimalsize}.  
 
 \subsection{Genre information for HPSS}
 
@@ -214,7 +217,7 @@ In this section, we present in Section \ref{optimalsize} the test conducted on t
 
 The first step to build a NMF drum dictionary is to select the rank of factorization. We run the optimization tests on the public SiSec database from~\cite{SiSec10} to avoid overtraining. The dataset is composed of $4$ polyphonic real-world music excerpts and each music signal contains percussive, harmonic instruments and vocals. The duration of the four recording is ranging from $14$ to $24$~s. Following the same protocol as~\cite{canadas2014percussive}, we will not consider the vocal part and we will build the mixture signals from the percussive and harmonic instruments only. All the signals are sampled at $44.1kHz$. We compute the STFT with a and $2048$ sample-long Hann window with a $50\%$ overlap as in the preprint.
 
-The drum signal used for the training comes from the database ENST-Drums \cite{gillet2006enst} and the signal is around $3$ min long. We used $30$ files from the database were the drummer is playing a \emph{drum phrase}. We compute an NMF decomposition with different rank of factorization ($k=12$, $k=50$, $k=100$, $k=500$, $k=1000$ and $k=2000$) on the drum signal alone to obtain $6$  drum dictionaries.
+The drum signal used for the training comes from the database ENST-Drums \cite{gillet2006enst} and the signal is around $3$ min long. We used $30$ files from the database were the drummer is playing a \emph{drum phrase}. We compute an NMF decomposition with different rank of factorization ($k=12$, $k=50$, $k=100$, $k=200$, $k=300$, $k=500$, $k=1000$ and $k=2000$) on the drum signal alone to obtain $8$ drum dictionaries.
 
 The dictionaries are then used to perform a HPSS on the four songs of the SiSEC database using the SPNMF algorithm. The results are compared by means of the Signal-to-Distortion Ratio (SDR), the Signal-to-Interference Ratio (SIR) and the Signal-to-Artifact ratio (SAR) of each of the separated sources using the BSS Eval toolbox provided in \cite{bsseval}.
 
@@ -227,9 +230,9 @@ The dictionaries are then used to perform a HPSS on the four songs of the SiSEC 
   
 \end{figure}
 
-The results on the figure \ref{dictsize} show that the optimal value for the SDR and SIR is reached for $k=100$, then the SDR decrease rapidly for $k\geqslant 500$. The high value of SAR (for $k\geqslant 500$) are explained because the separation process is not satisfying. The harmonic signal given at the end of the algorithm is composed of most of the original signal therefore the SAR is very high but the decomposition quality is poor. 
+The results on the figure \ref{dictsize} show that the optimal value for the SDR and SIR is reached for $k=100$, then the SDR decrease for $k\geqslant 200$. The high value of SAR (for $k\geqslant 500$) are explained because the separation process is not satisfying. The harmonic signal given at the end of the algorithm is composed of most of the original signal therefore the SAR is very high but the decomposition quality is poor. 
 
-The optimal dictionary size for the SPNMF algorithm is $k=100$ and that what we will in the next Section. The test using $k=50$ and $k=300$ are not significantly different meaning that the method is robust to the rank of factorization around the optimal value. 
+The optimal dictionary size for the SPNMF algorithm is $k=100$ and that what we will in the next Section. The test using $k=50$ and $k=300$ are not significantly different, it means that the method is robust and the to the rank of factorization. 
 
 \subsection{Training and evaluation database}\label{database}
 
@@ -294,45 +297,42 @@ Non specific & JoelHelander Definition \\
 
 \subsection{Genre specific dictionaries}\label{genrespecdict}
 
-The NMF model is:
-\begin{equation}
-V \approx \tilde{V} = WH.
-\end{equation}
-If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. Building a dictionary specific to an instrument that performs well on a large database is a complicated problem. Here we build genre specific drum dictionary using the medley-dB database. Using dictionary specific to the genre of music allows us to have dictionaries that a more specific to the signal to decompose.
+The NMF model is given by \ref{modelNMF}. If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. Building a dictionary specific to an instrument that performs well on a large database is a complicated problem. Here we build genre specific drum dictionary using the medley-dB database. Using dictionary specific to the genre of music allows us to have dictionaries that a more specific to the signal to decompose.
 
 Table \ref{lengthDict} gives us the length and the energy of the training signal for each genre. \emph{Classical} and \emph{Electronic/Fusion} songs are composed of songs where the drum is only playing for a few moments and even though the signals are longer than the other, the energy is around the same for all the signals. With the results from Section \ref{optimalsize} the dictionary are built as follow. For every genre specific database of the training database, we perform and NMF on the drum signals with $k=100$ following the results obtained in Section \ref{optimalsize}. Then the dictionaries are used in the SPNMF algorithm as the matrix $W_P$ (see algorithm \ref{AlgoDictionary}).
 
 \begin{table}
    
 	\centering 
-   \begin{tabular}{|l|l|l|}
+   \begin{tabular}{|l|l|}
 \hline   
-Genre & Length(min) & Energy\\
+Genre & Length(min) \\
 \hline
-Classical  & 22.06 & 12200 \\
+Classical  & 22.06  \\
 \hline
-Electronic/Fusion & 18.66 & 49800\\
+Electronic/Fusion & 18.66 \\
 \hline
-Jazz & 10.96 & 49900\\
+Jazz & 10.96 \\
 \hline
-Pop &  12.53 & 39300\\
+Pop &  12.53 \\
 \hline
-Rock & 11.43& 79000\\
+Rock & 11.43 \\
 \hline
-Singer/Songwriter & 9.36 & 48300\\
+Singer/Songwriter & 9.36 \\
 \hline
-World/Folk & 9.53 & 46700\\
+World/Folk & 9.53 \\
 \hline
-Non Specific (Mix) & 11.03 & 30000 \\
+Non Specific (Mix) & 11.03  \\
 \hline
   
 \end{tabular} 
-\caption{\label{lengthDict} Length and energy of the genre specific database.}
+\caption{\label{lengthDict} Length of the genre specific database.}
 \end{table}
 
 
 \section{Results}
 
+In this Section, we present the results of the SPNMF with the genre specific dictionaries on the evaluation database from Medley-dB.
 
 \subsection{Comparison of the dictionaries}
 
@@ -350,21 +350,21 @@ The dictionary built on the ENST-drums is giving very similar results to the uni
   \centering 
   \includegraphics[width=9cm]{figs/SDRismirpop.eps}
 %  \vspace{2.0cm}
-  \caption{\label{sdrpop} Percussive (left bar)/Harmonic (right bar) SDR results on the Pop sub-database using the SPNMF with the 8 dictionaries.}
+  \caption{\label{sdrpop} Percussive (left bar)/Harmonic (right bar) SDR results on the \emph{Pop} sub-database using the SPNMF with the 9 dictionaries.}
   
 \end{figure}\begin{figure}[h]
 
   \centering 
   \includegraphics[width=9cm]{figs/SIRismirpop.eps}
 %  \vspace{2.0cm}
-  \caption{\label{sirpop} Percussive (left bar)/Harmonic (right bar) SIR results on the Pop sub-database using the SPNMF with the 8 dictionaries.}
+  \caption{\label{sirpop} Percussive (left bar)/Harmonic (right bar) SIR results on the \emph{Pop} sub-database using the SPNMF with the 9 dictionaries.}
   
 \end{figure}\begin{figure}[h]
 
   \centering 
   \includegraphics[width=9cm]{figs/SARismirpop.eps}
 %  \vspace{2.0cm}
-  \caption{\label{sarpop} Percussive (left bar)/Harmonic (right bar) SAR results on the Pop sub-database using the SPNMF with the 8 dictionaries.}
+  \caption{\label{sarpop} Percussive (left bar)/Harmonic (right bar) SAR results on the \emph{Pop} sub-database using the SPNMF with the 9 dictionaries.}
   
 \end{figure}
 
@@ -477,24 +477,6 @@ $$ [\nabla_{H_2} D(V|\tilde{V})]^{+} = 2W_2^TW_1W_1^TV + W_2^TW_2H_2. $$
 % For bibtex users:
 \bibliography{reference}
 
-% For non bibtex users:
-%\begin{thebibliography}{citations}
-%
-%\bibitem {Author:00}
-%E. Author.
-%``The Title of the Conference Paper,''
-%{\it Proceedings of the International Symposium
-%on Music Information Retrieval}, pp.~000--111, 2000.
-%
-%\bibitem{Someone:10}
-%A. Someone, B. Someone, and C. Someone.
-%``The Title of the Journal Paper,''
-%{\it Journal of New Music Research},
-%Vol.~A, No.~B, pp.~111--222, 2010.
-%
-%\bibitem{Someone:04} X. Someone and Y. Someone. {\it Title of the Book},
-%    Editorial Acme, Porto, 2012.
-%
-%\end{thebibliography}
+
 
 \end{document}
