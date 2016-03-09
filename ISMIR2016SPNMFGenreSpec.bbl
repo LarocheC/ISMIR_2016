@@ -53,8 +53,7 @@ Daniel~PW Ellis.
 A.~Eronen and A.~Klapuri.
 \newblock Musical instrument recognition using cepstral coefficients and
   temporal features.
-\newblock In {\em Proc. of IEEE ICASSP}, volume~2, pages II753--II756. IEEE,
-  2000.
+\newblock In {\em Proc. of IEEE ICASSP}, volume~2, pages II753--II756, 2000.
 
 \bibitem{EwertM12}
 S.~Ewert and M.~M{\"u}ller.
@@ -71,6 +70,17 @@ D.~Fitzgerald.
 \newblock Upmixing from mono-a source separation approach.
 \newblock In {\em Proc. of IEEE DSP}, pages 1--7, 2011.
 
+\bibitem{gersho2012vector}
+A.~Gersho and R.M. Gray.
+\newblock {\em Vector quantization and signal compression}, volume 159.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem{hennequin2011score}
+R.~Hennequin, B.~David, and R.~Badeau.
+\newblock Score informed audio source separation using a parametric model of
+  non-negative spectrogram.
+\newblock In {\em Proc. of IEEE ICASSP}, 2011.
+
 \bibitem{hockman2012one}
 J.~Hockman, M.~Davies, and I.~Fujinaga.
 \newblock One in the jungle: Downbeat detection in hardcore, jungle, and drum
@@ -84,17 +94,17 @@ Chao-Ling Hsu, DeLiang Wang, Jyh-Shing~Roger Jang, and Ke~Hu.
 \newblock {\em Transactions on Audio, Speech, and Language Processing.},
   20(5):1482--1491, 2012.
 
+\bibitem{iwakami1995high}
+Naoki Iwakami, Takehiro Moriya, and Satoshi Miki.
+\newblock High-quality audio-coding at less than 64 kbit/s by using
+  transform-domain weighted interleave vector quantization (twinvq).
+\newblock In {\em In Proc. of IEEE ICASSP}, volume~5, pages 3095--3098, 1995.
+
 \bibitem{jaureguiberry2011adaptation}
 X.~Jaureguiberry, P.~Leveau, S.~Maller, and J.~Burred.
 \newblock Adaptation of source-specific dictionaries in non-negative matrix
   factorization for source separation.
 \newblock In {\em Proc. of IEEE ICASSP}, pages 5--8, 2011.
-
-\bibitem{jiang2011learning}
-Z.~Jiang, Z.~Lin, and L.S Davis.
-\newblock Learning a discriminative dictionary for sparse coding via label
-  consistent k-svd.
-\newblock In {\em Proc. of CVPR}, pages 1697--1704, 2011.
 
 \bibitem{kim2011nonnegative}
 Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
@@ -104,7 +114,7 @@ Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
   5(6):1192--1204, 2011.
 
 \bibitem{klapuri2008multipitch}
-Anssi Klapuri.
+A.~Klapuri.
 \newblock Multipitch analysis of polyphonic music and speech signals using an
   auditory model.
 \newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
@@ -115,6 +125,13 @@ A.~Lampropoulos, P.~Lampropoulou, and G.~Tsihrintzis.
 \newblock Musical genre classification enhanced by improved source separation
   technique.
 \newblock In {\em Proc. of ISMIR}, pages 576--581, 2005.
+
+\bibitem{larocheJournal}
+C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
+\newblock Structured projective non negative matrix factorization with drum
+  dictionaries for harmonic/percussive source separation.
+\newblock {\em submitted to IEEE Transactions on Acoustics, Speech and Signal
+  Processing}.
 
 \bibitem{laroche2015structured}
 C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
@@ -177,6 +194,12 @@ Jouni Paulus and Tuomas Virtanen.
 \newblock Drum transcription with non-negative spectrogram factorisation.
 \newblock In {\em Proc. of EUSIPCO}, pages 1--4, 2005.
 
+\bibitem{plumbley2010sparse}
+M.D. Plumbley, T.~Blumensath, L.~Daudet, R.~Gribonval, and M.E. Davies.
+\newblock Sparse representations in audio and music: from coding to source
+  separation.
+\newblock {\em Proceedings of the IEEE}, 98(6):995--1005, 2010.
+
 \bibitem{rump2010autoregressive}
 H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
 \newblock Autoregressive mfcc models for genre classification improved by
@@ -189,6 +212,11 @@ Justin Salamon and Emilia G{\'o}mez.
   characteristics.
 \newblock {\em Transactions on Audio, Speech, and Language Processing.},
   20(6):1759--1770, 2012.
+
+\bibitem{tovsic2011dictionary}
+I.~To{\v{s}}i{\'c} and P.~Frossard.
+\newblock Dictionary learning.
+\newblock {\em IEEE Transactions on Signal Processing}, 28(2):27--38, 2011.
 
 \bibitem{tzanetakis2002musical}
 G.~Tzanetakis and P.~Cook.
