@@ -3,52 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ISMIR2016SPNMFGenreSpec.aux
 The style file: plain.bst
 Database file #1: reference.bib
-Repeated entry---line 442 of file reference.bib
+Repeated entry---line 412 of file reference.bib
  : @inproceedings{hennequin2011score
  :                                  ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Huang2012"
-Warning--I didn't find a database entry for "Abdallah2006"
 Warning--empty year in larocheJournal
 You've used 42 entries,
             2118 wiz_defined-function locations,
-            728 strings with 10851 characters,
-and the built_in function-call counts, 16378 in all, are:
-= -- 1594
-> -- 726
-< -- 21
-+ -- 288
-- -- 242
-* -- 1096
-:= -- 2546
+            704 strings with 10583 characters,
+and the built_in function-call counts, 17461 in all, are:
+= -- 1710
+> -- 737
+< -- 33
++ -- 292
+- -- 246
+* -- 1037
+:= -- 2619
 add.period$ -- 127
 call.type$ -- 42
-change.case$ -- 246
+change.case$ -- 248
 chr.to.int$ -- 0
 cite$ -- 43
-duplicate$ -- 682
-empty$ -- 1345
-format.name$ -- 242
-if$ -- 3576
+duplicate$ -- 804
+empty$ -- 1403
+format.name$ -- 246
+if$ -- 3969
 int.to.chr$ -- 0
 int.to.str$ -- 42
 missing$ -- 43
 newline$ -- 213
 num.names$ -- 84
-pop$ -- 290
+pop$ -- 322
 preamble$ -- 1
-purify$ -- 205
+purify$ -- 207
 quote$ -- 0
-skip$ -- 529
+skip$ -- 691
 stack$ -- 0
-substring$ -- 1090
-swap$ -- 221
-text.length$ -- 21
+substring$ -- 1107
+swap$ -- 342
+text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 166
 warning$ -- 1
 while$ -- 153
 width$ -- 44
-write$ -- 459
+write$ -- 456
 (There was 1 error message)

@@ -1,11 +1,15 @@
 \begin{thebibliography}{10}
 
+\bibitem{abdallah2006unsupervised}
+S.A. Abdallah and M.D. Plumbley.
+\newblock Unsupervised analysis of polyphonic music by sparse coding.
+\newblock {\em IEEE Transactions on Neural Networks}, pages 179--196, 2006.
+
 \bibitem{aharon2006img}
 M.~Aharon, M.~Elad, and Alfred A.~Bruckstein.
 \newblock K-svd: An algorithm for designing overcomplete dictionaries for
   sparse representation.
-\newblock {\em IEEE Transactions on Signal Processing}, 54(11):4311--4322,
-  2006.
+\newblock {\em IEEE Transactions on Signal Processing}, pages 4311--4322, 2006.
 
 \bibitem{SiSec10}
 S.~Araki, A.~Ozerov, V.~Gowreesunker, H.~Sawada, F.~Theis, G.~Nolte, D.~Lutter,
@@ -17,48 +21,43 @@ S.~Araki, A.~Ozerov, V.~Gowreesunker, H.~Sawada, F.~Theis, G.~Nolte, D.~Lutter,
 \bibitem{aucouturier2003representing}
 J.J. Aucouturier and F.~Pachet.
 \newblock Representing musical genre: A state of the art.
-\newblock {\em Journal of New Music Research}, 32(1):83--93, 2003.
-
-\bibitem{Bertin07}
-N.~Bertin, R.Badeau, and G.Richard.
-\newblock Blind signal decompositions for automatic transcription of polyphonic
-  music: Nmf and k-svd on the benchmark.
-\newblock In {\em Proc. of IEEE ICASSP}, pages 65--68, 2007.
+\newblock {\em Journal of New Music Research}, pages 83--93, 2003.
 
 \bibitem{bittner2014medleydb}
 R.~Bittner, J.~Salamon, M.~Tierney, M.~Mauch, C.~Cannam, and J.~Bello.
 \newblock Medleydb: A multitrack dataset for annotation-intensive mir research.
 \newblock In {\em Proc. of ISMIR}, 2014.
 
-\bibitem{boll1979suppression}
-S.~Boll.
-\newblock Suppression of acoustic noise in speech using spectral subtraction.
-\newblock {\em IEEE Transactions on Acoustics, Speech and Signal Processing},
-  27(2):113--120, 1979.
-
 \bibitem{canadas2014percussive}
 F.~Canadas-Quesada, P.~Vera-Candeas, N.~Ruiz-Reyes, J.~Carabias-Orti, and
   P.~Cabanas-Molero.
 \newblock Percussive/harmonic sound separation by non-negative matrix
   factorization with smoothness/sparseness constraints.
-\newblock {\em EURASIP Journal on Audio, Speech, and Music Processing},
-  2014(1):1--17, 2014.
+\newblock {\em EURASIP Journal on Audio, Speech, and Music Processing}, pages
+  1--17, 2014.
 
 \bibitem{ellis2007beat}
-Daniel~PW Ellis.
+D.~Ellis.
 \newblock Beat tracking by dynamic programming.
-\newblock {\em Journal of New Music Research}, 36(1):51--60, 2007.
+\newblock {\em Journal of New Music Research}, pages 51--60, 2007.
 
 \bibitem{eronen2000musical}
 A.~Eronen and A.~Klapuri.
 \newblock Musical instrument recognition using cepstral coefficients and
   temporal features.
-\newblock In {\em Proc. of IEEE ICASSP}, volume~2, pages II753--II756, 2000.
+\newblock In {\em Proc. of IEEE ICASSP}, pages 753--756, 2000.
+
+\bibitem{vincent2010adaptive}
+E.Vincent, N.Bertin, and R.Badeau.
+\newblock Adaptive harmonic spectral decomposition for multiple pitch
+  estimation.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
+  pages 528--537, 2010.
 
 \bibitem{EwertM12}
 S.~Ewert and M.~M{\"u}ller.
 \newblock Score-informed source separation for music signals.
-\newblock {\em Multimodal music processing}, 3:73--94, 2012.
+\newblock {\em Multimodal music processing}, pages 73--94, 2012.
 
 \bibitem{fitzgerald2010harmonic}
 D.~Fitzgerald.
@@ -72,7 +71,7 @@ D.~Fitzgerald.
 
 \bibitem{gersho2012vector}
 A.~Gersho and R.M. Gray.
-\newblock {\em Vector quantization and signal compression}, volume 159.
+\newblock {\em Vector quantization and signal compression}.
 \newblock Springer Science \& Business Media, 2012.
 
 \bibitem{hennequin2011score}
@@ -94,11 +93,11 @@ Chao-Ling Hsu, DeLiang Wang, Jyh-Shing~Roger Jang, and Ke~Hu.
 \newblock {\em Transactions on Audio, Speech, and Language Processing.},
   20(5):1482--1491, 2012.
 
-\bibitem{iwakami1995high}
-Naoki Iwakami, Takehiro Moriya, and Satoshi Miki.
-\newblock High-quality audio-coding at less than 64 kbit/s by using
-  transform-domain weighted interleave vector quantization (twinvq).
-\newblock In {\em In Proc. of IEEE ICASSP}, volume~5, pages 3095--3098, 1995.
+\bibitem{huang2012singing}
+P.~Huang, S.D. Chen, P.~Smaragdis, and M.~Hasegawa-Johnson.
+\newblock Singing-voice separation from monaural recordings using robust
+  principal component analysis.
+\newblock In {\em Proc. of IEEE ICASSP}, pages 57--60, 2012.
 
 \bibitem{jaureguiberry2011adaptation}
 X.~Jaureguiberry, P.~Leveau, S.~Maller, and J.~Burred.
@@ -110,15 +109,15 @@ X.~Jaureguiberry, P.~Leveau, S.~Maller, and J.~Burred.
 Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
 \newblock Nonnegative matrix partial co-factorization for spectral and temporal
   drum source separation.
-\newblock {\em Journal of Selected Topics in Signal Processing},
-  5(6):1192--1204, 2011.
+\newblock {\em Journal of Selected Topics in Signal Processing}, pages
+  1192--1204, 2011.
 
 \bibitem{klapuri2008multipitch}
 A.~Klapuri.
 \newblock Multipitch analysis of polyphonic music and speech signals using an
   auditory model.
 \newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
-  16(2):255--266, 2008.
+  pages 255--266, 2008.
 
 \bibitem{lampropoulos2005musical}
 A.~Lampropoulos, P.~Lampropoulou, and G.~Tsihrintzis.
@@ -128,8 +127,8 @@ A.~Lampropoulos, P.~Lampropoulou, and G.~Tsihrintzis.
 
 \bibitem{larocheJournal}
 C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
-\newblock Structured projective non negative matrix factorization with drum
-  dictionaries for harmonic/percussive source separation.
+\newblock Spnmf with drum dictionaries for harmonic/percussive source
+  separation.
 \newblock {\em submitted to IEEE Transactions on Acoustics, Speech and Signal
   Processing}.
 
@@ -141,7 +140,7 @@ C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
 \bibitem{lee99}
 D.~Lee and S.~Seung.
 \newblock Learning the parts of objects by nonnegative matrix factorization.
-\newblock {\em Nature}, 401:788--791, 1999.
+\newblock {\em Nature}, pages 788--791, 1999.
 
 \bibitem{Lee01algorithmsfor}
 D.~Lee and S.~Seung.
@@ -153,7 +152,7 @@ K.~Lee and M.~Slaney.
 \newblock Acoustic chord transcription and key extraction from audio using
   key-dependent hmms trained on synthesized audio.
 \newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
-  16(2):291--301, 2008.
+  pages 291--301, 2008.
 
 \bibitem{li2003comparative}
 T.~Li, M.Ogihara, and Q.~Li.
@@ -198,7 +197,7 @@ Jouni Paulus and Tuomas Virtanen.
 M.D. Plumbley, T.~Blumensath, L.~Daudet, R.~Gribonval, and M.E. Davies.
 \newblock Sparse representations in audio and music: from coding to source
   separation.
-\newblock {\em Proceedings of the IEEE}, 98(6):995--1005, 2010.
+\newblock {\em Proceedings of the IEEE}, pages 995--1005, 2010.
 
 \bibitem{rump2010autoregressive}
 H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
@@ -210,25 +209,25 @@ H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
 Justin Salamon and Emilia G{\'o}mez.
 \newblock Melody extraction from polyphonic music signals using pitch contour
   characteristics.
-\newblock {\em Transactions on Audio, Speech, and Language Processing.},
-  20(6):1759--1770, 2012.
+\newblock {\em Transactions on Audio, Speech, and Language Processing.}, pages
+  1759--1770, 2012.
 
 \bibitem{tovsic2011dictionary}
 I.~To{\v{s}}i{\'c} and P.~Frossard.
 \newblock Dictionary learning.
-\newblock {\em IEEE Transactions on Signal Processing}, 28(2):27--38, 2011.
+\newblock {\em IEEE Transactions on Signal Processing}, pages 27--38, 2011.
 
 \bibitem{tzanetakis2002musical}
 G.~Tzanetakis and P.~Cook.
 \newblock Musical genre classification of audio signals.
-\newblock {\em IEEE transactions on Speech and Audio Processing},
-  10(5):293--302, 2002.
+\newblock {\em IEEE transactions on Speech and Audio Processing}, pages
+  293--302, 2002.
 
 \bibitem{bsseval}
 E.~Vincent, R.~Gribonval, and C.~F\'{e}votte.
 \newblock Performance measurement in blind audio source separation.
-\newblock {\em IEEE Transactions on Audio, Speech, Language Process.},
-  14:1462--1469, 2006.
+\newblock {\em IEEE Transactions on Audio, Speech, Language Process.}, pages
+  1462--1469, 2006.
 
 \bibitem{wudrum}
 C.~Wu and A.~Lerch.
