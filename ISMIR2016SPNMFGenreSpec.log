@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  11 MAR 2016 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  11 MAR 2016 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,7 +417,7 @@ LaTeX Warning: Citation `Smaragdis2003' on page 2 undefined on input line 114.
 
 
 Overfull \hbox (1.77464pt too wide) in paragraph at lines 114--115
-\OT1/ptm/m/n/10 Vec-tor Quan-ti-za-tion (VQ) [13], Prin-ci-pal Com-po-nent Anal
+\OT1/ptm/m/n/10 Vec-tor Quan-ti-za-tion (VQ) [12], Prin-ci-pal Com-po-nent Anal
 -
  []
 
@@ -580,57 +580,52 @@ Underfull \vbox (badness 4144) has occurred while \output is active []
  [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-converted
 -to.pdf>]
 (./ISMIR2016SPNMFGenreSpec.bbl
-Underfull \hbox (badness 2057) in paragraph at lines 32--38
+Underfull \hbox (badness 2057) in paragraph at lines 33--39
 \OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 32--38
+Underfull \hbox (badness 2181) in paragraph at lines 33--39
 \OT1/ptm/m/n/10 trix fac-tor-iza-tion with smooth-ness/sparseness con-
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 51--56
-[]\OT1/ptm/m/n/10 E.Vincent, N.Bertin, and R.Badeau.  Adap-tive har-
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 90--95
+Underfull \hbox (badness 1087) in paragraph at lines 84--89
 []\OT1/ptm/m/n/10 Chao-Ling Hsu, DeLiang Wang, Jyh-Shing Roger
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 97--101
+Underfull \hbox (badness 2884) in paragraph at lines 91--95
 \OT1/ptm/m/n/10 Johnson.  Singing-voice sep-a-ra-tion from monau-ral
  []
 
-[6 <./figs/SARismirpop-eps-converted-to.pdf>]
-Underfull \hbox (badness 1975) in paragraph at lines 103--107
+
+Underfull \hbox (badness 1975) in paragraph at lines 97--101
 \OT1/ptm/m/n/10 Adap-ta-tion of source-specific dic-tio-nar-ies in non-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--127
+[6 <./figs/SARismirpop-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 117--121
 []\OT1/ptm/m/n/10 A. Lam-propou-los, P. Lam-propoulou, and
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 123--127
+Underfull \hbox (badness 6978) in paragraph at lines 117--121
 \OT1/ptm/m/n/10 G. Tsihrintzis.  Mu-si-cal genre clas-si-fi-ca-tion en-
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 129--134
+Underfull \hbox (badness 1454) in paragraph at lines 123--128
 []\OT1/ptm/m/n/10 C. Laroche, M. Kowal-ski, H. Pa-padopou-los, and
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 136--139
+Underfull \hbox (badness 1454) in paragraph at lines 130--133
 []\OT1/ptm/m/n/10 C. Laroche, M. Kowal-ski, H. Pa-padopou-los, and
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 203--207
+Underfull \hbox (badness 1817) in paragraph at lines 197--201
 []\OT1/ptm/m/n/10 H. Rump, S. Miyabe, E. Tsunoo, N. Ono, and
  []
 
@@ -664,7 +659,7 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349521 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349538 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream

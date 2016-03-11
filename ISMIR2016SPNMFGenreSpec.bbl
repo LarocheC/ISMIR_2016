@@ -7,14 +7,14 @@ S.A. Abdallah and M.D. Plumbley.
 
 \bibitem{aharon2006img}
 M.~Aharon, M.~Elad, and Alfred A.~Bruckstein.
-\newblock K-svd: An algorithm for designing overcomplete dictionaries for
+\newblock {K-SVD}: An algorithm for designing overcomplete dictionaries for
   sparse representation.
 \newblock {\em IEEE Transactions on Signal Processing}, pages 4311--4322, 2006.
 
 \bibitem{SiSec10}
 S.~Araki, A.~Ozerov, V.~Gowreesunker, H.~Sawada, F.~Theis, G.~Nolte, D.~Lutter,
   and N.~Duong.
-\newblock The 2010 signal separation evaluation campaign : audio source
+\newblock The 2010 signal separation evaluation campaign: audio source
   separation.
 \newblock In {\em Proc. of LVA/ICA}, pages 114--122, 2010.
 
@@ -25,7 +25,8 @@ J.J. Aucouturier and F.~Pachet.
 
 \bibitem{bittner2014medleydb}
 R.~Bittner, J.~Salamon, M.~Tierney, M.~Mauch, C.~Cannam, and J.~Bello.
-\newblock Medleydb: A multitrack dataset for annotation-intensive mir research.
+\newblock Medley{DB}: A multitrack dataset for annotation-intensive {MIR}
+  research.
 \newblock In {\em Proc. of ISMIR}, 2014.
 
 \bibitem{canadas2014percussive}
@@ -46,13 +47,6 @@ A.~Eronen and A.~Klapuri.
 \newblock Musical instrument recognition using cepstral coefficients and
   temporal features.
 \newblock In {\em Proc. of IEEE ICASSP}, pages 753--756, 2000.
-
-\bibitem{vincent2010adaptive}
-E.Vincent, N.Bertin, and R.Badeau.
-\newblock Adaptive harmonic spectral decomposition for multiple pitch
-  estimation.
-\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
-  pages 528--537, 2010.
 
 \bibitem{EwertM12}
 S.~Ewert and M.~M{\"u}ller.
@@ -206,7 +200,7 @@ H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
 \newblock In {\em Proc. of ISMIR}, pages 87--92, 2010.
 
 \bibitem{salamon2012melody}
-Justin Salamon and Emilia G{\'o}mez.
+J.~Salamon and E.~G{\'o}mez.
 \newblock Melody extraction from polyphonic music signals using pitch contour
   characteristics.
 \newblock {\em Transactions on Audio, Speech, and Language Processing.}, pages
@@ -222,6 +216,13 @@ G.~Tzanetakis and P.~Cook.
 \newblock Musical genre classification of audio signals.
 \newblock {\em IEEE transactions on Speech and Audio Processing}, pages
   293--302, 2002.
+
+\bibitem{vincent2010adaptive}
+E.~Vincent, N.~Bertin, and R.~Badeau.
+\newblock Adaptive harmonic spectral decomposition for multiple pitch
+  estimation.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
+  pages 528--537, 2010.
 
 \bibitem{bsseval}
 E.~Vincent, R.~Gribonval, and C.~F\'{e}votte.
@@ -243,7 +244,7 @@ Z.~Yuan and E.~Oja.
 
 \bibitem{zhang2010discriminative}
 Q.~Zhang and B.~Li.
-\newblock Discriminative k-svd for dictionary learning in face recognition.
+\newblock Discriminative {K-SVD} for dictionary learning in face recognition.
 \newblock In {\em Proc. of IEEE CVPR}, pages 2691--2698. IEEE, 2010.
 
 \end{thebibliography}
