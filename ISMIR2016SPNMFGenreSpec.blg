@@ -3,44 +3,40 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ISMIR2016SPNMFGenreSpec.aux
 The style file: plain.bst
 Database file #1: reference.bib
-Repeated entry---line 412 of file reference.bib
- : @inproceedings{hennequin2011score
- :                                  ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Smaragdis2003"
 Warning--empty year in larocheJournal
 You've used 42 entries,
             2118 wiz_defined-function locations,
-            706 strings with 10600 characters,
-and the built_in function-call counts, 17461 in all, are:
-= -- 1710
-> -- 737
+            707 strings with 10646 characters,
+and the built_in function-call counts, 17365 in all, are:
+= -- 1703
+> -- 721
 < -- 33
-+ -- 292
-- -- 246
-* -- 1037
-:= -- 2619
++ -- 287
+- -- 240
+* -- 1024
+:= -- 2601
 add.period$ -- 127
 call.type$ -- 42
-change.case$ -- 248
+change.case$ -- 245
 chr.to.int$ -- 0
 cite$ -- 43
 duplicate$ -- 804
 empty$ -- 1403
-format.name$ -- 246
-if$ -- 3969
+format.name$ -- 240
+if$ -- 3952
 int.to.chr$ -- 0
 int.to.str$ -- 42
 missing$ -- 43
 newline$ -- 213
 num.names$ -- 84
-pop$ -- 322
+pop$ -- 319
 preamble$ -- 1
-purify$ -- 207
+purify$ -- 204
 quote$ -- 0
 skip$ -- 691
 stack$ -- 0
-substring$ -- 1107
+substring$ -- 1108
 swap$ -- 342
 text.length$ -- 33
 text.prefix$ -- 0
@@ -50,4 +46,4 @@ warning$ -- 1
 while$ -- 153
 width$ -- 44
 write$ -- 456
-(There was 1 error message)
+(There were 2 warnings)

@@ -63,6 +63,11 @@ D.~Fitzgerald.
 \newblock Upmixing from mono-a source separation approach.
 \newblock In {\em Proc. of IEEE DSP}, pages 1--7, 2011.
 
+\bibitem{laroche2015structured}
+Hidden for the~review process.
+\newblock A structured nonnegative matrix factorization for source separation.
+\newblock In {\em Proc. of EUSIPCO}, 2015.
+
 \bibitem{gersho2012vector}
 A.~Gersho and R.M. Gray.
 \newblock {\em Vector quantization and signal compression}.
@@ -120,16 +125,11 @@ A.~Lampropoulos, P.~Lampropoulou, and G.~Tsihrintzis.
 \newblock In {\em Proc. of ISMIR}, pages 576--581, 2005.
 
 \bibitem{larocheJournal}
-C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
-\newblock Spnmf with drum dictionaries for harmonic/percussive source
-  separation.
-\newblock {\em submitted to IEEE Transactions on Acoustics, Speech and Signal
+C.~Laroche, M.~Kowalski, H.~Papadopoulous, and G.Richard.
+\newblock A structured nonnegative matrix factorization for harmonic/percussive
+  source separation.
+\newblock {\em Submitted to IEEE Transactions on Acoustics, Speech and Signal
   Processing}.
-
-\bibitem{laroche2015structured}
-C.~Laroche, M.~Kowalski, H.~Papadopoulos, and G.~Richard.
-\newblock A structured nonnegative matrix factorization for source separation.
-\newblock In {\em Proc. of EUSIPCO}, 2015.
 
 \bibitem{lee99}
 D.~Lee and S.~Seung.
