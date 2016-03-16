@@ -3,52 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ISMIR2016SPNMFGenreSpec.aux
 The style file: plain.bst
 Database file #1: reference.bib
-Warning--I didn't find a database entry for "Smaragdis2003"
 Warning--empty title in laroche2015structuredhidden
 Warning--empty booktitle in laroche2015structuredhidden
 Warning--empty year in laroche2015structuredhidden
 Warning--empty title in larocheJournalhidden
 Warning--empty journal in larocheJournalhidden
 Warning--empty year in larocheJournalhidden
-You've used 42 entries,
+You've used 44 entries,
             2118 wiz_defined-function locations,
-            703 strings with 10376 characters,
-and the built_in function-call counts, 17235 in all, are:
-= -- 1687
-> -- 705
-< -- 33
-+ -- 279
-- -- 234
-* -- 1020
-:= -- 2574
-add.period$ -- 123
-call.type$ -- 42
-change.case$ -- 240
+            711 strings with 10684 characters,
+and the built_in function-call counts, 17948 in all, are:
+= -- 1754
+> -- 731
+< -- 34
++ -- 289
+- -- 242
+* -- 1056
+:= -- 2679
+add.period$ -- 129
+call.type$ -- 44
+change.case$ -- 250
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 803
-empty$ -- 1401
-format.name$ -- 234
-if$ -- 3924
+cite$ -- 50
+duplicate$ -- 840
+empty$ -- 1470
+format.name$ -- 242
+if$ -- 4089
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 43
-newline$ -- 209
-num.names$ -- 84
-pop$ -- 325
+int.to.str$ -- 44
+missing$ -- 45
+newline$ -- 219
+num.names$ -- 88
+pop$ -- 342
 preamble$ -- 1
-purify$ -- 201
+purify$ -- 209
 quote$ -- 0
-skip$ -- 688
+skip$ -- 717
 stack$ -- 0
-substring$ -- 1106
-swap$ -- 340
-text.length$ -- 33
+substring$ -- 1144
+swap$ -- 353
+text.length$ -- 34
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 166
+type$ -- 174
 warning$ -- 6
-while$ -- 153
-width$ -- 44
-write$ -- 447
-(There were 7 warnings)
+while$ -- 159
+width$ -- 46
+write$ -- 468
+(There were 6 warnings)

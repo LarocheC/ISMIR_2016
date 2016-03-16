@@ -200,6 +200,18 @@ J.~Salamon and E.~G{\'o}mez.
 \newblock {\em Transactions on Audio, Speech, and Language Processing.}, pages
   1759--1770, 2012.
 
+\bibitem{schmidt2006single}
+M.N Schmidt and R.K. Olsson.
+\newblock Single-channel speech separation using sparse non-negative matrix
+  factorization.
+\newblock In {\em Proc. of INTERSPEECH}, 2006.
+
+\bibitem{Smaragdis03}
+P.~Smaragdis and JC. Brown.
+\newblock Non-negative matrix factorization for polyphonic music transcription.
+\newblock In {\em Workshop on Applications of Signal Processing to Audio and
+  Acoustics}, pages 177--180, 2003.
+
 \bibitem{tovsic2011dictionary}
 I.~To{\v{s}}i{\'c} and P.~Frossard.
 \newblock Dictionary learning.
