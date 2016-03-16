@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  16 MAR 2016 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  16 MAR 2016 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -380,6 +380,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
 
+Overfull \hbox (2.45473pt too wide) in paragraph at lines 89--92
+\OT1/ptm/m/n/10 How-ever, the dic-tio-nar-ies must match the tar-get in-stru-me
+nts
+ []
+
+
 Overfull \hbox (4.61508pt too wide) in paragraph at lines 94--97
 \OT1/ptm/m/n/10 track-ing [6] and drum tran-scrip-tion al-go-rithms [29] are mo
 re
@@ -399,11 +405,6 @@ Overfull \hbox (5.33546pt too wide) in paragraph at lines 98--99
 Overfull \hbox (8.56503pt too wide) in paragraph at lines 122--123
 \OT1/ptm/m/n/10 sub-set of atoms taken from a re-dun-dant rep-re-sen-ta-tion. T
 hese
- []
-
-
-Overfull \hbox (7.50555pt too wide) in paragraph at lines 128--130
-\OT1/ptm/m/n/10 these meth-ods do not have been used yet has a pre-processing
  []
 
 
@@ -628,7 +629,7 @@ m10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols
 pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349802 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349815 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
