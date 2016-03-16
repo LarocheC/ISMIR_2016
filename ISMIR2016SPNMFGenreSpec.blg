@@ -4,46 +4,51 @@ The top-level auxiliary file: ISMIR2016SPNMFGenreSpec.aux
 The style file: plain.bst
 Database file #1: reference.bib
 Warning--I didn't find a database entry for "Smaragdis2003"
-Warning--empty year in larocheJournal
+Warning--empty title in laroche2015structuredhidden
+Warning--empty booktitle in laroche2015structuredhidden
+Warning--empty year in laroche2015structuredhidden
+Warning--empty title in larocheJournalhidden
+Warning--empty journal in larocheJournalhidden
+Warning--empty year in larocheJournalhidden
 You've used 42 entries,
             2118 wiz_defined-function locations,
-            707 strings with 10646 characters,
-and the built_in function-call counts, 17365 in all, are:
-= -- 1703
-> -- 721
+            703 strings with 10376 characters,
+and the built_in function-call counts, 17235 in all, are:
+= -- 1687
+> -- 705
 < -- 33
-+ -- 287
-- -- 240
-* -- 1024
-:= -- 2601
-add.period$ -- 127
++ -- 279
+- -- 234
+* -- 1020
+:= -- 2574
+add.period$ -- 123
 call.type$ -- 42
-change.case$ -- 245
+change.case$ -- 240
 chr.to.int$ -- 0
-cite$ -- 43
-duplicate$ -- 804
-empty$ -- 1403
-format.name$ -- 240
-if$ -- 3952
+cite$ -- 48
+duplicate$ -- 803
+empty$ -- 1401
+format.name$ -- 234
+if$ -- 3924
 int.to.chr$ -- 0
 int.to.str$ -- 42
 missing$ -- 43
-newline$ -- 213
+newline$ -- 209
 num.names$ -- 84
-pop$ -- 319
+pop$ -- 325
 preamble$ -- 1
-purify$ -- 204
+purify$ -- 201
 quote$ -- 0
-skip$ -- 691
+skip$ -- 688
 stack$ -- 0
-substring$ -- 1108
-swap$ -- 342
+substring$ -- 1106
+swap$ -- 340
 text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 166
-warning$ -- 1
+warning$ -- 6
 while$ -- 153
 width$ -- 44
-write$ -- 456
-(There were 2 warnings)
+write$ -- 447
+(There were 7 warnings)

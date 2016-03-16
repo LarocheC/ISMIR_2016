@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  15 MAR 2016 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  16 MAR 2016 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -463,10 +463,7 @@ Overfull \hbox (5.83914pt too wide) in paragraph at lines 256--299
  [][] 
  []
 
-
-Underfull \vbox (badness 3240) has occurred while \output is active []
-
- [4 <./figs/AllDictSizeISMIR-eps-converted-to.pdf>]
+[4 <./figs/AllDictSizeISMIR-eps-converted-to.pdf>]
 Overfull \hbox (8.57458pt too wide) in paragraph at lines 356--357
 \OT1/ptm/m/n/10 sim-i-lar re-sults to the uni-ver-sal dic-tio-nary built on the
  Medley-
@@ -545,15 +542,13 @@ Overfull \hbox (22.7622pt too wide) in paragraph at lines 376--378
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 1694) has occurred while \output is active []
-
- [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-converted
--to.pdf> <./figs/SARismirpop-eps-converted-to.pdf>]
 Overfull \hbox (9.36539pt too wide) in paragraph at lines 457--458
 []\OT1/ptm/m/n/10 Future work will be ded-i-cated into build-ing a blind method
 
  []
 
+[5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-converted-
+to.pdf> <./figs/SARismirpop-eps-converted-to.pdf>]
 (./ISMIR2016SPNMFGenreSpec.bbl
 Underfull \hbox (badness 2057) in paragraph at lines 33--39
 \OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
@@ -565,32 +560,32 @@ Underfull \hbox (badness 2181) in paragraph at lines 33--39
  []
 
 [6]
-Underfull \hbox (badness 1087) in paragraph at lines 89--94
+Underfull \hbox (badness 1087) in paragraph at lines 90--95
 []\OT1/ptm/m/n/10 Chao-Ling Hsu, DeLiang Wang, Jyh-Shing Roger
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 96--100
+Underfull \hbox (badness 2884) in paragraph at lines 97--101
 \OT1/ptm/m/n/10 Johnson.  Singing-voice sep-a-ra-tion from monau-ral
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 102--106
+Underfull \hbox (badness 1975) in paragraph at lines 103--107
 \OT1/ptm/m/n/10 Adap-ta-tion of source-specific dic-tio-nar-ies in non-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 []\OT1/ptm/m/n/10 A. Lam-propou-los, P. Lam-propoulou, and
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 122--126
+Underfull \hbox (badness 6978) in paragraph at lines 123--127
 \OT1/ptm/m/n/10 G. Tsihrintzis.  Mu-si-cal genre clas-si-fi-ca-tion en-
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 197--201
+Underfull \hbox (badness 1817) in paragraph at lines 191--195
 []\OT1/ptm/m/n/10 H. Rump, S. Miyabe, E. Tsunoo, N. Ono, and
  []
 
@@ -606,12 +601,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
  ) 
 Here is how much of TeX's memory you used:
  5679 strings out of 493089
- 83664 string characters out of 6134842
- 180900 words of memory out of 5000000
+ 83676 string characters out of 6134842
+ 181900 words of memory out of 5000000
  9053 multiletter control sequences out of 15000+600000
  27079 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,38p,1426b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,16n,38p,1432b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texl
@@ -629,7 +624,7 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (8 pages, 352330 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (8 pages, 351837 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
