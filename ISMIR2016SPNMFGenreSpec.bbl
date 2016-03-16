@@ -42,12 +42,6 @@ D.~Ellis.
 \newblock Beat tracking by dynamic programming.
 \newblock {\em Journal of New Music Research}, pages 51--60, 2007.
 
-\bibitem{eronen2000musical}
-A.~Eronen and A.~Klapuri.
-\newblock Musical instrument recognition using cepstral coefficients and
-  temporal features.
-\newblock In {\em Proc. of IEEE ICASSP}, pages 753--756, 2000.
-
 \bibitem{EwertM12}
 S.~Ewert and M.~M{\"u}ller.
 \newblock Score-informed source separation for music signals.
@@ -111,13 +105,6 @@ Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
   drum source separation.
 \newblock {\em Journal of Selected Topics in Signal Processing}, pages
   1192--1204, 2011.
-
-\bibitem{klapuri2008multipitch}
-A.~Klapuri.
-\newblock Multipitch analysis of polyphonic music and speech signals using an
-  auditory model.
-\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
-  pages 255--266, 2008.
 
 \bibitem{lampropoulos2005musical}
 A.~Lampropoulos, P.~Lampropoulou, and G.~Tsihrintzis.
@@ -192,13 +179,6 @@ H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
 \newblock Autoregressive mfcc models for genre classification improved by
   harmonic-percussion separation.
 \newblock In {\em Proc. of ISMIR}, pages 87--92, 2010.
-
-\bibitem{salamon2012melody}
-J.~Salamon and E.~G{\'o}mez.
-\newblock Melody extraction from polyphonic music signals using pitch contour
-  characteristics.
-\newblock {\em Transactions on Audio, Speech, and Language Processing.}, pages
-  1759--1770, 2012.
 
 \bibitem{schmidt2006single}
 M.N Schmidt and R.K. Olsson.

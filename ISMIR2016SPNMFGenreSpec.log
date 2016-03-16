@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  16 MAR 2016 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  16 MAR 2016 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -380,7 +380,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
 
-Overfull \hbox (5.33546pt too wide) in paragraph at lines 96--98
+Overfull \hbox (4.61508pt too wide) in paragraph at lines 94--97
+\OT1/ptm/m/n/10 track-ing [7] and drum tran-scrip-tion al-go-rithms [30] are mo
+re
+ []
+
+
+Overfull \hbox (5.33546pt too wide) in paragraph at lines 98--101
 []\OT1/ptm/m/n/10 In this pa-per, we fo-cus on the task of har-monic/percussive
 
  []
@@ -390,22 +396,25 @@ Overfull \hbox (5.33546pt too wide) in paragraph at lines 96--98
 
 
  <./figs/cc_by.pdf>]
-Overfull \hbox (3.48457pt too wide) in paragraph at lines 139--141
+Overfull \hbox (3.48457pt too wide) in paragraph at lines 142--144
 \OT1/ptm/m/n/10 cap-ture the spec-tral and tem-po-ral char-ac-ter-is-tics of th
 e drum
  []
 
 
-Overfull \hbox (9.11467pt too wide) in paragraph at lines 139--141
+Overfull \hbox (9.11467pt too wide) in paragraph at lines 142--144
 \OT1/ptm/m/n/10 strained while the har-monic part is com-pletely un-con-straine
 d.
  []
 
 [2]
-Overfull \hbox (19.77473pt too wide) in paragraph at lines 149--150
+Overfull \hbox (19.77473pt too wide) in paragraph at lines 152--153
 \OT1/ptm/m/n/10 In this sec-tion we present our al-go-rithm for har-monic/percu
 ssive
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
 Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
@@ -417,7 +426,7 @@ Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 (epstopdf)                    size: 7634 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/AllDictSizeISMIR-eps-
 converted-to.pdf figs/AllDictSizeISMIR.eps>
-(epstopdf)             \includegraphics on input line 241.
+(epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/AllDictSizeISMIR-eps-converted-to.pdf, id=33, 1284.8pt x 613.29124pt>
@@ -425,22 +434,22 @@ File: figs/AllDictSizeISMIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/AllDictSizeISMIR-eps-converted-to.pdf>
 Package pdftex.def Info: figs/AllDictSizeISMIR-eps-converted-to.pdf used on inp
-ut line 241.
+ut line 244.
 (pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 241--243
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 244--246
  [][] 
  []
 
 
-Overfull \hbox (3.0648pt too wide) in paragraph at lines 253--254
+Overfull \hbox (3.0648pt too wide) in paragraph at lines 256--257
 \OT1/ptm/m/n/10 tion. The gen-res are, \OT1/ptm/m/it/10 Clas-si-cal \OT1/ptm/m/
 n/10 ($\OT1/cmr/m/n/10 8$ \OT1/ptm/m/n/10 songs), \OT1/ptm/m/it/10 Singer/Songw
 riter
  []
 
 
-Overfull \hbox (5.94615pt too wide) in paragraph at lines 253--254
+Overfull \hbox (5.94615pt too wide) in paragraph at lines 256--257
 \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10 17$ \OT1/ptm/m/n/10 songs), \OT1/ptm/m/it/10 
 Pop \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10 10$ \OT1/ptm/m/n/10 songs), \OT1/ptm/m/it
 /10 Rock \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10 20$ \OT1/ptm/m/n/10 songs), \OT1/ptm
@@ -448,19 +457,19 @@ Pop \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10 10$ \OT1/ptm/m/n/10 songs), \OT1/ptm/m/it
  []
 
 
-Overfull \hbox (2.3253pt too wide) in paragraph at lines 253--254
+Overfull \hbox (2.3253pt too wide) in paragraph at lines 256--257
 \OT1/ptm/m/it/10 Elec-tronic/Fusion \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10 13$ \OT1/
 ptm/m/n/10 songs) and \OT1/ptm/m/it/10 World/Folk \OT1/ptm/m/n/10 ($\OT1/cmr/m/
 n/10 6$ \OT1/ptm/m/n/10 songs). Be-
  []
 
 
-Overfull \hbox (5.83914pt too wide) in paragraph at lines 261--304
+Overfull \hbox (5.83914pt too wide) in paragraph at lines 264--307
  [][] 
  []
 
 [4 <./figs/AllDictSizeISMIR-eps-converted-to.pdf>]
-Overfull \hbox (8.57458pt too wide) in paragraph at lines 361--362
+Overfull \hbox (8.57458pt too wide) in paragraph at lines 364--365
 \OT1/ptm/m/n/10 sim-i-lar re-sults to the uni-ver-sal dic-tio-nary built on the
  Medley-
  []
@@ -473,17 +482,17 @@ Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    size: 56260 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SDRismirpop-eps-conve
 rted-to.pdf figs/SDRismirpop.eps>
-(epstopdf)             \includegraphics on input line 367.
+(epstopdf)             \includegraphics on input line 370.
 Package epstopdf Info: Output file is already uptodate.
 <figs/SDRismirpop-eps-converted-to.pdf, id=43, 1284.8pt x 614.295pt>
 File: figs/SDRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SDRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SDRismirpop-eps-converted-to.pdf used on input li
-ne 367.
+ne 370.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 367--369
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 370--372
  [][] 
  []
 
@@ -495,22 +504,19 @@ Package epstopdf Info: Source file: <figs/SIRismirpop.eps>
 (epstopdf)                    size: 56553 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SIRismirpop-eps-conve
 rted-to.pdf figs/SIRismirpop.eps>
-(epstopdf)             \includegraphics on input line 374.
+(epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
 <figs/SIRismirpop-eps-converted-to.pdf, id=44, 1284.8pt x 614.295pt>
 File: figs/SIRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SIRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SIRismirpop-eps-converted-to.pdf used on input li
-ne 374.
+ne 377.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 374--376
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 377--379
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    date: 2016-03-08 13:35:13
@@ -520,17 +526,17 @@ Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    size: 40076 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SARismirpop-eps-conve
 rted-to.pdf figs/SARismirpop.eps>
-(epstopdf)             \includegraphics on input line 381.
+(epstopdf)             \includegraphics on input line 384.
 Package epstopdf Info: Output file is already uptodate.
 <figs/SARismirpop-eps-converted-to.pdf, id=45, 1284.8pt x 614.295pt>
 File: figs/SARismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SARismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SARismirpop-eps-converted-to.pdf used on input li
-ne 381.
+ne 384.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 381--383
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 384--386
  [][] 
  []
 
@@ -538,7 +544,7 @@ Overfull \hbox (22.7622pt too wide) in paragraph at lines 381--383
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (9.36539pt too wide) in paragraph at lines 462--463
+Overfull \hbox (9.36539pt too wide) in paragraph at lines 465--466
 []\OT1/ptm/m/n/10 Future work will be ded-i-cated into build-ing a blind method
 
  []
@@ -556,32 +562,32 @@ Underfull \hbox (badness 2181) in paragraph at lines 33--39
  []
 
 [6]
-Underfull \hbox (badness 1087) in paragraph at lines 90--95
+Underfull \hbox (badness 1087) in paragraph at lines 84--89
 []\OT1/ptm/m/n/10 Chao-Ling Hsu, DeLiang Wang, Jyh-Shing Roger
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 97--101
+Underfull \hbox (badness 2884) in paragraph at lines 91--95
 \OT1/ptm/m/n/10 Johnson.  Singing-voice sep-a-ra-tion from monau-ral
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 103--107
+Underfull \hbox (badness 1975) in paragraph at lines 97--101
 \OT1/ptm/m/n/10 Adap-ta-tion of source-specific dic-tio-nar-ies in non-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--127
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 []\OT1/ptm/m/n/10 A. Lam-propou-los, P. Lam-propoulou, and
  []
 
 
-Underfull \hbox (badness 6978) in paragraph at lines 123--127
+Underfull \hbox (badness 6978) in paragraph at lines 110--114
 \OT1/ptm/m/n/10 G. Tsihrintzis.  Mu-si-cal genre clas-si-fi-ca-tion en-
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 191--195
+Underfull \hbox (badness 1817) in paragraph at lines 178--182
 []\OT1/ptm/m/n/10 H. Rump, S. Miyabe, E. Tsunoo, N. Ono, and
  []
 
@@ -589,10 +595,10 @@ Underfull \hbox (badness 1817) in paragraph at lines 191--195
 
 ] (./ISMIR2016SPNMFGenreSpec.aux) ) 
 Here is how much of TeX's memory you used:
- 5680 strings out of 493089
- 83693 string characters out of 6134842
- 181908 words of memory out of 5000000
- 9054 multiletter control sequences out of 15000+600000
+ 5676 strings out of 493089
+ 83624 string characters out of 6134842
+ 180896 words of memory out of 5000000
+ 9050 multiletter control sequences out of 15000+600000
  27079 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,16n,38p,1114b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -613,7 +619,7 @@ m10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (8 pages, 351276 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (8 pages, 350689 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
