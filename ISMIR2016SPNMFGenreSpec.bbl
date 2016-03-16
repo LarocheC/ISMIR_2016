@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{abdallah2006unsupervised}
-S.A. Abdallah and M.D. Plumbley.
-\newblock Unsupervised analysis of polyphonic music by sparse coding.
-\newblock {\em IEEE Transactions on Neural Networks}, pages 179--196, 2006.
-
 \bibitem{aharon2006img}
 M.~Aharon, M.~Elad, and Alfred A.~Bruckstein.
 \newblock {K-SVD}: An algorithm for designing overcomplete dictionaries for
@@ -167,12 +162,6 @@ N.~Ono, K.~Miyamoto, J.~Le Roux, H.~Kameoka, and S.~Sagayama.
 J.~Paulus and T.~Virtanen.
 \newblock Drum transcription with non-negative spectrogram factorisation.
 \newblock In {\em Proc. of EUSIPCO}, pages 1--4, 2005.
-
-\bibitem{plumbley2010sparse}
-M.D. Plumbley, T.~Blumensath, L.~Daudet, R.~Gribonval, and M.E. Davies.
-\newblock Sparse representations in audio and music: from coding to source
-  separation.
-\newblock {\em Proceedings of the IEEE}, pages 995--1005, 2010.
 
 \bibitem{rump2010autoregressive}
 H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.

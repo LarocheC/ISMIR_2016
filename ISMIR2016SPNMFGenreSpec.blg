@@ -9,45 +9,45 @@ Warning--empty year in laroche2015structuredhidden
 Warning--empty title in larocheJournalhidden
 Warning--empty journal in larocheJournalhidden
 Warning--empty year in larocheJournalhidden
-You've used 41 entries,
+You've used 39 entries,
             2118 wiz_defined-function locations,
-            698 strings with 10296 characters,
-and the built_in function-call counts, 16677 in all, are:
-= -- 1620
-> -- 698
-< -- 31
-+ -- 276
-- -- 232
-* -- 991
-:= -- 2502
-add.period$ -- 120
-call.type$ -- 41
-change.case$ -- 236
+            688 strings with 9938 characters,
+and the built_in function-call counts, 15747 in all, are:
+= -- 1525
+> -- 657
+< -- 29
++ -- 260
+- -- 218
+* -- 933
+:= -- 2363
+add.period$ -- 114
+call.type$ -- 39
+change.case$ -- 223
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 775
-empty$ -- 1362
-format.name$ -- 232
-if$ -- 3786
+cite$ -- 45
+duplicate$ -- 735
+empty$ -- 1297
+format.name$ -- 218
+if$ -- 3575
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 42
-newline$ -- 204
-num.names$ -- 82
-pop$ -- 325
+int.to.str$ -- 39
+missing$ -- 40
+newline$ -- 194
+num.names$ -- 78
+pop$ -- 312
 preamble$ -- 1
-purify$ -- 198
+purify$ -- 187
 quote$ -- 0
-skip$ -- 654
+skip$ -- 615
 stack$ -- 0
-substring$ -- 1037
-swap$ -- 320
-text.length$ -- 31
+substring$ -- 968
+swap$ -- 300
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
+type$ -- 154
 warning$ -- 6
-while$ -- 147
-width$ -- 43
-write$ -- 435
+while$ -- 139
+width$ -- 41
+write$ -- 413
 (There were 6 warnings)
