@@ -248,9 +248,8 @@ The dictionaries are then used to perform a HPSS on the four songs of the SiSEC 
   
 \end{figure}
 
-The results on Figure \ref{dictsize} show that the optimal value for the SDR and SIR is reached for $k=100$, then the SDR decreases for $k\geqslant 200$. The high values of SAR (for $k\geqslant 500$) are explained by the fact that the separation process is not satisfying. The harmonic signal provided by the algorithm is composed of most of the original signal therefore the SAR is very high but the decomposition quality is poor. 
-
-\textcolor{red}{The optimal dictionary size for the SPNMF algorithm is $k=100$ so we will use it in the next Section. $k=50$ and $k=200$ does not lead to significantly different. The method is robust and the to the rank of factorization.}
+The results on Figure \ref{dictsize} show that the optimal value for the SDR and SIR is reached for $k=100$, then the SDR decreases for $k\geqslant 200$. The high values of SAR (for $k\geqslant 500$) are explained by the fact that the separation process is not satisfying. The harmonic signal provided by the algorithm is composed of most of the original signal therefore the SAR is very high but the decomposition quality is poor. For the rest of the article, the size of the drum dictionaries will be $k=100$.
+%\textcolor{red}{The optimal dictionary size for the SPNMF algorithm is $k=100$ so we will use it in the next Section. $k=50$ and $k=200$ does not lead to significantly different. The method is robust and the to the rank of factorization.}
 
 \subsection{Training and evaluation database}\label{database}
 
