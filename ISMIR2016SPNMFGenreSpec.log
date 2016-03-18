@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  18 MAR 2016 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  18 MAR 2016 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,7 +304,11 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box38
 \enitdp@description=\count110
 )
-(./ISMIR2016SPNMFGenreSpec.aux)
+(./ISMIR2016SPNMFGenreSpec.aux
+
+LaTeX Warning: Label `database' multiply defined.
+
+)
 \openout1 = `ISMIR2016SPNMFGenreSpec.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -320,8 +324,7 @@ LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -379,12 +382,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
-
-Overfull \hbox (1.39474pt too wide) in paragraph at lines 71--72
-\OT1/ptm/m/n/10 nar-ies built on genre-specific train-ing sub-sets al-low to re
-ach
- []
-
 
 Overfull \hbox (2.45473pt too wide) in paragraph at lines 87--90
 \OT1/ptm/m/n/10 How-ever, the dic-tio-nar-ies must match the tar-get in-stru-me
@@ -609,13 +606,13 @@ Underfull \hbox (badness 1817) in paragraph at lines 167--171
 
 ) [7] (./ISMIR2016SPNMFGenreSpec.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  5674 strings out of 493089
  83578 string characters out of 6134842
- 180876 words of memory out of 5000000
+ 180915 words of memory out of 5000000
  9048 multiletter control sequences out of 15000+600000
  27079 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -637,7 +634,7 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349808 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349845 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
