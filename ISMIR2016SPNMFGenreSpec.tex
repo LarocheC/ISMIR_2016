@@ -55,7 +55,7 @@
 % Four addresses
 % --------------
 \fourauthors
-  {Cl\'{e}ment Laroche} {Affiliation1 \\ {\tt author1@ismir.edu}}
+  {First author} {Affiliation1 \\ {\tt author1@ismir.edu}}
   {Second author}{Affiliation2 \\ {\tt author2@ismir.edu}}
   {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
   {Fourth author} {Affiliation4 \\ {\tt author4@ismir.edu}}
@@ -68,9 +68,7 @@
 
 \begin{abstract}
 
-Supervised algorithms for audio source separation often use {\it a priori} information such as musical scores and learned dictionaries to achieve a decomposition. Audio signals are diverse because of the inconsistency of the musical performance, recording condition and post processing treatment, as a result it is generally impossible to build prior information that is relevant on any audio signal. Current state-of-the-art methods for source separation use large instruments specific data to build dictionaries to take into account these variability. However, the dictionaries are still too generic and they do not characterize completely a target instrument as the large amount of information is not properly compressed.  
-In this article, we prove that musical genre information is suitable to further specialize the dictionaries in order to improve the decomposition results. Our test on a task of harmonic/percussive source separation on a large database proves that the genre is a relevant feature as the drum dictionaries built using genre specific information perform better that an universal drum dictionary.  
-
+Blind source separation usually obtains limited performance on real and polyphonic music signals. To overcome these limitations, it is common to rely on prior knowledge under the form of side information as in Informed Source Separation or on machine learning paradigms applied on a training database. In the context of source separation based on factorization models such as Non-negative Matrix Factorization, this supervision can be introduced by learning specific dictionaries. However, the large diversity of musical signals does not easily permit to build sufficiently compact and precise dictionaries that will allow to well characterize the diversity of audio sources. In this paper, we advocate that it is appropriate to build genre-specific dictionaries. More specifically, we show on a task of harmonic/percussive source separation that the dictionaries built on genre-specific training subsets allow to reach better performance than cross-genre dictionaries.
 
 
 
@@ -91,11 +89,11 @@ with $W \in \mathbb{R}_{+}^{n \times k}$, $H \in \mathbb{R}_{+}^{k \times m}$ an
 Supervised algorithms in the NMF framework exploit training data or prior information in order to guide the decomposition process. For example, information from the scores or from midi signals can be used to initialize the learning process \cite{EwertM12}. The downside of these approaches is that they require well organized prior information that is not always available. Another supervised method consists in performing prior training on specific databases. A dictionary matrix $W_{train}$ can be learned from a big database in order to separate instruments \cite{jaureguiberry2011adaptation,wudrum}. Such methods require minimum tuning from the user. However, the dictionaries must match the target instruments to obtain satisfying performances. 
 
 
-Harmonic/percussive source separation has numerous applications as a preprocessing step for other audio tasks. For example the HPSS algorithm~\cite{fitzgerald2010harmonic} can be also used as a preprocessing step to increase the performance for singing pitch extraction and voice separation~\cite{hsu2012tandem}. 
+Harmonic/Percussive Source Separation (HPSS) has numerous applications as a preprocessing step for other audio tasks. For example the HPSS algorithm~\cite{fitzgerald2010harmonic} can be also used as a preprocessing step to increase the performance for singing pitch extraction and voice separation~\cite{hsu2012tandem}. 
 %most multi-pitch estimation models~\cite{klapuri2008multipitch}, instruments recognition~\cite{eronen2000musical} and melody extraction~\cite{salamon2012melody} algorithms are much more efficient when processing harmonic data only. 
 Similarly, beat tracking~\cite{ellis2007beat} and drum transcription algorithms~\cite{paulus2005drum} are more accurate if the harmonic instruments are not part of the analysed signal. 
 
-In this paper, we focus on the task of harmonic/percussive source separation (HPSS) leveraging on the method developed in \cite{laroche2015structuredhidden}: an unconstrained NMF decomposes the audio signal in sparse orthogonal components that are well suited for representing the harmonic component, while the percussive part is represented by a regular nonnegative matrix factorization decomposition. In \cite{larocheJournalhidden}, we have adapted the algorithm using a trained drum dictionary to improve the extraction of the percussive instruments. Within different music pieces of a database, the same instrument can sound differently depending on the recording conditions and post processing treatments. In order to accurately represent an instrument, one can decide to learn a dictionary on a very large database but takes the risk of over-fitting the data. Furthermore when databases cover a wide variety of genres, instrumentation may strongly differ from one piece to another. In order to avoid this problem and to build effective dictionaries, we propose to use genre specific training data.
+In this paper, we focus on the task of HPSS leveraging on the method developed in \cite{laroche2015structuredhidden}: an unconstrained NMF decomposes the audio signal in sparse orthogonal components that are well suited for representing the harmonic component, while the percussive part is represented by a regular nonnegative matrix factorization decomposition. In \cite{larocheJournalhidden}, we have adapted the algorithm using a trained drum dictionary to improve the extraction of the percussive instruments. Within different music pieces of a database, the same instrument can sound differently depending on the recording conditions and post processing treatments. In order to accurately represent an instrument, one can decide to learn a dictionary on a very large database but takes the risk of over-fitting the data. Furthermore when databases cover a wide variety of genres, instrumentation may strongly differ from one piece to another. In order to avoid this problem and to build effective dictionaries, we propose to use genre specific training data.
 
 The main contribution is that we develop a genre specific method to build NMF drum dictionaries that give consistent and robust results on a HPSS task. The \emph{genre specific dictionaries} are able to improve the separation score compared to a \emph{universal dictionary} trained from all available data. 
 
@@ -255,7 +253,7 @@ The results on Figure \ref{dictsize} show that the optimal value for the SDR and
 
 The tests was run on the dataset Medley-dB \cite{bittner2014medleydb} composed of polyphonic real-world music excerpts. It has $122$ music signals and $85$ of them contain percussive instruments, harmonic instruments and vocals. The signals that do not contain a percussive part are not part of the evaluation. The genres are, \emph{Classical} ($8$ songs), \emph{Singer/Songwriter} ($17$ songs), \emph{Pop} ($10$ songs), \emph{Rock} ($20$ songs), \emph{Jazz} ($11$ songs), \emph{Electronic/Fusion} ($13$ songs) and \emph{World/Folk} ($6$ songs). Because the notion of genre is quite subjective (see Section \ref{defgenre}), the medley-dB database uses general genre labels. These labels should not be considered to be precise genre labels. There are many instances where a song could have fallen in multiple genres, and the choices were made so that each genre would be as acoustically homogeneous as possible. As we are only working with the instrumental part of the song, the \emph{Pop} label (for example) are similar to the \emph{Singer/Songwriter}.
 
-The training dataset is built using $3$ songs of each genre, excluding the training set. To compare the genre specific dictionaries, we build a non specific/universal dictionary using half of one song of each genre. Finally, a last dictionary is built using around $10$~min of pure drum signals from the ENST-Drums database as in Section \ref{optimalsize}. The files from medley-dB selected for the training are given in Table \ref{trainingdata}. 
+The training dataset is built using $3$ songs of each genre, excluding the training set. To compare the genre specific dictionaries, we build a cross-genre dictionary using half of one song of each genre. Finally, a last dictionary is built using around $10$~min of pure drum signals from the ENST-Drums database as in Section \ref{optimalsize}. The files from medley-dB selected for the training are given in Table \ref{trainingdata}. 
 
 
 \begin{table} 
@@ -478,15 +476,12 @@ SAR & \bf{27.2}& \bf{27.7}   & \bf{29.9} & \bf{26.2}& 34.3     &\bf{31.9} & 21.6
 
 
 
-On Table \ref{specresults}, we display the mean separation score for all the genre specific dictionaries compared to the non specific dictionary. The genre specific dictionaries outperform the universal dictionary by a considerable margin on $5$ of the $7$ genres. The results are discussed in  next Section.
+On Table \ref{specresults}, we display the mean separation score for all the genre specific dictionaries compared to the non specific dictionary. On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary. %The results are discussed in next Section.
 
 
 \subsection{Discussion}
 
-
-On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary. 
-
-The information from the music of the same genre is not altered by the NMF compression and the drum templates are closer to the target drum.  
+The cross-genre dictionary as well as the ENST-drum dictionary are outperformed by the genre specific dictionaries. The information from the music of the same genre is not altered by the NMF compression and provides drum templates closer to the target drum.  
 The databases \emph{Classical} and \emph{Electronic/Fusion} are composed of songs where the drum is only playing for a few moments. Similarly on some songs of the \emph{Electronic/Fusion} database, the electronic drum reproduces the same pattern during the whole song making the drum part very redundant thus the drum dictionary does not contain a sufficient amount of information to outperform the universal dictionary. Because of these two factors, the genre specific dictionaries are not performing correctly.
 
 Overall the harmonic separation is giving much better results than the percussive extraction. The fixed dictionaries are creating artefact as the percussive templates do not correspond exactly to the target drum signal. A possible way to alleviate this problem is to adapt the dictionaries but this requires the use of hyper parameters and that is not the philosophy of this work \cite{laroche2015structuredhidden}.
@@ -503,7 +498,7 @@ Future work will be dedicated into building a blind method to select the genre s
 \section{Appendix: SPNMF with the IS divergence}\label{ISdisteq}
  
 The Itakura Saito divergence gives us the problem,
-$$\min_{W_1,W_2,H_2 \geq 0} \frac{V}{\tilde{V}} - log(\frac{V}{\tilde{V}}) +1.$$
+$$\min_{W_1,W_2,H_2 \geq 0} \frac{V}{\tilde{V}} - log(\frac{V}{\tilde{V}}) -1.$$
 
 The gradient wrt $W_1$ gives
 $$[\nabla_{W_1} D(V|\tilde{V})]_{i,j}^{-} = (ZV^TW_1)_{i,j} + (VZ^TW_1)_{i,j},$$

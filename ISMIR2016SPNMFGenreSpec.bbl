@@ -63,6 +63,12 @@ A.~Gersho and R.M. Gray.
 \newblock {\em Vector quantization and signal compression}.
 \newblock Springer Science \& Business Media, 2012.
 
+\bibitem{gillet2006enst}
+O.~Gillet and G.~Richard.
+\newblock Enst-drums: an extensive audio-visual database for drum signals
+  processing.
+\newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
+
 \bibitem{hennequin2011score}
 R.~Hennequin, B.~David, and R.~Badeau.
 \newblock Score informed audio source separation using a parametric model of
@@ -76,11 +82,11 @@ J.~Hockman, M.~Davies, and I.~Fujinaga.
 \newblock In {\em Proc. of ISMIR}, pages 169--174, 2012.
 
 \bibitem{hsu2012tandem}
-Chao-Ling Hsu, DeLiang Wang, Jyh-Shing~Roger Jang, and Ke~Hu.
+C.~Hsu, D.~Wang, J.R. Jang, and K.~Hu.
 \newblock A tandem algorithm for singing pitch extraction and voice separation
   from music accompaniment.
-\newblock {\em Transactions on Audio, Speech, and Language Processing.},
-  20(5):1482--1491, 2012.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing.},
+  pages 1482--1491, 2012.
 
 \bibitem{huang2012singing}
 P.~Huang, S.D. Chen, P.~Smaragdis, and M.~Hasegawa-Johnson.
@@ -95,7 +101,7 @@ X.~Jaureguiberry, P.~Leveau, S.~Maller, and J.~Burred.
 \newblock In {\em Proc. of IEEE ICASSP}, pages 5--8, 2011.
 
 \bibitem{kim2011nonnegative}
-Minje Kim, Jiho Yoo, Kyeongok Kang, and Seungjin Choi.
+M.~Kim, J.~Yoo, K.~Kang, and S.~Choi.
 \newblock Nonnegative matrix partial co-factorization for spectral and temporal
   drum source separation.
 \newblock {\em Journal of Selected Topics in Signal Processing}, pages
@@ -146,12 +152,6 @@ Y.~Ni, M.~McVicar, R.~Santos-Rodriguez, and T.~De Bie.
   chord estimation.
 \newblock In {\em Proc. of ISMIR}, pages 109--114, 2012.
 
-\bibitem{gillet2006enst}
-O.Gillet and G.Richard.
-\newblock Enst-drums: an extensive audio-visual database for drum signals
-  processing.
-\newblock In {\em Proc. of ISMIR}, pages 156--159, 2006.
-
 \bibitem{ono2008separation}
 N.~Ono, K.~Miyamoto, J.~Le Roux, H.~Kameoka, and S.~Sagayama.
 \newblock Separation of a monaural audio signal into harmonic/percussive
@@ -170,7 +170,7 @@ H.~Rump, S.~Miyabe, E.~Tsunoo, N.~Ono, and S.~Sagayama.
 \newblock In {\em Proc. of ISMIR}, pages 87--92, 2010.
 
 \bibitem{schmidt2006single}
-M.N Schmidt and R.K. Olsson.
+M.N. Schmidt and R.K. Olsson.
 \newblock Single-channel speech separation using sparse non-negative matrix
   factorization.
 \newblock In {\em Proc. of INTERSPEECH}, 2006.
