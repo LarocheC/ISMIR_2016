@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  21 MAR 2016 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  22 MAR 2016 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,19 +405,29 @@ ngly
 
 
  <./figs/cc_by.pdf>]
-Overfull \hbox (8.56503pt too wide) in paragraph at lines 122--123
-\OT1/ptm/m/n/10 sub-set of atoms taken from a re-dun-dant rep-re-sen-ta-tion. T
-hese
+Overfull \hbox (5.24547pt too wide) in paragraph at lines 126--127
+\OT1/ptm/m/n/10 ful ap-proach in im-age pro-cess-ing [39]. How-ever this method
+
  []
 
 
-Overfull \hbox (3.48457pt too wide) in paragraph at lines 140--142
+Overfull \hbox (3.58524pt too wide) in paragraph at lines 140--141
+\OT1/ptm/m/n/10 such as com-ple-men-tary dif-fu-sion [28] and con-strained NMF
+ []
+
+
+Overfull \hbox (0.74548pt too wide) in paragraph at lines 142--144
+[]\OT1/ptm/m/n/10 However su-per-vised method be mod-i-fied to uti-lize genre
+ []
+
+
+Overfull \hbox (3.48457pt too wide) in paragraph at lines 142--144
 \OT1/ptm/m/n/10 cap-ture the spec-tral and tem-po-ral char-ac-ter-is-tics of th
 e drum
  []
 
 
-Overfull \hbox (9.11467pt too wide) in paragraph at lines 140--142
+Overfull \hbox (9.11467pt too wide) in paragraph at lines 142--144
 \OT1/ptm/m/n/10 strained while the har-monic part is com-pletely un-con-straine
 d.
  []
@@ -437,6 +447,7 @@ Overfull \hbox (5.05492pt too wide) in paragraph at lines 240--241
 []\OT1/ptm/m/n/10 A fixed drum dic-tio-nary is built us-ing the database ENST-
  []
 
+[3]
 Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 (epstopdf)                    date: 2016-03-08 15:12:20
 (epstopdf)                    size: 11878 bytes
@@ -448,7 +459,8 @@ Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 converted-to.pdf figs/AllDictSizeISMIR.eps>
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
-<figs/AllDictSizeISMIR-eps-converted-to.pdf, id=27, 1284.8pt x 613.29124pt>
+
+<figs/AllDictSizeISMIR-eps-converted-to.pdf, id=33, 1284.8pt x 613.29124pt>
 File: figs/AllDictSizeISMIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/AllDictSizeISMIR-eps-converted-to.pdf>
@@ -460,7 +472,7 @@ Overfull \hbox (22.7622pt too wide) in paragraph at lines 247--249
  [][] 
  []
 
-[3]
+
 Overfull \hbox (7.84464pt too wide) in paragraph at lines 258--259
 \OT1/ptm/m/n/10 The eval-u-a-tion test are con-ducted on the Medley-dB database
 
@@ -558,6 +570,9 @@ Overfull \hbox (22.7622pt too wide) in paragraph at lines 385--387
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (9.36539pt too wide) in paragraph at lines 498--499
 []\OT1/ptm/m/n/10 Future work will be ded-i-cated into build-ing a blind method
 
@@ -630,7 +645,7 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349727 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349719 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
