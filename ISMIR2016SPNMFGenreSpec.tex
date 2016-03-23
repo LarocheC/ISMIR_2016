@@ -250,7 +250,7 @@ These dictionaries are then used to perform a HPSS on the four songs of the SiSE
   
 \end{figure}
 
-The results in Figure \ref{dictsize} show that the optimal value for the SDR and SIR is reached for $k=100$, then the SDR decreases for $k\geqslant 200$. The high values of SAR (for $k\geqslant 500$) are explained by the fact that the separation process is not satisfying. The harmonic signal provided by the algorithm contains most of the original signal therefore the SAR is very high but the decomposition quality is poor. For the rest of the article, the size of the drum dictionaries will be $k=100$.
+The results in Figure \ref{dictsize} show that the optimal value for the SDR and SIR is reached for $k=100$, then the SDR decreases for $k\geqslant 200$. For $k\geqslant 500$ the harmonic signal provided by the algorithm contains most of the original signal therefore the SAR is very high but the decomposition quality is poor. For the rest of the article, the size of the drum dictionaries will be $k=100$.
 %\textcolor{red}{The optimal dictionary size for the SPNMF algorithm is $k=100$ so we will use it in the next Section. $k=50$ and $k=200$ does not lead to significantly different. The method is robust and the to the rank of factorization.}
 
 \subsection{Training and evaluation database}\label{database}
@@ -315,11 +315,7 @@ Non specific & JoelHelander Definition \\
 
 Seven genre-specific drum dictionaries are built using $3$ songs of each genre. In addition, a cross-genre drum dictionary is built using half of one song of each genre. Finally, a dictionary is built using the $10$~min excerpt of pure drum signals from the ENST-Drums database described in Section \ref{optimalsize}. The Medley-dB files selected for training are given in Table \ref{trainingdata} and excluded from evaluation. 
 
-The NMF model is given by \eqref{modelNMF}. If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. Here we build genre specific drum dictionaries using the medley-dB database. %Using dictionaries specific to the genre of music allows to have dictionaries that a more specific to the signal to decompose.
-
-%Table \ref{lengthDict} gives us the length and the energy of the training signal for each genre.
-%\emph{Classical} and \emph{Electronic/Fusion} songs are composed of songs where the drum is only playing for a few moments and even though the signals are longer than the other. 
-With the results from Section \ref{optimalsize} the dictionaries are built as follows: for every genre specific subset of the training database, we perform a NMF on the drum signals with $k=100$,  the $W$ matrices of the NMF are then used in the SPNMF algorithm as the  $W_P$ matrix (see Algorithm \ref{AlgoDictionary}).
+The NMF model is given by \eqref{modelNMF}. If $V$ is the power spectrum of a drum signal, The matrix $W$ is a {\em dictionary} or a set of {\em patterns} that codes the frequency information of the drum. Here we build genre specific drum dictionaries using the medley-dB database. With the results from Section \ref{optimalsize} the dictionaries are built as follows: for every genre specific subset of the training database, we perform a NMF on the drum signals with $k=100$,  the $W$ matrices of the NMF are then used in the SPNMF algorithm as the  $W_P$ matrix (see Algorithm \ref{AlgoDictionary}).
 
 %\begin{table}
 %   
@@ -359,7 +355,7 @@ In this Section, we present the results of the SPNMF with the genre specific dic
 We perform a HPSS on the audio files using the SPNMF with the $9$ dictionaries build in Section \ref{genrespecdict}. The results on each song are then sorted by genres and the average results are displayed using box-plots. Each box-plot is made up of a central line indicating the median of the data, upper and lower box edges indicating the $1^{st}$ and $3^{rd}$ quartiles while the whiskers indicate the minimum and maximum values. 
 
 
-The Figures \ref{sdrpop}, \ref{sirpop} and \ref{sarpop} show the SDR, SAR and SIR results for all the dictionaries on the \emph{Pop} subsection, giving an overall idea of the performance of the dictionaries inside a specific sub-database. The \emph{Pop} dictionary leads to the highest SDR and SIR. The non specific dictionaries are not performing as well as the \emph{Pop} dictionary. On this sub-database, the genre specific data gives relevant information to the algorithm. As stated in Section \ref{database}, some genres are similar to other, explaining why the \emph{Rock} and the \emph{Singer} dictionaries are also providing good results. 
+The Figures \ref{sdrpop}, \ref{sirpop} and \ref{sarpop} show the SDR, SAR and SIR results for all the dictionaries on the \emph{Pop} subsection, giving an overall idea of the performance of the dictionaries inside a specific sub-database. The \emph{Pop} dictionary leads to the highest SDR and SIR and the non specific dictionaries are not performing as well. On this sub-database, the genre specific data gives relevant information to the algorithm. As stated in Section \ref{database}, some genres are similar to other, explaining why the \emph{Rock} and the \emph{Singer} dictionaries are also providing good results. 
 An interesting result is that compared to the non specific dictionary, the \emph{Pop} dictionary has a lower variance. Genre information allows for a higher robustness to the variety of the songs within the same genre.  
 
 The dictionary built on the ENST-drums is giving very similar results to the universal dictionary built on the Medley-dB database. For the sake of concision we only display the results using the universal dictionary from Medley-dB. 
@@ -479,7 +475,7 @@ SAR & \bf{27.2}& \bf{27.7}   & \bf{29.9} & \bf{26.2}& 34.3     &\bf{31.9} & 21.6
 
 
 
-On Table \ref{specresults}, we display the mean separation score for all the genre specific dictionaries compared to the non specific dictionary. On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary. %The results are discussed in next Section.
+On Table \ref{specresults}, we display the mean separation score for all the genre specific dictionaries compared to the non specific dictionary. On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary on the harmonic and percussive separation. s
 
 
 \subsection{Discussion}
