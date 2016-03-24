@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  24 MAR 2016 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  24 MAR 2016 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -387,13 +387,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 
 
  <./figs/cc_by.pdf>]
-Underfull \hbox (badness 1057) in paragraph at lines 145--147
-[]\OT1/ptm/m/n/10 However su-per-vised method be mod-i-fied to uti-lize
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 145--147
-\OT1/ptm/m/n/10 genre in-for-ma-tion. In [19] the drum source sep-a-ra-
+Underfull \hbox (badness 1067) in paragraph at lines 145--146
+\OT1/ptm/m/n/10 part con-tains some per-cus-sive in-stru-ments). An-other
  []
 
 [2]
@@ -410,7 +405,7 @@ Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 (epstopdf)                    size: 7634 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/AllDictSizeISMIR-eps-
 converted-to.pdf figs/AllDictSizeISMIR.eps>
-(epstopdf)             \includegraphics on input line 250.
+(epstopdf)             \includegraphics on input line 249.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/AllDictSizeISMIR-eps-converted-to.pdf, id=33, 1284.8pt x 613.29124pt>
@@ -418,20 +413,20 @@ File: figs/AllDictSizeISMIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/AllDictSizeISMIR-eps-converted-to.pdf>
 Package pdftex.def Info: figs/AllDictSizeISMIR-eps-converted-to.pdf used on inp
-ut line 250.
+ut line 249.
 (pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 250--252
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 249--251
  [][] 
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 261--262
+Underfull \hbox (badness 1231) in paragraph at lines 260--261
 \OT1/ptm/m/n/10 The eval-u-a-tion test are con-ducted on the Medley-dB
  []
 
 
-Overfull \hbox (5.83914pt too wide) in paragraph at lines 266--309
+Overfull \hbox (5.83914pt too wide) in paragraph at lines 265--308
  [][] 
  []
 
@@ -444,7 +439,7 @@ Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    size: 56260 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SDRismirpop-eps-conve
 rted-to.pdf figs/SDRismirpop.eps>
-(epstopdf)             \includegraphics on input line 370.
+(epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/SDRismirpop-eps-converted-to.pdf, id=43, 1284.8pt x 614.295pt>
@@ -452,10 +447,10 @@ File: figs/SDRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SDRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SDRismirpop-eps-converted-to.pdf used on input li
-ne 370.
+ne 369.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 370--372
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 369--371
  [][] 
  []
 
@@ -467,17 +462,17 @@ Package epstopdf Info: Source file: <figs/SIRismirpop.eps>
 (epstopdf)                    size: 56553 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SIRismirpop-eps-conve
 rted-to.pdf figs/SIRismirpop.eps>
-(epstopdf)             \includegraphics on input line 377.
+(epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 <figs/SIRismirpop-eps-converted-to.pdf, id=44, 1284.8pt x 614.295pt>
 File: figs/SIRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SIRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SIRismirpop-eps-converted-to.pdf used on input li
-ne 377.
+ne 376.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 377--379
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 376--378
  [][] 
  []
 
@@ -489,17 +484,17 @@ Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    size: 40076 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SARismirpop-eps-conve
 rted-to.pdf figs/SARismirpop.eps>
-(epstopdf)             \includegraphics on input line 384.
+(epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
 <figs/SARismirpop-eps-converted-to.pdf, id=45, 1284.8pt x 614.295pt>
 File: figs/SARismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SARismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SARismirpop-eps-converted-to.pdf used on input li
-ne 384.
+ne 383.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 384--386
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 383--385
  [][] 
  []
 
@@ -565,7 +560,7 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349602 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349596 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
