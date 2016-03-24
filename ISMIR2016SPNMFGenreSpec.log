@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  23 MAR 2016 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.25)  24 MAR 2016 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,21 +304,6 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box38
 \enitdp@description=\count110
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
-\babel@savecnt=\count111
-\U@D=\dimen131
-)
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-))
 (./ISMIR2016SPNMFGenreSpec.aux
 
 LaTeX Warning: Label `database' multiply defined.
@@ -326,162 +311,94 @@ LaTeX Warning: Label `database' multiply defined.
 )
 \openout1 = `ISMIR2016SPNMFGenreSpec.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 66.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen132
+\scratchcounter=\count111
+\scratchdimen=\dimen131
 \scratchbox=\box39
-\nofMPsegments=\count113
-\nofMParguments=\count114
+\nofMPsegments=\count112
+\nofMParguments=\count113
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen133
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen132
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks24
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 68.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+Overfull \hbox (12.0pt too wide) in paragraph at lines 68--68
  [][] 
  []
 
 <figs/cc_by.pdf, id=1, 121.45375pt x 43.16125pt>
 File: figs/cc_by.pdf Graphic file (type pdf)
  <use figs/cc_by.pdf>
-Package pdftex.def Info: figs/cc_by.pdf used on input line 66.
+Package pdftex.def Info: figs/cc_by.pdf used on input line 68.
 (pdftex.def)             Requested size: 36.02869pt x 12.80365pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 66.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 68.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
-
-Overfull \hbox (1.17474pt too wide) in paragraph at lines 72--73
-[]\OT1/ptm/m/n/10 Blind source sep-ar-a-tion usu-ally ob-tains lim-ited per-for
-m-
- []
-
-
-Overfull \hbox (0.85454pt too wide) in paragraph at lines 72--73
-\OT1/ptm/m/n/10 sep-ar-a-tion that the dic-tion-ar-ies built on genre-specific 
-train-
- []
-
-
-Overfull \hbox (8.11537pt too wide) in paragraph at lines 94--97
-[]\OT1/ptm/m/n/10 In this pa-per, we fo-cus on the task of Har-monic/Percussive
-
- []
-
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
  <./figs/cc_by.pdf>]
-Overfull \hbox (5.24547pt too wide) in paragraph at lines 127--128
-\OT1/ptm/m/n/10 ful ap-proach in im-age pro-cessing [39]. How-ever this method
+Underfull \hbox (badness 1057) in paragraph at lines 145--147
+[]\OT1/ptm/m/n/10 However su-per-vised method be mod-i-fied to uti-lize
  []
 
 
-Overfull \hbox (3.58524pt too wide) in paragraph at lines 141--142
-\OT1/ptm/m/n/10 such as com-ple-ment-ary dif-fu-sion [28] and con-strained NMF
- []
-
-
-Overfull \hbox (0.74548pt too wide) in paragraph at lines 143--145
-[]\OT1/ptm/m/n/10 However su-per-vised method be mod-i-fied to util-ize genre
- []
-
-
-Overfull \hbox (3.48457pt too wide) in paragraph at lines 143--145
-\OT1/ptm/m/n/10 cap-ture the spec-tral and tem-poral char-ac-ter-ist-ics of the
- drum
- []
-
-
-Overfull \hbox (9.11467pt too wide) in paragraph at lines 143--145
-\OT1/ptm/m/n/10 strained while the har-monic part is com-pletely un-con-straine
-d.
+Underfull \hbox (badness 1092) in paragraph at lines 145--147
+\OT1/ptm/m/n/10 genre in-for-ma-tion. In [19] the drum source sep-a-ra-
  []
 
 [2]
-Overfull \hbox (23.92421pt too wide) in paragraph at lines 165--167
-\OT1/ptm/m/n/10 sparse part that codes the har-monic in-stru-ments $\OML/cmm/m/
-it/10 V[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 W[]W[]V$
- []
-
-
-Overfull \hbox (30.10411pt too wide) in paragraph at lines 165--167
-\OT1/ptm/m/n/10 SPNMF model does not al-low for a sat-is-fy-ing har-monic/percu
-ssive
- []
-
-
-Overfull \hbox (22.7965pt too wide) in paragraph at lines 179--180
-\OT1/ptm/m/n/10 spect to (wrt) one vari-able (here $\OML/cmm/m/it/10 W[]$ \OT1/
-ptm/m/n/10 for ex-ample) $\OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 D\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 V\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (38.64937pt too wide) in paragraph at lines 179--180
-\OT1/ptm/m/n/10 in its pos-it-ive $\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 r[]\OML/cm
-m/m/it/10 D\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V\OMS/cmsy/m/n/10 j[]\OT1/cmr/m/n/
-10 )][]$ \OT1/ptm/m/n/10 and neg-at-ive parts $\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/1
-0 r[]\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V\OMS/cmsy/m/n/10 j[]\
-OT1/cmr/m/n/10 )][]$\OT1/ptm/m/n/10 .
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (5.05492pt too wide) in paragraph at lines 241--242
-[]\OT1/ptm/m/n/10 A fixed drum dic-tion-ary is built us-ing the data-base ENST-
-
- []
 
 [3]
 Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
@@ -493,7 +410,7 @@ Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 (epstopdf)                    size: 7634 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/AllDictSizeISMIR-eps-
 converted-to.pdf figs/AllDictSizeISMIR.eps>
-(epstopdf)             \includegraphics on input line 248.
+(epstopdf)             \includegraphics on input line 250.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/AllDictSizeISMIR-eps-converted-to.pdf, id=33, 1284.8pt x 613.29124pt>
@@ -501,36 +418,24 @@ File: figs/AllDictSizeISMIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/AllDictSizeISMIR-eps-converted-to.pdf>
 Package pdftex.def Info: figs/AllDictSizeISMIR-eps-converted-to.pdf used on inp
-ut line 248.
+ut line 250.
 (pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 248--250
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 250--252
  [][] 
  []
 
 
-Overfull \hbox (4.40541pt too wide) in paragraph at lines 259--260
-\OT1/ptm/m/n/10 base [4] com-posed of poly-phonic real-world mu-sic ex-cerpts.
+Underfull \hbox (badness 1231) in paragraph at lines 261--262
+\OT1/ptm/m/n/10 The eval-u-a-tion test are con-ducted on the Medley-dB
  []
 
 
-Overfull \hbox (1.4354pt too wide) in paragraph at lines 259--260
-\OT1/ptm/m/n/10 songs), \OT1/ptm/m/it/10 Rock \OT1/ptm/m/n/10 ($\OT1/cmr/m/n/10
- 20$ \OT1/ptm/m/n/10 songs), \OT1/ptm/m/it/10 Jazz \OT1/ptm/m/n/10 ($\OT1/cmr/m
-/n/10 11$ \OT1/ptm/m/n/10 songs), \OT1/ptm/m/it/10 Elec-tronic/Fusion
- []
-
-
-Overfull \hbox (5.83914pt too wide) in paragraph at lines 264--307
+Overfull \hbox (5.83914pt too wide) in paragraph at lines 266--309
  [][] 
  []
 
 [4 <./figs/AllDictSizeISMIR-eps-converted-to.pdf>]
-Overfull \hbox (8.57458pt too wide) in paragraph at lines 362--363
-\OT1/ptm/m/n/10 sim-ilar res-ults to the uni-ver-sal dic-tion-ary built on the 
-Medley-
- []
-
 Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    date: 2016-03-08 13:34:56
 (epstopdf)                    size: 20464595 bytes
@@ -539,17 +444,18 @@ Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    size: 56260 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SDRismirpop-eps-conve
 rted-to.pdf figs/SDRismirpop.eps>
-(epstopdf)             \includegraphics on input line 368.
+(epstopdf)             \includegraphics on input line 370.
 Package epstopdf Info: Output file is already uptodate.
+
 <figs/SDRismirpop-eps-converted-to.pdf, id=43, 1284.8pt x 614.295pt>
 File: figs/SDRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SDRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SDRismirpop-eps-converted-to.pdf used on input li
-ne 368.
+ne 370.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 368--370
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 370--372
  [][] 
  []
 
@@ -561,17 +467,17 @@ Package epstopdf Info: Source file: <figs/SIRismirpop.eps>
 (epstopdf)                    size: 56553 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SIRismirpop-eps-conve
 rted-to.pdf figs/SIRismirpop.eps>
-(epstopdf)             \includegraphics on input line 375.
+(epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
 <figs/SIRismirpop-eps-converted-to.pdf, id=44, 1284.8pt x 614.295pt>
 File: figs/SIRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SIRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SIRismirpop-eps-converted-to.pdf used on input li
-ne 375.
+ne 377.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 375--377
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 377--379
  [][] 
  []
 
@@ -583,51 +489,45 @@ Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    size: 40076 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/SARismirpop-eps-conve
 rted-to.pdf figs/SARismirpop.eps>
-(epstopdf)             \includegraphics on input line 382.
+(epstopdf)             \includegraphics on input line 384.
 Package epstopdf Info: Output file is already uptodate.
 <figs/SARismirpop-eps-converted-to.pdf, id=45, 1284.8pt x 614.295pt>
 File: figs/SARismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SARismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SARismirpop-eps-converted-to.pdf used on input li
-ne 382.
+ne 384.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 382--384
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 384--386
  [][] 
- []
-
-
-Overfull \hbox (9.36539pt too wide) in paragraph at lines 495--496
-[]\OT1/ptm/m/n/10 Future work will be ded-ic-ated into build-ing a blind method
-
  []
 
 [5 <./figs/SDRismirpop-eps-converted-to.pdf> <./figs/SIRismirpop-eps-converted-
 to.pdf> <./figs/SARismirpop-eps-converted-to.pdf>]
 (./ISMIR2016SPNMFGenreSpec.bbl
-Underfull \hbox (badness 1142) in paragraph at lines 28--34
-\OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cuss-
+Underfull \hbox (badness 2057) in paragraph at lines 28--34
+\OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 36--39
-[]\OT1/ptm/m/n/10 D. El-lis.  Beat track-ing by dy-namic pro-gram-ming.
+Underfull \hbox (badness 2181) in paragraph at lines 28--34
+\OT1/ptm/m/n/10 trix fac-tor-iza-tion with smooth-ness/sparseness con-
  []
 
 [6]
+Underfull \hbox (badness 2884) in paragraph at lines 92--96
+\OT1/ptm/m/n/10 Johnson.  Singing-voice sep-a-ra-tion from monau-ral
+ []
+
+
 Underfull \hbox (badness 1975) in paragraph at lines 98--102
-\OT1/ptm/m/n/10 Ad-apt-a-tion of source-specific dic-tion-ar-ies in non-
+\OT1/ptm/m/n/10 Adap-ta-tion of source-specific dic-tio-nar-ies in non-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 111--115
-[]\OT1/ptm/m/n/10 A. Lampro-poulos, P. Lampro-poulou, and
- []
-
-
-Underfull \hbox (badness 6978) in paragraph at lines 111--115
-\OT1/ptm/m/n/10 G. Tsihrintzis.  Mu-sical genre clas-si-fic-a-tion en-
+[]\OT1/ptm/m/n/10 A. Lam-propou-los, P. Lam-propoulou, and
  []
 
 
@@ -641,13 +541,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6069 strings out of 493089
- 88635 string characters out of 6134842
- 191390 words of memory out of 5000000
- 9431 multiletter control sequences out of 15000+600000
+ 5674 strings out of 493089
+ 83578 string characters out of 6134842
+ 180915 words of memory out of 5000000
+ 9048 multiletter control sequences out of 15000+600000
  27079 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,38p,1213b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,15n,38p,1213b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texl
@@ -665,7 +565,7 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349744 bytes).
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 349602 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
