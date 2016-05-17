@@ -1,53 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: ISMIR2016SPNMFGenreSpec.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ISMIR2016SPNMFGenreSpec.aux
 The style file: plain.bst
 Database file #1: reference.bib
-Warning--empty title in laroche2015structuredhidden
-Warning--empty booktitle in laroche2015structuredhidden
-Warning--empty year in laroche2015structuredhidden
-Warning--empty title in larocheJournalhidden
-Warning--empty journal in larocheJournalhidden
-Warning--empty year in larocheJournalhidden
-You've used 39 entries,
-            2118 wiz_defined-function locations,
-            685 strings with 9835 characters,
-and the built_in function-call counts, 15858 in all, are:
-= -- 1540
-> -- 657
-< -- 30
-+ -- 260
-- -- 218
-* -- 930
-:= -- 2370
-add.period$ -- 114
-call.type$ -- 39
-change.case$ -- 223
-chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 746
-empty$ -- 1303
-format.name$ -- 218
-if$ -- 3610
-int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 40
-newline$ -- 194
-num.names$ -- 78
-pop$ -- 314
-preamble$ -- 1
-purify$ -- 187
-quote$ -- 0
-skip$ -- 630
-stack$ -- 0
-substring$ -- 977
-swap$ -- 311
-text.length$ -- 30
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 154
-warning$ -- 6
-while$ -- 140
-width$ -- 41
-write$ -- 413
-(There were 6 warnings)
+Warning--empty year in larocheJournal
+(There was 1 warning)
