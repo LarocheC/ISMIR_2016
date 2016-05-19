@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  17 MAY 2016 14:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.2)  19 MAY 2016 16:41
 entering extended mode
 **ISMIR2016SPNMFGenreSpec.tex
 (C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016SPNMFGenreSpec.tex
@@ -310,19 +310,19 @@ Package: enumitem 2011/08/06 v3.4 Customized lists
 \enitdp@description=\count110
 )
 (C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016SPNMFGenreSpec.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 95.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -345,44 +345,55 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Try loading font information for U+msa on input line 97.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 97.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 97.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (12.0pt too wide) in paragraph at lines 68--68
+Overfull \hbox (24.10568pt too wide) in paragraph at lines 97--97
  [][] 
  []
 
 <figs/cc_by.pdf, id=1, 121.45375pt x 43.16125pt>
 File: figs/cc_by.pdf Graphic file (type pdf)
  <use figs/cc_by.pdf>
-Package pdftex.def Info: figs/cc_by.pdf used on input line 68.
+Package pdftex.def Info: figs/cc_by.pdf used on input line 97.
 (pdftex.def)             Requested size: 36.02869pt x 12.80365pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 68.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 97.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+
+Underfull \hbox (badness 3492) in paragraph at lines 97--97
+[] [] \OT1/ptm/m/n/8 Cl[]ement Laroche, H[]el[]ene Pa-padopou-los, Matthieu
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 97--97
+\OT1/ptm/m/n/8 Laroche, H[]el[]ene Pa-padopou-los, Matthieu Kowal-ski, Ga[]el R
+ichard.
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 101.
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
@@ -400,23 +411,23 @@ Package epstopdf Info: Source file: <figs/AllDictSizeISMIR.eps>
 (epstopdf)                    size: 7634 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/AllDictSizeISMIR-eps-c
 onverted-to.pdf figs/AllDictSizeISMIR.eps>
-(epstopdf)             \includegraphics on input line 241.
+(epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/AllDictSizeISMIR-eps-converted-to.pdf, id=32, 1284.8pt x 613.29124pt>
+<figs/AllDictSizeISMIR-eps-converted-to.pdf, id=35, 1284.8pt x 613.29124pt>
 File: figs/AllDictSizeISMIR-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/AllDictSizeISMIR-eps-converted-to.pdf>
 Package pdftex.def Info: figs/AllDictSizeISMIR-eps-converted-to.pdf used on inp
-ut line 241.
+ut line 262.
 (pdftex.def)             Requested size: 256.0748pt x 122.23495pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 241--243
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 262--264
  [][] 
  []
 
 
-Overfull \hbox (5.83914pt too wide) in paragraph at lines 257--300
+Overfull \hbox (5.83914pt too wide) in paragraph at lines 278--321
  [][] 
  []
 
@@ -430,18 +441,18 @@ Package epstopdf Info: Source file: <figs/SDRismirpop.eps>
 (epstopdf)                    size: 56260 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/SDRismirpop-eps-conver
 ted-to.pdf figs/SDRismirpop.eps>
-(epstopdf)             \includegraphics on input line 360.
+(epstopdf)             \includegraphics on input line 382.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/SDRismirpop-eps-converted-to.pdf, id=42, 1284.8pt x 614.295pt>
+<figs/SDRismirpop-eps-converted-to.pdf, id=45, 1284.8pt x 614.295pt>
 File: figs/SDRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SDRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SDRismirpop-eps-converted-to.pdf used on input li
-ne 360.
+ne 382.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 360--362
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 382--384
  [][] 
  []
 
@@ -453,17 +464,17 @@ Package epstopdf Info: Source file: <figs/SIRismirpop.eps>
 (epstopdf)                    size: 56553 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/SIRismirpop-eps-conver
 ted-to.pdf figs/SIRismirpop.eps>
-(epstopdf)             \includegraphics on input line 367.
+(epstopdf)             \includegraphics on input line 389.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SIRismirpop-eps-converted-to.pdf, id=43, 1284.8pt x 614.295pt>
+<figs/SIRismirpop-eps-converted-to.pdf, id=46, 1284.8pt x 614.295pt>
 File: figs/SIRismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SIRismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SIRismirpop-eps-converted-to.pdf used on input li
-ne 367.
+ne 389.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 367--369
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 389--391
  [][] 
  []
 
@@ -475,27 +486,30 @@ Package epstopdf Info: Source file: <figs/SARismirpop.eps>
 (epstopdf)                    size: 40076 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/SARismirpop-eps-conver
 ted-to.pdf figs/SARismirpop.eps>
-(epstopdf)             \includegraphics on input line 374.
+(epstopdf)             \includegraphics on input line 396.
 Package epstopdf Info: Output file is already uptodate.
-<figs/SARismirpop-eps-converted-to.pdf, id=44, 1284.8pt x 614.295pt>
+<figs/SARismirpop-eps-converted-to.pdf, id=47, 1284.8pt x 614.295pt>
 File: figs/SARismirpop-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/SARismirpop-eps-converted-to.pdf>
 Package pdftex.def Info: figs/SARismirpop-eps-converted-to.pdf used on input li
-ne 374.
+ne 396.
 (pdftex.def)             Requested size: 256.0748pt x 122.43501pt.
 
-Overfull \hbox (22.7622pt too wide) in paragraph at lines 374--376
+Overfull \hbox (22.7622pt too wide) in paragraph at lines 396--398
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figs/SDRismirpop-eps-converted
--to.pdf> <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figs/SIRismirpop-eps-con
-verted-to.pdf> <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figs/SARismirpop-e
-ps-converted-to.pdf>]
+
+Underfull \vbox (badness 5203) has occurred while \output is active []
+
+ [5 <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figs/SDRismirpop-eps-converte
+d-to.pdf> <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figs/SIRismirpop-eps-co
+nverted-to.pdf> <C:/Users/laroche/Documents/GitHub/ISMIR_2016/figs/SARismirpop-
+eps-converted-to.pdf>]
 (C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016SPNMFGenreSpec.bbl
 Underfull \hbox (badness 2057) in paragraph at lines 28--34
 \OT1/ptm/m/n/10 J. Carabias-Orti, and P. Cabanas-Molero.  Per-cus-
@@ -536,37 +550,37 @@ Underfull \hbox (badness 1817) in paragraph at lines 173--177
 []\OT1/ptm/m/n/10 H. Rump, S. Miyabe, E. Tsunoo, N. Ono, and
  []
 
-[7]) [8
-
-]
-(C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016SPNMFGenreSpec.aux) ) 
+) [7] (C:\Users\laroche\Documents\GitHub\ISMIR_2016\ISMIR2016SPNMFGenreSpec.aux
+) ) 
 Here is how much of TeX's memory you used:
- 5348 strings out of 494045
- 77341 string characters out of 3148382
- 169011 words of memory out of 3000000
- 8529 multiletter control sequences out of 15000+200000
- 30249 words of font info for 71 fonts, out of 3000000 for 9000
+ 5351 strings out of 494045
+ 77370 string characters out of 3148382
+ 169127 words of memory out of 3000000
+ 8532 multiletter control sequences out of 15000+200000
+ 30465 words of font info for 72 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,15n,38p,1397b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:
-/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
-mb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ISMIR2016SPNMFGenreSpec.pdf (8 pages, 365246 bytes).
+ 42i,17n,38p,1397b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on ISMIR2016SPNMFGenreSpec.pdf (7 pages, 387932 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
+ 187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -57,11 +57,40 @@
 
 % Four addresses
 % --------------
-\fourauthors
-  {First author} {Affiliation1 \\ {\tt author1@ismir.edu}}
-  {Second author}{Affiliation2 \\ {\tt author2@ismir.edu}}
-  {Third author} {Affiliation3 \\ {\tt author3@ismir.edu}}
-  {Fourth author} {Affiliation4 \\ {\tt author4@ismir.edu}}
+%\fourauthors
+%  {Cl\'{e}ment Laroche$^{\star \dagger}$} {$^\star$ LTCI, CNRS, T\'{e}l\'{e}com ParisTech,\\ Univ Paris-Saclay, Paris, France \\{\tt }}
+%  {H\'{e}l\`{e}ne Papadopoulos$^{\dagger}$}{$^\dagger$ Univ Paris-Sud-CNRS-CentraleSupelec,\\ L2S, Gif-sur-Yvette, France \\ {$\star$ \texttt{name.lastname@telecom-paristech.fr} \tt}}
+%  {Matthieu Kowalski$^{\dagger \ddagger}$} {$^\ddagger$ Parietal project-team,\\ INRIA, CEA-Saclay, France \\ {$\dagger$ \texttt{name.lastname@lss.supelec.fr} \tt }}
+%  {Ga\"{e}l Richard$^{\star}$} {\\ \\ {\tt}}
+  
+  
+  
+  
+  %% To make customize author list in Creative Common license, uncomment and customize the next line
+%  \def\authorname{First Author, Second Author, Third Author} 
+
+% Four or more addresses
+% OR alternative format for large number of co-authors
+% ------------
+\multauthor
+{Cl\'{e}ment Laroche$^{1,2}$ \hspace{1cm} H\'{e}l\`{e}ne Papadopoulos$^2$ \hspace{1cm} Matthieu Kowalski$^{2,3}$ \hspace{1cm} Ga\"{e}l Richard$^1$} { \bfseries{}\\
+  $^1$ LTCI, CNRS, T\'{e}l\'{e}com ParisTech, Univ Paris-Saclay, Paris, France\\
+$^2$ Univ Paris-Sud-CNRS-CentraleSupelec, L2S, Gif-sur-Yvette, France\\
+$^3$  Parietal project-team, INRIA, CEA-Saclay, France\\
+{\tt\small $^1$name.lastname@telecom-paristech.fr, $^2$name.lastname@lss.supelec.fr}
+}
+\def\authorname{Cl\'{e}ment Laroche, H\'{e}l\`{e}ne Papadopoulos, Matthieu Kowalski, Ga\"{e}l Richard}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 \begin{document}
 %
@@ -168,7 +197,8 @@ The SPNMF model gives the optimization problem:
 \min_{W_H,W_P,H_P \geq 0} D(V|W_{H}W_{H}^{T}V + W_{P} H_{P})  
 \end{equation}
 
-A solution to this problem can be obtained by iterative multiplicative update rules following the same strategy as in~\cite{yuanOja2005,Lee01algorithmsfor} which consists in splitting the gradient with respect to (wrt) one variable (here $W_H$ for example) $\nabla_{W_H} D(V|\tilde{V})$ in its positive $[\nabla_{W_H} D(V|\tilde{V})]^{+}$ and negative $[\nabla_{W_H} D(V|\tilde{V})]^{-}$ parts. Using formula from Appendix~\ref{ISdisteq}, the SPNMF optimization process is given in Algorithm~\ref{AlgoDictionary}, where $\otimes$ is the Hadamard product and all division are element-wise operation.
+A solution to this problem can be obtained by iterative multiplicative update rules following the same strategy as in~\cite{yuanOja2005,Lee01algorithmsfor}. %which consists in splitting the gradient with respect to (wrt) one variable (here $W_H$ for example) in its positive $[\nabla_{W_H} D(V|\tilde{V})]^{+}$ and negative $[\nabla_{W_H} D(V|\tilde{V})]^{-}$ parts. 
+Using formula from Appendix~\ref{ISdisteq}, the optimization process is given in Algorithm~\ref{AlgoDictionary}, where $\otimes$ is the Hadamard product and all division are element-wise operation.
  
 \begin{algorithm}[h]
  Input: $V \in \mathbb{R}_{+}^{m \times n} $ and $ W_{train} \in \mathbb{R}_+^{m \times e}$
@@ -193,7 +223,8 @@ A solution to this problem can be obtained by iterative multiplicative update ru
 
 
 
- 
+ \vspace{-2cm}
+
 \subsection{Signal reconstruction}
 
 The percussive signal $x_p(t)$ is synthesized using the magnitude percussive spectrogram $X_P = W_PH_P$. To reconstruct the phase of the percussive part, we use a Wiener filter~\cite{liutkus2015generalized} to create a percussive mask as:
@@ -206,16 +237,6 @@ x_p(t) = \mbox{SFTF}^{-1}(\mathcal{M}_P \otimes X).
 \end{equation}
 Where $X$ is the complex spectrogram of the mixture.
 We use a similar procedure for the harmonic part.
-%, we obtain:
-%\begin{equation}\label{percuweiner}
-%\mathcal{M}_H = \frac{X_H^2}{X_M^2 + X_P^2},
-%\end{equation}
-%and:
-%\begin{equation}
-%x_h(t) = InverseSTFT(\mathcal{M}_H \otimes X).
-%\end{equation}
-%
-
 
 
 
@@ -339,6 +360,7 @@ With the results from Section \ref{optimalsize} the dictionaries are built as fo
 %\caption{\label{lengthDict} Length of the genre specific database.}
 %\end{table}
 
+\vspace{-0.5cm}
 
 \section{Results}\label{sec:results}
 
@@ -469,7 +491,7 @@ SAR & \bf{27.2}& \bf{27.7}   & \bf{29.9} & \bf{26.2}& 34.3     &\bf{31.9} & 21.6
 
 
 On Table \ref{specresults}, we display the mean separation score for all the genre specific dictionaries compared to the non specific dictionary. The dictionary built on the ENST-drums is giving results very similar to the universal dictionary built on the Medley-dB database. For the sake of concision we only display the results using the universal dictionary from Medley-dB. On the database \emph{Singer/Songwriter}, \emph{Pop}, \emph{Rock}, \emph{Jazz} and \emph{World/Folk}, the genre specific dictionaries outperform the universal dictionary on the harmonic and percussive separation.
-
+\vspace{-0.5cm}
 
 \subsection{Discussion}
 
@@ -478,8 +500,7 @@ The databases \emph{Classical} and \emph{Electronic/Fusion} are composed of song
 
 It can be noticed that overall the harmonic separation is giving much better results than the percussive extraction. The fixed dictionaries are creating artefact as the percussive templates do not correspond exactly to the target drum signal. A possible way to alleviate this problem would be to adapt the dictionaries but this would require the use of hyper parameters and that is not the philosophy of this work \cite{laroche2015structured}.
 
-
-
+\vspace{-1cm}
 \section{Conclusion}\label{sec:conclusion}
 
 Using genre specific information in order to build more relevant drum dictionaries is a powerful approach to improve the HPSS. The dictionaries still have an imprint of the genre after the NMF decomposition and the additional information is properly used by the SPNMF to improve the source separation quality. This is a first step in order to produce dictionaries capable of separating a wide variety of audio signal. 
@@ -490,25 +511,19 @@ Future work will be dedicated into building a blind method to select the genre s
 \section{Appendix: SPNMF with the IS divergence}\label{ISdisteq}
  
 The Itakura Saito divergence gives us the problem,
-$$\min_{W_1,W_2,H_2 \geq 0} \frac{V}{\tilde{V}} - log(\frac{V}{\tilde{V}}) -1.$$
+$$\min_{W_H,W_P,H_P \geq 0} \frac{V}{\tilde{V}} - log(\frac{V}{\tilde{V}}) -1.$$
 
-The gradient wrt $W_1$ gives
-$$[\nabla_{W_1} D(V|\tilde{V})]_{i,j}^{-} = (ZV^TW_1)_{i,j} + (VZ^TW_1)_{i,j},$$
-with $Z_{i,j} = (\frac{V}{W_1W_1^TV + W_2H_2})_{i,j}$. 
+The gradient wrt $W_H$ gives
+$$[\nabla_{W_H} D(V|\tilde{V})]_{i,j}^{-} = (ZV^TW_H)_{i,j} + (VZ^TW_H)_{i,j},$$
+with $Z_{i,j} = (\frac{V}{W_HW_H^TV + W_PH_P})_{i,j}$. 
 The positive part of the gradient is
-$$[\nabla_{W_1} D(V|\tilde{V})]_{i,j}^{+} = (\phi V^TW_1)_{i,j} + (V \phi^T W_1)_{i,j},$$
-with $$ \phi_{i,j} = (\frac{I}{W_1W_1^TV + W_2H_2})_{i,j}.$$ and $I \in \mathbb{R}^{f \times t} ; \forall i,j \quad I_{i,j}=1$.
+$$[\nabla_{W_H} D(V|\tilde{V})]_{i,j}^{+} = (\phi V^TW_H)_{i,j} + (V \phi^T W_H)_{i,j},$$
+with \vspace{-0.2cm} $$ \phi_{i,j} = (\frac{I}{W_HW_H^TV + W_PH_P})_{i,j}.$$ and $I \in \mathbb{R}^{f \times t} ; \forall i,j \quad I_{i,j}=1$.
 
-
-Similarly, the gradient wrt $W_2$ gives
-$$ [\nabla_{W_2} D(V|\tilde{V})]^{-} = VH_2^T $$
-and
-$$ [\nabla_{W_2} D(V|\tilde{V})]^{+} = W_1W_1^TVH_2^T + W_2H_2H_2^T.$$
-
-Finally, the gradient wrt $H_2$ gives
-$$ [\nabla_{H_2} D(V|\tilde{V})]^{-} = W_2^TV  $$
-and
-$$ [\nabla_{H_2} D(V|\tilde{V})]^{+} = 2W_2^TW_1W_1^TV + W_2^TW_2H_2. $$
+Similarly, the gradient wrt $H_P$ gives
+$$ [\nabla_{H_P} D(V|\tilde{V})]^{-} = W_P^TV  $$
+and \vspace{-0.2cm}
+$$ [\nabla_{H_P} D(V|\tilde{V})]^{+} = 2W_P^TW_HW_H^TV + W_P^TW_PH_P. $$
 
 
 
